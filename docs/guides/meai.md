@@ -1,6 +1,9 @@
 # Microsoft.Extensions.AI Integration
 
-The Resend SDK provides `AIFunction` tools that integrate with any `IChatClient` supporting function/tool calling via [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai).
+!!! tip "Cross-SDK comparison"
+    See the [centralized MEAI documentation](https://tryagi.github.io/docs/meai/) for feature matrices and comparisons across all tryAGI SDKs.
+
+The Resend SDK provides `AIFunction` tool wrappers compatible with [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai). These tools can be used with any `IChatClient` to give AI models email sending, domain management, contact listing, and template management capabilities.
 
 ## Available Tools
 
