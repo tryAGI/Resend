@@ -1,0 +1,19 @@
+#nullable enable
+
+namespace Resend
+{
+    public partial interface IContactsClient
+    {
+        /// <summary>
+        /// Remove a contact from a segment
+        /// </summary>
+        /// <param name="contactId"></param>
+        /// <param name="segmentId"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Resend.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Resend.RemoveContactFromSegmentResponseSuccess> DeleteContactsByContactIdSegmentsBySegmentIdAsync(
+            string contactId,
+            string segmentId,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
