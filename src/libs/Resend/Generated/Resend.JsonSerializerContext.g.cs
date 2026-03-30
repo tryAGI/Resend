@@ -129,6 +129,14 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.UpdateContactTopicsResponseSuccessTopicSubscriptionNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.LogSummaryMethodJsonConverter),
+
+            typeof(global::Resend.JsonConverters.LogSummaryMethodNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.LogMethodJsonConverter),
+
+            typeof(global::Resend.JsonConverters.LogMethodNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
 
             typeof(global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
@@ -336,6 +344,12 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.UpdateContactTopicsResponseSuccessTopic>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateContactTopicsResponseSuccessTopic))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateContactTopicsResponseSuccessTopicSubscription), TypeInfoPropertyName = "UpdateContactTopicsResponseSuccessTopicSubscription2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.LogSummary))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.LogSummaryMethod), TypeInfoPropertyName = "LogSummaryMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Log))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.LogMethod), TypeInfoPropertyName = "LogMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListLogsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.LogSummary>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.List<string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
@@ -367,6 +381,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.GetContactTopicsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.UpdateContactTopicsOptionsTopic>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.UpdateContactTopicsResponseSuccessTopic>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.LogSummary>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.SendEmailRequest>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
