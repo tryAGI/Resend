@@ -16,13 +16,18 @@ namespace Resend
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
+        partial void ProcessDeleteKeysByApiKeyIdResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
         /// <summary>
         /// Remove an existing API key
         /// </summary>
         /// <param name="apiKeyId"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task DeleteKeysByApiKeyIdAsync(
+        public async global::System.Threading.Tasks.Task<global::Resend.DeleteApiKeyResponse> DeleteKeysByApiKeyIdAsync(
             string apiKeyId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -92,11 +97,18 @@ namespace Resend
                     client: HttpClient,
                     response: __response,
                     content: ref __content);
+                ProcessDeleteKeysByApiKeyIdResponseContent(
+                    httpClient: HttpClient,
+                    httpResponseMessage: __response,
+                    content: ref __content);
 
                 try
                 {
                     __response.EnsureSuccessStatusCode();
 
+                    return
+                        global::Resend.DeleteApiKeyResponse.FromJson(__content, JsonSerializerContext) ??
+                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -125,6 +137,9 @@ namespace Resend
 #endif
                     ).ConfigureAwait(false);
 
+                    return
+                        await global::Resend.DeleteApiKeyResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
                 {

@@ -10,7 +10,7 @@ namespace Resend
         /// <param name="apiKeyId"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        global::System.Threading.Tasks.Task DeleteKeysByApiKeyIdAsync(
+        global::System.Threading.Tasks.Task<global::Resend.DeleteApiKeyResponse> DeleteKeysByApiKeyIdAsync(
             string apiKeyId,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
