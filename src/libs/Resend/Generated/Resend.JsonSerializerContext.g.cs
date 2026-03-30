@@ -215,6 +215,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListApiKeysResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ApiKey>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ApiKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteApiKeyResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAudienceOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAudienceResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetAudienceResponseSuccess))]

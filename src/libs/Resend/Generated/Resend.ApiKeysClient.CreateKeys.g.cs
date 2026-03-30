@@ -189,7 +189,7 @@ namespace Resend
         /// The API key can have full access to Resend’s API or be only restricted to send emails. * full_access - Can create, delete, get, and update any resource. * sending_access - Can only send emails.
         /// </param>
         /// <param name="domainId">
-        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_acces.
+        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_access.
         /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

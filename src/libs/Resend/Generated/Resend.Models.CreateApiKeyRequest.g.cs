@@ -23,7 +23,7 @@ namespace Resend
         public global::Resend.CreateApiKeyRequestPermission? Permission { get; set; }
 
         /// <summary>
-        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_acces.
+        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_access.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain_id")]
         public string? DomainId { get; set; }
@@ -44,7 +44,7 @@ namespace Resend
         /// The API key can have full access to Resend’s API or be only restricted to send emails. * full_access - Can create, delete, get, and update any resource. * sending_access - Can only send emails.
         /// </param>
         /// <param name="domainId">
-        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_acces.
+        /// Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_access.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
