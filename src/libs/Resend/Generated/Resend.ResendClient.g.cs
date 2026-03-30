@@ -92,6 +92,15 @@ namespace Resend
         };
 
         /// <summary>
+        /// Retrieve API request logs through the Resend API.
+        /// </summary>
+        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Retrieve and manage received emails and attachments through the Resend API.
         /// </summary>
         public ReceivingEmailsClient ReceivingEmails => new ReceivingEmailsClient(HttpClient, authorizations: Authorizations)

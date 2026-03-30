@@ -71,6 +71,11 @@ namespace Resend
         public EmailsClient Emails { get; }
 
         /// <summary>
+        /// Retrieve API request logs through the Resend API.
+        /// </summary>
+        public LogsClient Logs { get; }
+
+        /// <summary>
         /// Retrieve and manage received emails and attachments through the Resend API.
         /// </summary>
         public ReceivingEmailsClient ReceivingEmails { get; }

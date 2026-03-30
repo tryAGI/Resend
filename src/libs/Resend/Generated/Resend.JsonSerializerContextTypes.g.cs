@@ -748,7 +748,31 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type180 { get; set; }
+        public global::Resend.LogSummary? Type180 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.LogSummaryMethod? Type181 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.Log? Type182 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.LogMethod? Type183 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListLogsResponse? Type184 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.LogSummary>? Type185 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type186 { get; set; }
 
         /// <summary>
         /// 
@@ -873,6 +897,10 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType30 { get; set; }
+        public global::System.Collections.Generic.List<global::Resend.LogSummary>? ListType30 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType31 { get; set; }
     }
 }
