@@ -217,7 +217,6 @@ namespace Resend
             global::Resend.DomainCapabilities? capabilities = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.CreateDomainRequest
             {
                 Name = name,

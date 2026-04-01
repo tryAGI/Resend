@@ -207,7 +207,6 @@ namespace Resend
             global::Resend.UpdateTopicOptionsVisibility? visibility = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.UpdateTopicOptions
             {
                 Name = name,
