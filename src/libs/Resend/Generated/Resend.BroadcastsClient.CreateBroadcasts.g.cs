@@ -234,6 +234,7 @@ namespace Resend
             string? scheduledAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Resend.CreateBroadcastOptions
             {
                 Name = name,
