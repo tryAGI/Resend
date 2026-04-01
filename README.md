@@ -1,6 +1,6 @@
 # Resend
 
-[![Nuget package](https://img.shields.io/nuget/vpre/Resend)](https://www.nuget.org/packages/Resend/)
+[![Nuget package](https://img.shields.io/nuget/vpre/tryAGI.Resend)](https://www.nuget.org/packages/tryAGI.Resend/)
 [![dotnet](https://github.com/tryAGI/Resend/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/tryAGI/Resend/actions/workflows/dotnet.yml)
 [![License: MIT](https://img.shields.io/github/license/tryAGI/Resend)](https://github.com/tryAGI/Resend/blob/main/LICENSE.txt)
 [![Discord](https://img.shields.io/discord/1115206893015662663?label=Discord&logo=discord&logoColor=white&color=d82679)](https://discord.gg/Ca2xhfBf3v)
@@ -13,6 +13,10 @@
 - Support .Net Framework/.Net Standard 2.0
 
 ### Usage
+```bash
+dotnet add package tryAGI.Resend
+```
+
 ```csharp
 using Resend;
 
