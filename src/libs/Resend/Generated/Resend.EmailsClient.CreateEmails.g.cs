@@ -251,7 +251,6 @@ namespace Resend
             string? topicId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.SendEmailRequest
             {
                 From = from,

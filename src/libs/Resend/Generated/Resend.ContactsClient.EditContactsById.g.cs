@@ -219,7 +219,6 @@ namespace Resend
             object? properties = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.UpdateContactOptions
             {
                 Email = email,

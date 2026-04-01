@@ -197,7 +197,6 @@ namespace Resend
             object? filter = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.CreateSegmentOptions
             {
                 Name = name,

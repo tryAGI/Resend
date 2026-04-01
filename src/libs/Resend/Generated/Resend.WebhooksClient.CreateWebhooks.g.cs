@@ -197,7 +197,6 @@ namespace Resend
             global::System.Collections.Generic.IList<string> events,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Resend.CreateWebhookRequest
             {
                 Endpoint = endpoint,
