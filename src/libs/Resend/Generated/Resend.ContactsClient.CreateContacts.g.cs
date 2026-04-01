@@ -221,6 +221,7 @@ namespace Resend
             global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? topics = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Resend.CreateContactOptions
             {
                 Email = email,

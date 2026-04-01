@@ -199,6 +199,7 @@ namespace Resend
             global::Resend.OneOf<string, double?>? fallbackValue = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Resend.UpdateContactPropertyOptions
             {
                 FallbackValue = fallbackValue,
