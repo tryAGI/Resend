@@ -47,6 +47,15 @@ namespace Resend
         };
 
         /// <summary>
+        /// Create and manage Automations through the Resend API.
+        /// </summary>
+        public AutomationsClient Automations => new AutomationsClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Create and manage Broadcasts through the Resend API.
         /// </summary>
         public BroadcastsClient Broadcasts => new BroadcastsClient(HttpClient, authorizations: Authorizations)
@@ -86,6 +95,15 @@ namespace Resend
         /// Start sending emails through the Resend API.
         /// </summary>
         public EmailsClient Emails => new EmailsClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// Create and manage Events through the Resend API.
+        /// </summary>
+        public EventsClient Events => new EventsClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
