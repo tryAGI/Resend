@@ -776,7 +776,183 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type187 { get; set; }
+        public global::Resend.AutomationStep? Type187 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationStepType? Type188 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationStepResponse? Type189 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationStepResponseType? Type190 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationEdge? Type191 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationEdgeEdgeType? Type192 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.CreateAutomationRequest? Type193 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.CreateAutomationRequestStatus? Type194 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationStep>? Type195 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? Type196 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.CreateAutomationResponse? Type197 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.Automation? Type198 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationStatus? Type199 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationStepResponse>? Type200 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationListItem? Type201 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationListItemStatus? Type202 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListAutomationsResponse? Type203 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationListItem>? Type204 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.PatchAutomationRequest? Type205 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.PatchAutomationRequestStatus? Type206 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.PatchAutomationResponse? Type207 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DeleteAutomationResponse? Type208 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.StopAutomationResponse? Type209 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRunStep? Type210 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRunStepType? Type211 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRun? Type212 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRunStatus? Type213 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationRunStep>? Type214 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRunListItem? Type215 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.AutomationRunListItemStatus? Type216 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListAutomationRunsResponse? Type217 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.AutomationRunListItem>? Type218 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.Event? Type219 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EventSummary? Type220 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.CreateEventRequest? Type221 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.CreateEventResponse? Type222 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListEventsResponse? Type223 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.EventSummary>? Type224 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.UpdateEventRequest? Type225 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.UpdateEventResponse? Type226 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.RemoveEventResponse? Type227 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.SendEventRequest? Type228 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.SendEventResponse? Type229 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type230 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetAutomationsStatus? Type231 { get; set; }
 
         /// <summary>
         /// 
@@ -905,6 +1081,34 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType31 { get; set; }
+        public global::System.Collections.Generic.List<global::Resend.AutomationStep>? ListType31 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.AutomationEdge>? ListType32 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.AutomationStepResponse>? ListType33 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.AutomationListItem>? ListType34 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.AutomationRunStep>? ListType35 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.AutomationRunListItem>? ListType36 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.EventSummary>? ListType37 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType38 { get; set; }
     }
 }

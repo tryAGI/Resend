@@ -46,6 +46,11 @@ namespace Resend
         public ApiKeysClient ApiKeys { get; }
 
         /// <summary>
+        /// Create and manage Automations through the Resend API.
+        /// </summary>
+        public AutomationsClient Automations { get; }
+
+        /// <summary>
         /// Create and manage Broadcasts through the Resend API.
         /// </summary>
         public BroadcastsClient Broadcasts { get; }
@@ -69,6 +74,11 @@ namespace Resend
         /// Start sending emails through the Resend API.
         /// </summary>
         public EmailsClient Emails { get; }
+
+        /// <summary>
+        /// Create and manage Events through the Resend API.
+        /// </summary>
+        public EventsClient Events { get; }
 
         /// <summary>
         /// Retrieve API request logs through the Resend API.
