@@ -9,7 +9,7 @@ namespace Resend
     public sealed partial class DomainRecord
     {
         /// <summary>
-        /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails).
+        /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails, Tracking for click and open tracking).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("record")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.DomainRecordRecordJsonConverter))]
@@ -63,7 +63,7 @@ namespace Resend
         /// Initializes a new instance of the <see cref="DomainRecord" /> class.
         /// </summary>
         /// <param name="record">
-        /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails).
+        /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails, Tracking for click and open tracking).
         /// </param>
         /// <param name="name">
         /// The name of the DNS record.

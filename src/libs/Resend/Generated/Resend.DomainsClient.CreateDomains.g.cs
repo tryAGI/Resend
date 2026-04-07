@@ -204,6 +204,9 @@ namespace Resend
         /// <param name="capabilities">
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </param>
+        /// <param name="trackingSubdomain">
+        /// The subdomain to use for click and open tracking.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.CreateDomainResponse> CreateDomainsAsync(
@@ -214,6 +217,7 @@ namespace Resend
             bool? clickTracking = default,
             global::Resend.CreateDomainRequestTls? tls = default,
             global::Resend.DomainCapabilities? capabilities = default,
+            string? trackingSubdomain = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Resend.CreateDomainRequest
@@ -225,6 +229,7 @@ namespace Resend
                 ClickTracking = clickTracking,
                 Tls = tls,
                 Capabilities = capabilities,
+                TrackingSubdomain = trackingSubdomain,
             };
 
             return await CreateDomainsAsync(

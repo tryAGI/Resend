@@ -22,7 +22,8 @@ namespace Resend
             ref string content);
 
         /// <summary>
-        /// Verify an existing domain
+        /// Verify an existing domain<br/>
+        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured).
         /// </summary>
         /// <param name="domainId"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

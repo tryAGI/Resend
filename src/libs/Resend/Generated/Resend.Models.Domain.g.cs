@@ -57,6 +57,24 @@ namespace Resend
         public string? Region { get; set; }
 
         /// <summary>
+        /// Whether open tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("open_tracking")]
+        public bool? OpenTracking { get; set; }
+
+        /// <summary>
+        /// Whether click tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("click_tracking")]
+        public bool? ClickTracking { get; set; }
+
+        /// <summary>
+        /// The subdomain used for click and open tracking.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tracking_subdomain")]
+        public string? TrackingSubdomain { get; set; }
+
+        /// <summary>
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("capabilities")]
@@ -101,6 +119,15 @@ namespace Resend
         /// The region where the domain is hosted.<br/>
         /// Example: us-east-1
         /// </param>
+        /// <param name="openTracking">
+        /// Whether open tracking is enabled for this domain.
+        /// </param>
+        /// <param name="clickTracking">
+        /// Whether click tracking is enabled for this domain.
+        /// </param>
+        /// <param name="trackingSubdomain">
+        /// The subdomain used for click and open tracking.
+        /// </param>
         /// <param name="capabilities">
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </param>
@@ -115,6 +142,9 @@ namespace Resend
             string? status,
             global::System.DateTime? createdAt,
             string? region,
+            bool? openTracking,
+            bool? clickTracking,
+            string? trackingSubdomain,
             global::Resend.DomainCapabilities? capabilities,
             global::System.Collections.Generic.IList<global::Resend.DomainRecord>? records)
         {
@@ -124,6 +154,9 @@ namespace Resend
             this.Status = status;
             this.CreatedAt = createdAt;
             this.Region = region;
+            this.OpenTracking = openTracking;
+            this.ClickTracking = clickTracking;
+            this.TrackingSubdomain = trackingSubdomain;
             this.Capabilities = capabilities;
             this.Records = records;
         }

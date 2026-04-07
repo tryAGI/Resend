@@ -51,6 +51,24 @@ namespace Resend
         public string? Region { get; set; }
 
         /// <summary>
+        /// Whether open tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("open_tracking")]
+        public bool? OpenTracking { get; set; }
+
+        /// <summary>
+        /// Whether click tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("click_tracking")]
+        public bool? ClickTracking { get; set; }
+
+        /// <summary>
+        /// The subdomain used for click and open tracking.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tracking_subdomain")]
+        public string? TrackingSubdomain { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -78,6 +96,15 @@ namespace Resend
         /// <param name="region">
         /// The region where the domain is hosted.
         /// </param>
+        /// <param name="openTracking">
+        /// Whether open tracking is enabled for this domain.
+        /// </param>
+        /// <param name="clickTracking">
+        /// Whether click tracking is enabled for this domain.
+        /// </param>
+        /// <param name="trackingSubdomain">
+        /// The subdomain used for click and open tracking.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -88,7 +115,10 @@ namespace Resend
             string? status,
             global::Resend.DomainCapabilities? capabilities,
             global::System.Collections.Generic.IList<global::Resend.DomainRecord>? records,
-            string? region)
+            string? region,
+            bool? openTracking,
+            bool? clickTracking,
+            string? trackingSubdomain)
         {
             this.Id = id;
             this.Name = name;
@@ -97,6 +127,9 @@ namespace Resend
             this.Capabilities = capabilities;
             this.Records = records;
             this.Region = region;
+            this.OpenTracking = openTracking;
+            this.ClickTracking = clickTracking;
+            this.TrackingSubdomain = trackingSubdomain;
         }
 
         /// <summary>
