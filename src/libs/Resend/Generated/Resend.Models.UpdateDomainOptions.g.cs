@@ -34,6 +34,12 @@ namespace Resend
         public global::Resend.DomainCapabilities? Capabilities { get; set; }
 
         /// <summary>
+        /// The subdomain to use for click and open tracking.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tracking_subdomain")]
+        public string? TrackingSubdomain { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -55,6 +61,9 @@ namespace Resend
         /// <param name="capabilities">
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </param>
+        /// <param name="trackingSubdomain">
+        /// The subdomain to use for click and open tracking.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,12 +71,14 @@ namespace Resend
             bool? openTracking,
             bool? clickTracking,
             string? tls,
-            global::Resend.DomainCapabilities? capabilities)
+            global::Resend.DomainCapabilities? capabilities,
+            string? trackingSubdomain)
         {
             this.OpenTracking = openTracking;
             this.ClickTracking = clickTracking;
             this.Tls = tls;
             this.Capabilities = capabilities;
+            this.TrackingSubdomain = trackingSubdomain;
         }
 
         /// <summary>
