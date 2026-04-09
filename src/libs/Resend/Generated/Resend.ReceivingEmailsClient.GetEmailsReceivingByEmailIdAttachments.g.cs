@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class ReceivingEmailsClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_GetEmailsReceivingByEmailIdAttachmentsSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_GetEmailsReceivingByEmailIdAttachmentsSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_GetEmailsReceivingByEmailIdAttachmentsSecurityRequirement0,
+            };
         partial void PrepareGetEmailsReceivingByEmailIdAttachmentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid emailId,
@@ -52,6 +71,12 @@ namespace Resend
                 after: ref after,
                 before: ref before);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetEmailsReceivingByEmailIdAttachmentsSecurityRequirements,
+                operationName: "GetEmailsReceivingByEmailIdAttachmentsAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: $"/emails/receiving/{emailId}/attachments",
                 baseUri: HttpClient.BaseAddress); 
@@ -59,7 +84,7 @@ namespace Resend
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("after", after?.ToString())
                 .AddOptionalParameter("before", before?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -69,7 +94,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

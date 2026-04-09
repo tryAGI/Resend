@@ -13,7 +13,7 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.resend.com";
+        public const string DefaultBaseUrl = "https://api.resend.com/";
 
         private bool _disposeHttpClient = true;
 

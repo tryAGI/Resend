@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class EventsClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_DeleteEventsByIdentifierSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_DeleteEventsByIdentifierSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_DeleteEventsByIdentifierSecurityRequirement0,
+            };
         partial void PrepareDeleteEventsByIdentifierArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string identifier);
@@ -37,9 +56,15 @@ namespace Resend
                 httpClient: HttpClient,
                 identifier: ref identifier);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteEventsByIdentifierSecurityRequirements,
+                operationName: "DeleteEventsByIdentifierAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: $"/events/{identifier}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -49,7 +74,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

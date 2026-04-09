@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class TemplatesClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_EditTemplatesByIdSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_EditTemplatesByIdSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_EditTemplatesByIdSecurityRequirement0,
+            };
         partial void PrepareEditTemplatesByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -45,9 +64,15 @@ namespace Resend
                 id: ref id,
                 request: request);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_EditTemplatesByIdSecurityRequirements,
+                operationName: "EditTemplatesByIdAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: $"/templates/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -57,7 +82,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

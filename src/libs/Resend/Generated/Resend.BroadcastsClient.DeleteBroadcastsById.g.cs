@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class BroadcastsClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_DeleteBroadcastsByIdSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_DeleteBroadcastsByIdSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_DeleteBroadcastsByIdSecurityRequirement0,
+            };
         partial void PrepareDeleteBroadcastsByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id);
@@ -37,9 +56,15 @@ namespace Resend
                 httpClient: HttpClient,
                 id: ref id);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteBroadcastsByIdSecurityRequirements,
+                operationName: "DeleteBroadcastsByIdAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: $"/broadcasts/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -49,7 +74,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
