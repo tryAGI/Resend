@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class WebhooksClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_EditWebhooksByWebhookIdSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_EditWebhooksByWebhookIdSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_EditWebhooksByWebhookIdSecurityRequirement0,
+            };
         partial void PrepareEditWebhooksByWebhookIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid webhookId,
@@ -45,9 +64,15 @@ namespace Resend
                 webhookId: ref webhookId,
                 request: request);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_EditWebhooksByWebhookIdSecurityRequirements,
+                operationName: "EditWebhooksByWebhookIdAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: $"/webhooks/{webhookId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -57,7 +82,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

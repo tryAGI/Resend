@@ -6,6 +6,7 @@ namespace Resend
     public sealed partial class ResendClient
     {
         /// <inheritdoc cref="ResendClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Resend.EndPointAuthorization}?, bool)"/>
+
         public ResendClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

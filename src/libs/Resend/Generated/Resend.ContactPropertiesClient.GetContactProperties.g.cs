@@ -5,6 +5,25 @@ namespace Resend
 {
     public partial class ContactPropertiesClient
     {
+
+
+        private static readonly global::Resend.EndPointSecurityRequirement s_GetContactPropertiesSecurityRequirement0 =
+            new global::Resend.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
+                {                    new global::Resend.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_GetContactPropertiesSecurityRequirements =
+            new global::Resend.EndPointSecurityRequirement[]
+            {                s_GetContactPropertiesSecurityRequirement0,
+            };
         partial void PrepareGetContactPropertiesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -47,6 +66,12 @@ namespace Resend
                 after: ref after,
                 before: ref before);
 
+
+            var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetContactPropertiesSecurityRequirements,
+                operationName: "GetContactPropertiesAsync");
+
             var __pathBuilder = new global::Resend.PathBuilder(
                 path: "/contact-properties",
                 baseUri: HttpClient.BaseAddress); 
@@ -54,7 +79,7 @@ namespace Resend
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("after", after)
                 .AddOptionalParameter("before", before) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -64,7 +89,7 @@ namespace Resend
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
