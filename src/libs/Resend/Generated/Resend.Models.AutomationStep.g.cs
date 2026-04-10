@@ -9,11 +9,11 @@ namespace Resend
     public sealed partial class AutomationStep
     {
         /// <summary>
-        /// A unique reference identifier for this step within the automation graph.
+        /// A unique key for this step within the automation graph.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ref { get; set; }
+        public required string Key { get; set; }
 
         /// <summary>
         /// The type of automation step.
@@ -24,7 +24,7 @@ namespace Resend
         public required global::Resend.AutomationStepType Type { get; set; }
 
         /// <summary>
-        /// Configuration for the step. Shape depends on `type`: - **trigger**: `{ event_name: string }` - **send_email**: `{ template_id: string, subject?: string, from?: string, reply_to?: string, variables?: object }` - **delay**: `{ seconds: number }` - **wait_for_event**: `{ event_name: string, timeout_seconds?: number, filter_rule?: object }` - **condition**: A rule tree with `type` (`rule`, `and`, `or`), `field`, `operator`, and `value` - **contact_update**: `{ first_name?: string|object, last_name?: string|object, unsubscribed?: boolean|object, properties?: object }` - **contact_delete**: `{}` - **add_to_segment**: `{ segment_id: string }`
+        /// Configuration for the step. Shape depends on `type`: - **trigger**: `{ event_name: string }` - **send_email**: `{ template: { id: string, variables?: object }, subject?: string, from?: string, reply_to?: string }` - **delay**: `{ duration?: string, seconds?: number }` — provide exactly one of `duration` (e.g. `"30 minutes"`) or `seconds` - **wait_for_event**: `{ event_name: string, timeout?: string, filter_rule?: object }` — `timeout` is a human-readable duration (e.g. `"1 hour"`) - **condition**: A rule tree with `type` (`rule`, `and`, `or`), `field`, `operator`, and `value` - **contact_update**: `{ first_name?: string|object, last_name?: string|object, unsubscribed?: boolean|object, properties?: object }` - **contact_delete**: `{}` - **add_to_segment**: `{ segment_id: string }`
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -39,24 +39,24 @@ namespace Resend
         /// <summary>
         /// Initializes a new instance of the <see cref="AutomationStep" /> class.
         /// </summary>
-        /// <param name="ref">
-        /// A unique reference identifier for this step within the automation graph.
+        /// <param name="key">
+        /// A unique key for this step within the automation graph.
         /// </param>
         /// <param name="type">
         /// The type of automation step.
         /// </param>
         /// <param name="config">
-        /// Configuration for the step. Shape depends on `type`: - **trigger**: `{ event_name: string }` - **send_email**: `{ template_id: string, subject?: string, from?: string, reply_to?: string, variables?: object }` - **delay**: `{ seconds: number }` - **wait_for_event**: `{ event_name: string, timeout_seconds?: number, filter_rule?: object }` - **condition**: A rule tree with `type` (`rule`, `and`, `or`), `field`, `operator`, and `value` - **contact_update**: `{ first_name?: string|object, last_name?: string|object, unsubscribed?: boolean|object, properties?: object }` - **contact_delete**: `{}` - **add_to_segment**: `{ segment_id: string }`
+        /// Configuration for the step. Shape depends on `type`: - **trigger**: `{ event_name: string }` - **send_email**: `{ template: { id: string, variables?: object }, subject?: string, from?: string, reply_to?: string }` - **delay**: `{ duration?: string, seconds?: number }` — provide exactly one of `duration` (e.g. `"30 minutes"`) or `seconds` - **wait_for_event**: `{ event_name: string, timeout?: string, filter_rule?: object }` — `timeout` is a human-readable duration (e.g. `"1 hour"`) - **condition**: A rule tree with `type` (`rule`, `and`, `or`), `field`, `operator`, and `value` - **contact_update**: `{ first_name?: string|object, last_name?: string|object, unsubscribed?: boolean|object, properties?: object }` - **contact_delete**: `{}` - **add_to_segment**: `{ segment_id: string }`
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AutomationStep(
-            string @ref,
+            string key,
             global::Resend.AutomationStepType type,
             object config)
         {
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.Type = type;
             this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
         }

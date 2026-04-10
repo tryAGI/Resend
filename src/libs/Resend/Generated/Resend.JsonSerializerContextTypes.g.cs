@@ -792,11 +792,11 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.AutomationEdge? Type191 { get; set; }
+        public global::Resend.AutomationConnection? Type191 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.AutomationEdgeEdgeType? Type192 { get; set; }
+        public global::Resend.AutomationConnectionType? Type192 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -812,7 +812,7 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? Type196 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? Type196 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -1085,7 +1085,7 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Resend.AutomationEdge>? ListType32 { get; set; }
+        public global::System.Collections.Generic.List<global::Resend.AutomationConnection>? ListType32 { get; set; }
         /// <summary>
         /// 
         /// </summary>
