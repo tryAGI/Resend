@@ -8,11 +8,13 @@ namespace Resend
         /// Create an automation
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateAutomationResponse> CreateAutomationsAsync(
 
             global::Resend.CreateAutomationRequest request,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create an automation
@@ -30,6 +32,7 @@ namespace Resend
         /// <param name="edges">
         /// The edges connecting steps in the automation graph.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateAutomationResponse> CreateAutomationsAsync(
@@ -37,6 +40,7 @@ namespace Resend
             global::System.Collections.Generic.IList<global::Resend.AutomationStep> steps,
             global::System.Collections.Generic.IList<global::Resend.AutomationEdge> edges,
             global::Resend.CreateAutomationRequestStatus? status = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

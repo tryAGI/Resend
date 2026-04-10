@@ -8,11 +8,13 @@ namespace Resend
         /// Create a new domain
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateDomainResponse> CreateDomainsAsync(
 
             global::Resend.CreateDomainRequest request,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a new domain
@@ -43,6 +45,7 @@ namespace Resend
         /// <param name="trackingSubdomain">
         /// The subdomain to use for click and open tracking.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateDomainResponse> CreateDomainsAsync(
@@ -54,6 +57,7 @@ namespace Resend
             global::Resend.CreateDomainRequestTls? tls = default,
             global::Resend.DomainCapabilities? capabilities = default,
             string? trackingSubdomain = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

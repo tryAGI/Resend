@@ -10,11 +10,13 @@ namespace Resend
         /// Create a broadcast
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateBroadcastResponseSuccess> CreateBroadcastsAsync(
 
             global::Resend.CreateBroadcastOptions request,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a broadcast
@@ -53,6 +55,7 @@ namespace Resend
         /// <param name="scheduledAt">
         /// Schedule time to send the broadcast. Can only be used if `send` is true.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateBroadcastResponseSuccess> CreateBroadcastsAsync(
@@ -67,6 +70,7 @@ namespace Resend
             string? topicId = default,
             bool? send = default,
             string? scheduledAt = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
