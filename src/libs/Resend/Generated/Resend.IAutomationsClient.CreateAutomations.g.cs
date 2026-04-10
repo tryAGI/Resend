@@ -29,8 +29,8 @@ namespace Resend
         /// <param name="steps">
         /// The steps that compose the automation workflow. Must include at least one `trigger` step.
         /// </param>
-        /// <param name="edges">
-        /// The edges connecting steps in the automation graph.
+        /// <param name="connections">
+        /// The connections between steps in the automation graph.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -38,7 +38,7 @@ namespace Resend
         global::System.Threading.Tasks.Task<global::Resend.CreateAutomationResponse> CreateAutomationsAsync(
             string name,
             global::System.Collections.Generic.IList<global::Resend.AutomationStep> steps,
-            global::System.Collections.Generic.IList<global::Resend.AutomationEdge> edges,
+            global::System.Collections.Generic.IList<global::Resend.AutomationConnection> connections,
             global::Resend.CreateAutomationRequestStatus? status = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

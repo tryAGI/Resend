@@ -145,9 +145,9 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.AutomationStepResponseTypeNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.AutomationEdgeEdgeTypeJsonConverter),
+            typeof(global::Resend.JsonConverters.AutomationConnectionTypeJsonConverter),
 
-            typeof(global::Resend.JsonConverters.AutomationEdgeEdgeTypeNullableJsonConverter),
+            typeof(global::Resend.JsonConverters.AutomationConnectionTypeNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.CreateAutomationRequestStatusJsonConverter),
 
@@ -399,12 +399,12 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationStepType), TypeInfoPropertyName = "AutomationStepType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationStepResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationStepResponseType), TypeInfoPropertyName = "AutomationStepResponseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationEdge))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationEdgeEdgeType), TypeInfoPropertyName = "AutomationEdgeEdgeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationConnection))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationConnectionType), TypeInfoPropertyName = "AutomationConnectionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAutomationRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAutomationRequestStatus), TypeInfoPropertyName = "CreateAutomationRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.AutomationStep>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.AutomationEdge>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.AutomationConnection>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Automation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationStatus), TypeInfoPropertyName = "AutomationStatus2")]
@@ -472,7 +472,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.UpdateContactTopicsResponseSuccessTopic>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.LogSummary>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationStep>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationEdge>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationConnection>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationStepResponse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationListItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationRunStep>))]

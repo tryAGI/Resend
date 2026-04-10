@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// At least one of `name`, `status`, or `steps` and `edges` must be provided. When updating the workflow graph, both `steps` and `edges` must be provided together.
+    /// At least one of `name`, `status`, or `steps` and `connections` must be provided. When updating the workflow graph, both `steps` and `connections` must be provided together.
     /// </summary>
     public sealed partial class PatchAutomationRequest
     {
@@ -22,16 +22,16 @@ namespace Resend
         public global::Resend.PatchAutomationRequestStatus? Status { get; set; }
 
         /// <summary>
-        /// The steps that compose the automation workflow. Must be provided together with `edges`.
+        /// The steps that compose the automation workflow. Must be provided together with `connections`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("steps")]
         public global::System.Collections.Generic.IList<global::Resend.AutomationStep>? Steps { get; set; }
 
         /// <summary>
-        /// The edges connecting steps in the automation graph. Must be provided together with `steps`.
+        /// The connections between steps in the automation graph. Must be provided together with `steps`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edges")]
-        public global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? Edges { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("connections")]
+        public global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? Connections { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,10 +49,10 @@ namespace Resend
         /// The status of the automation.
         /// </param>
         /// <param name="steps">
-        /// The steps that compose the automation workflow. Must be provided together with `edges`.
+        /// The steps that compose the automation workflow. Must be provided together with `connections`.
         /// </param>
-        /// <param name="edges">
-        /// The edges connecting steps in the automation graph. Must be provided together with `steps`.
+        /// <param name="connections">
+        /// The connections between steps in the automation graph. Must be provided together with `steps`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -61,12 +61,12 @@ namespace Resend
             string? name,
             global::Resend.PatchAutomationRequestStatus? status,
             global::System.Collections.Generic.IList<global::Resend.AutomationStep>? steps,
-            global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? edges)
+            global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? connections)
         {
             this.Name = name;
             this.Status = status;
             this.Steps = steps;
-            this.Edges = edges;
+            this.Connections = connections;
         }
 
         /// <summary>

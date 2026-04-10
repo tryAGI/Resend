@@ -54,10 +54,10 @@ namespace Resend
         public global::System.Collections.Generic.IList<global::Resend.AutomationStepResponse>? Steps { get; set; }
 
         /// <summary>
-        /// The edges connecting steps in the active version of the automation.
+        /// The connections between steps in the active version of the automation.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edges")]
-        public global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? Edges { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("connections")]
+        public global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? Connections { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -90,8 +90,8 @@ namespace Resend
         /// <param name="steps">
         /// The steps in the active version of the automation.
         /// </param>
-        /// <param name="edges">
-        /// The edges connecting steps in the active version of the automation.
+        /// <param name="connections">
+        /// The connections between steps in the active version of the automation.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -104,7 +104,7 @@ namespace Resend
             string? createdAt,
             string? updatedAt,
             global::System.Collections.Generic.IList<global::Resend.AutomationStepResponse>? steps,
-            global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? edges)
+            global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? connections)
         {
             this.Object = @object;
             this.Id = id;
@@ -113,7 +113,7 @@ namespace Resend
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.Steps = steps;
-            this.Edges = edges;
+            this.Connections = connections;
         }
 
         /// <summary>

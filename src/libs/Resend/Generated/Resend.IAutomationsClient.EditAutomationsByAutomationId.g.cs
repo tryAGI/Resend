@@ -29,10 +29,10 @@ namespace Resend
         /// The status of the automation.
         /// </param>
         /// <param name="steps">
-        /// The steps that compose the automation workflow. Must be provided together with `edges`.
+        /// The steps that compose the automation workflow. Must be provided together with `connections`.
         /// </param>
-        /// <param name="edges">
-        /// The edges connecting steps in the automation graph. Must be provided together with `steps`.
+        /// <param name="connections">
+        /// The connections between steps in the automation graph. Must be provided together with `steps`.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -42,7 +42,7 @@ namespace Resend
             string? name = default,
             global::Resend.PatchAutomationRequestStatus? status = default,
             global::System.Collections.Generic.IList<global::Resend.AutomationStep>? steps = default,
-            global::System.Collections.Generic.IList<global::Resend.AutomationEdge>? edges = default,
+            global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? connections = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

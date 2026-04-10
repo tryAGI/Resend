@@ -31,11 +31,11 @@ namespace Resend
         public required global::System.Collections.Generic.IList<global::Resend.AutomationStep> Steps { get; set; }
 
         /// <summary>
-        /// The edges connecting steps in the automation graph.
+        /// The connections between steps in the automation graph.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edges")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("connections")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Resend.AutomationEdge> Edges { get; set; }
+        public required global::System.Collections.Generic.IList<global::Resend.AutomationConnection> Connections { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,8 +52,8 @@ namespace Resend
         /// <param name="steps">
         /// The steps that compose the automation workflow. Must include at least one `trigger` step.
         /// </param>
-        /// <param name="edges">
-        /// The edges connecting steps in the automation graph.
+        /// <param name="connections">
+        /// The connections between steps in the automation graph.
         /// </param>
         /// <param name="status">
         /// The initial status of the automation. Defaults to `disabled`.<br/>
@@ -65,13 +65,13 @@ namespace Resend
         public CreateAutomationRequest(
             string name,
             global::System.Collections.Generic.IList<global::Resend.AutomationStep> steps,
-            global::System.Collections.Generic.IList<global::Resend.AutomationEdge> edges,
+            global::System.Collections.Generic.IList<global::Resend.AutomationConnection> connections,
             global::Resend.CreateAutomationRequestStatus? status)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Status = status;
             this.Steps = steps ?? throw new global::System.ArgumentNullException(nameof(steps));
-            this.Edges = edges ?? throw new global::System.ArgumentNullException(nameof(edges));
+            this.Connections = connections ?? throw new global::System.ArgumentNullException(nameof(connections));
         }
 
         /// <summary>

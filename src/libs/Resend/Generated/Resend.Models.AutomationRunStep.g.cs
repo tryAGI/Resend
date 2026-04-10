@@ -9,6 +9,12 @@ namespace Resend
     public sealed partial class AutomationRunStep
     {
         /// <summary>
+        /// The key of the automation step.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string? Key { get; set; }
+
+        /// <summary>
         /// The type of automation step.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
@@ -60,6 +66,9 @@ namespace Resend
         /// <summary>
         /// Initializes a new instance of the <see cref="AutomationRunStep" /> class.
         /// </summary>
+        /// <param name="key">
+        /// The key of the automation step.
+        /// </param>
         /// <param name="type">
         /// The type of automation step.
         /// </param>
@@ -85,6 +94,7 @@ namespace Resend
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AutomationRunStep(
+            string? key,
             global::Resend.AutomationRunStepType? type,
             string? status,
             string? startedAt,
@@ -93,6 +103,7 @@ namespace Resend
             object? error,
             string? createdAt)
         {
+            this.Key = key;
             this.Type = type;
             this.Status = status;
             this.StartedAt = startedAt;
