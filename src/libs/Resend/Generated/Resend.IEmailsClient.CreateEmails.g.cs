@@ -9,12 +9,14 @@ namespace Resend
         /// </summary>
         /// <param name="idempotencyKey"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.SendEmailResponse> CreateEmailsAsync(
 
             global::Resend.SendEmailRequest request,
             string? idempotencyKey = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Send an email
@@ -56,6 +58,7 @@ namespace Resend
         /// <param name="topicId">
         /// The topic ID to scope the email to. If the recipient is a contact and opted-in to the topic, the email is sent. If opted-out, the email is not sent. If the recipient is not a contact, the email is sent if the topic's default subscription is opt_in.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.SendEmailResponse> CreateEmailsAsync(
@@ -74,6 +77,7 @@ namespace Resend
             global::System.Collections.Generic.IList<global::Resend.Attachment>? attachments = default,
             global::System.Collections.Generic.IList<global::Resend.Tag>? tags = default,
             string? topicId = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

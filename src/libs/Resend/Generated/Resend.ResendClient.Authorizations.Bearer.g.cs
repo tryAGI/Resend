@@ -25,6 +25,7 @@ namespace Resend
             Authorizations.Add(new global::Resend.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "BearerAuth",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,
