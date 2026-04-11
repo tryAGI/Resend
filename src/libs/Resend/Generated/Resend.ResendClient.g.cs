@@ -34,6 +34,10 @@ namespace Resend
 
         /// <inheritdoc/>
         public global::Resend.AutoSDKClientOptions Options { get; }
+
+
+        /// <inheritdoc/>
+        public global::System.Func<string> CreateIdempotencyKey { get; set; } = () => global::System.Guid.NewGuid().ToString("D");
         /// <summary>
         /// 
         /// </summary>
@@ -46,6 +50,7 @@ namespace Resend
         public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -55,6 +60,7 @@ namespace Resend
         public AutomationsClient Automations => new AutomationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -64,6 +70,7 @@ namespace Resend
         public BroadcastsClient Broadcasts => new BroadcastsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -73,6 +80,7 @@ namespace Resend
         public ContactPropertiesClient ContactProperties => new ContactPropertiesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -82,6 +90,7 @@ namespace Resend
         public ContactsClient Contacts => new ContactsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -91,6 +100,7 @@ namespace Resend
         public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -100,6 +110,7 @@ namespace Resend
         public EmailsClient Emails => new EmailsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -109,6 +120,7 @@ namespace Resend
         public EventsClient Events => new EventsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -118,6 +130,7 @@ namespace Resend
         public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -127,6 +140,7 @@ namespace Resend
         public ReceivingEmailsClient ReceivingEmails => new ReceivingEmailsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -136,6 +150,7 @@ namespace Resend
         public SegmentsClient Segments => new SegmentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -145,6 +160,7 @@ namespace Resend
         public TemplatesClient Templates => new TemplatesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -154,6 +170,7 @@ namespace Resend
         public TopicsClient Topics => new TopicsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
@@ -163,6 +180,7 @@ namespace Resend
         public WebhooksClient Webhooks => new WebhooksClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
             JsonSerializerContext = JsonSerializerContext,
         };
 
