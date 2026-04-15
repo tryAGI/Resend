@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails, Tracking for click and open tracking).
+    /// The type of record (SPF for sending, DKIM for sending, Receiving for inbound emails, Tracking &amp; TrackingCAA for click and open tracking).
     /// </summary>
     public enum DomainRecordRecord
     {
@@ -24,6 +24,10 @@ namespace Resend
         /// 
         /// </summary>
         Tracking,
+        /// <summary>
+        /// 
+        /// </summary>
+        TrackingCAA,
     }
 
     /// <summary>
@@ -42,6 +46,7 @@ namespace Resend
                 DomainRecordRecord.Receiving => "Receiving",
                 DomainRecordRecord.Spf => "SPF",
                 DomainRecordRecord.Tracking => "Tracking",
+                DomainRecordRecord.TrackingCAA => "TrackingCAA",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -56,6 +61,7 @@ namespace Resend
                 "Receiving" => DomainRecordRecord.Receiving,
                 "SPF" => DomainRecordRecord.Spf,
                 "Tracking" => DomainRecordRecord.Tracking,
+                "TrackingCAA" => DomainRecordRecord.TrackingCAA,
                 _ => null,
             };
         }
