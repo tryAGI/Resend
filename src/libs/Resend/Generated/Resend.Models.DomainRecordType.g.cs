@@ -11,6 +11,10 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
+        Caa,
+        /// <summary>
+        /// 
+        /// </summary>
         Cname,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Resend
         {
             return value switch
             {
+                DomainRecordType.Caa => "CAA",
                 DomainRecordType.Cname => "CNAME",
                 DomainRecordType.Mx => "MX",
                 DomainRecordType.Txt => "TXT",
@@ -47,6 +52,7 @@ namespace Resend
         {
             return value switch
             {
+                "CAA" => DomainRecordType.Caa,
                 "CNAME" => DomainRecordType.Cname,
                 "MX" => DomainRecordType.Mx,
                 "TXT" => DomainRecordType.Txt,
