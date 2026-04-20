@@ -29,6 +29,10 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.CreateDomainRequestTlsNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.CreateDomainResponseStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.CreateDomainResponseStatusNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.DomainRecordRecordJsonConverter),
 
             typeof(global::Resend.JsonConverters.DomainRecordRecordNullableJsonConverter),
@@ -40,6 +44,14 @@ namespace Resend
             typeof(global::Resend.JsonConverters.DomainRecordStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.DomainRecordStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListDomainsItemStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListDomainsItemStatusNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.CreateApiKeyRequestPermissionJsonConverter),
 
@@ -239,6 +251,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainRequestRegion), TypeInfoPropertyName = "CreateDomainRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainRequestTls), TypeInfoPropertyName = "CreateDomainRequestTls2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainResponseStatus), TypeInfoPropertyName = "CreateDomainResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.DomainRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecord))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptions))]
@@ -247,10 +260,12 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus), TypeInfoPropertyName = "DomainRecordStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Domain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainStatus), TypeInfoPropertyName = "DomainStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.VerifyDomainResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListDomainsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListDomainsItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListDomainsItemStatus), TypeInfoPropertyName = "ListDomainsItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteDomainResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateApiKeyRequest))]

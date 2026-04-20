@@ -38,7 +38,8 @@ namespace Resend
         /// </summary>
         /// <example>not_started</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        public string? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.DomainStatusJsonConverter))]
+        public global::Resend.DomainStatus? Status { get; set; }
 
         /// <summary>
         /// The date and time the domain was created.<br/>
@@ -139,7 +140,7 @@ namespace Resend
             string? @object,
             string? id,
             string? name,
-            string? status,
+            global::Resend.DomainStatus? status,
             global::System.DateTime? createdAt,
             string? region,
             bool? openTracking,

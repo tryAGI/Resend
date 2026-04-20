@@ -30,7 +30,8 @@ namespace Resend
         /// The status of the domain.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        public string? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.CreateDomainResponseStatusJsonConverter))]
+        public global::Resend.CreateDomainResponseStatus? Status { get; set; }
 
         /// <summary>
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
@@ -112,7 +113,7 @@ namespace Resend
             string? id,
             string? name,
             global::System.DateTime? createdAt,
-            string? status,
+            global::Resend.CreateDomainResponseStatus? status,
             global::Resend.DomainCapabilities? capabilities,
             global::System.Collections.Generic.IList<global::Resend.DomainRecord>? records,
             string? region,
