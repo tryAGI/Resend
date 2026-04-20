@@ -30,7 +30,8 @@ namespace Resend
         /// </summary>
         /// <example>not_started</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        public string? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.ListDomainsItemStatusJsonConverter))]
+        public global::Resend.ListDomainsItemStatus? Status { get; set; }
 
         /// <summary>
         /// The date and time the domain was created.<br/>
@@ -92,7 +93,7 @@ namespace Resend
         public ListDomainsItem(
             string? id,
             string? name,
-            string? status,
+            global::Resend.ListDomainsItemStatus? status,
             global::System.DateTime? createdAt,
             string? region,
             global::Resend.DomainCapabilities? capabilities)
