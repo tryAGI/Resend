@@ -129,8 +129,8 @@ namespace Resend
                 PrepareGetEmailsReceivingByEmailIdAttachmentsByAttachmentIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    emailId: emailId,
-                    attachmentId: attachmentId);
+                    emailId: emailId!,
+                    attachmentId: attachmentId!);
 
                 return __httpRequest;
             }

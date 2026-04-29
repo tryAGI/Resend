@@ -124,7 +124,7 @@ namespace Resend
                 PrepareDeleteKeysByApiKeyIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    apiKeyId: apiKeyId);
+                    apiKeyId: apiKeyId!);
 
                 return __httpRequest;
             }

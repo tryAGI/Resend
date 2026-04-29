@@ -129,8 +129,8 @@ namespace Resend
                 PrepareGetAutomationsByAutomationIdRunsByRunIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    automationId: automationId,
-                    runId: runId);
+                    automationId: automationId!,
+                    runId: runId!);
 
                 return __httpRequest;
             }

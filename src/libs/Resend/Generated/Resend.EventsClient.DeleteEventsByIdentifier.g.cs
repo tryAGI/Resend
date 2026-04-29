@@ -124,7 +124,7 @@ namespace Resend
                 PrepareDeleteEventsByIdentifierRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    identifier: identifier);
+                    identifier: identifier!);
 
                 return __httpRequest;
             }

@@ -144,7 +144,7 @@ namespace Resend
                 PrepareGetContactsByContactIdTopicsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    contactId: contactId,
+                    contactId: contactId!,
                     limit: limit,
                     after: after,
                     before: before);

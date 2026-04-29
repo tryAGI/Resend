@@ -129,8 +129,8 @@ namespace Resend
                 PrepareCreateContactsByContactIdSegmentsBySegmentIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    contactId: contactId,
-                    segmentId: segmentId);
+                    contactId: contactId!,
+                    segmentId: segmentId!);
 
                 return __httpRequest;
             }

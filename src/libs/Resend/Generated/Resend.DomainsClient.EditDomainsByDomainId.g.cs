@@ -138,7 +138,7 @@ namespace Resend
                 PrepareEditDomainsByDomainIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domainId: domainId,
+                    domainId: domainId!,
                     request: request);
 
                 return __httpRequest;
