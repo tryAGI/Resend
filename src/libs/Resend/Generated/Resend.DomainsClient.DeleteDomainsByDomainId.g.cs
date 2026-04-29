@@ -124,7 +124,7 @@ namespace Resend
                 PrepareDeleteDomainsByDomainIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domainId: domainId);
+                    domainId: domainId!);
 
                 return __httpRequest;
             }

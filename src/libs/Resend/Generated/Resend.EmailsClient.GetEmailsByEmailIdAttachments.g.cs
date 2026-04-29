@@ -144,7 +144,7 @@ namespace Resend
                 PrepareGetEmailsByEmailIdAttachmentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    emailId: emailId,
+                    emailId: emailId!,
                     limit: limit,
                     after: after,
                     before: before);

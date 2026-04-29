@@ -124,7 +124,7 @@ namespace Resend
                 PrepareGetLogsByLogIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    logId: logId);
+                    logId: logId!);
 
                 return __httpRequest;
             }

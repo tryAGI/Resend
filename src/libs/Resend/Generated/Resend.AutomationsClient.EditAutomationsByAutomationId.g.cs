@@ -138,7 +138,7 @@ namespace Resend
                 PrepareEditAutomationsByAutomationIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    automationId: automationId,
+                    automationId: automationId!,
                     request: request);
 
                 return __httpRequest;

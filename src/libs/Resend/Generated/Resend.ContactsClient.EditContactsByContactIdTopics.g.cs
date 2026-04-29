@@ -138,7 +138,7 @@ namespace Resend
                 PrepareEditContactsByContactIdTopicsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    contactId: contactId,
+                    contactId: contactId!,
                     request: request);
 
                 return __httpRequest;

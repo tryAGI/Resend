@@ -150,7 +150,7 @@ namespace Resend
                 PrepareGetAutomationsByAutomationIdRunsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    automationId: automationId,
+                    automationId: automationId!,
                     status: status,
                     limit: limit,
                     after: after,

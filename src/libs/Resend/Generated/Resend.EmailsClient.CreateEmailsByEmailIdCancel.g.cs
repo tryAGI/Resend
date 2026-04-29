@@ -124,7 +124,7 @@ namespace Resend
                 PrepareCreateEmailsByEmailIdCancelRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    emailId: emailId);
+                    emailId: emailId!);
 
                 return __httpRequest;
             }
