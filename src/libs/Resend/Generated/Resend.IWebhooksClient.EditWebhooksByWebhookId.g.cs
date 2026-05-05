@@ -22,6 +22,20 @@ namespace Resend
         /// Update an existing webhook
         /// </summary>
         /// <param name="webhookId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Resend.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateWebhookResponse>> EditWebhooksByWebhookIdAsResponseAsync(
+            global::System.Guid webhookId,
+
+            global::Resend.UpdateWebhookRequest request,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update an existing webhook
+        /// </summary>
+        /// <param name="webhookId"></param>
         /// <param name="endpoint">
         /// The URL where webhook events will be sent.<br/>
         /// Example: https://webhook.example.com/new-handler
