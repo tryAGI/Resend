@@ -19,9 +19,9 @@ namespace Resend
 
         /// <summary>
         /// Array of event types to subscribe to.<br/>
-        /// Example: [email.sent, email.delivered, email.bounced]
+        /// Example: [email.sent, email.delivered, email.bounced, email.suppressed]
         /// </summary>
-        /// <example>[email.sent, email.delivered, email.bounced]</example>
+        /// <example>[email.sent, email.delivered, email.bounced, email.suppressed]</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("events")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Events { get; set; }
@@ -41,7 +41,7 @@ namespace Resend
         /// </param>
         /// <param name="events">
         /// Array of event types to subscribe to.<br/>
-        /// Example: [email.sent, email.delivered, email.bounced]
+        /// Example: [email.sent, email.delivered, email.bounced, email.suppressed]
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

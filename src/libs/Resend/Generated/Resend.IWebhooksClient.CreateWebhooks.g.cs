@@ -37,7 +37,7 @@ namespace Resend
         /// </param>
         /// <param name="events">
         /// Array of event types to subscribe to.<br/>
-        /// Example: [email.sent, email.delivered, email.bounced]
+        /// Example: [email.sent, email.delivered, email.bounced, email.suppressed]
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
