@@ -87,5 +87,6 @@ namespace Resend
         public UpdateDomainOptions()
         {
         }
+
     }
 }

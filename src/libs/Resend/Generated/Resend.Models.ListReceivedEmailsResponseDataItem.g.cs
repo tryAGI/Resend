@@ -158,5 +158,6 @@ namespace Resend
         public ListReceivedEmailsResponseDataItem()
         {
         }
+
     }
 }

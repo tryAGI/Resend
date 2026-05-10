@@ -80,5 +80,6 @@ namespace Resend
         public CreateAutomationRequest()
         {
         }
+
     }
 }

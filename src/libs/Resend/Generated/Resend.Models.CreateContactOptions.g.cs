@@ -131,5 +131,6 @@ namespace Resend
         public CreateContactOptions()
         {
         }
+
     }
 }

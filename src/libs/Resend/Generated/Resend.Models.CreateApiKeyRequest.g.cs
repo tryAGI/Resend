@@ -65,5 +65,6 @@ namespace Resend
         public CreateApiKeyRequest()
         {
         }
+
     }
 }

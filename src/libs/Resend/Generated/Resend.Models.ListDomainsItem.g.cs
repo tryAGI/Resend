@@ -112,5 +112,6 @@ namespace Resend
         public ListDomainsItem()
         {
         }
+
     }
 }

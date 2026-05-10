@@ -54,5 +54,6 @@ namespace Resend
         public DomainCapabilities()
         {
         }
+
     }
 }

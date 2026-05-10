@@ -75,5 +75,6 @@ namespace Resend
         public PatchAutomationRequest()
         {
         }
+
     }
 }

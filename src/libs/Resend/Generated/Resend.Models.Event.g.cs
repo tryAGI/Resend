@@ -99,5 +99,6 @@ namespace Resend
         public Event()
         {
         }
+
     }
 }

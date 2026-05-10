@@ -166,5 +166,6 @@ namespace Resend
         public CreateBroadcastOptions()
         {
         }
+
     }
 }

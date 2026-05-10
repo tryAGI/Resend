@@ -41,5 +41,6 @@ namespace Resend
         public SendEmailResponse()
         {
         }
+
     }
 }

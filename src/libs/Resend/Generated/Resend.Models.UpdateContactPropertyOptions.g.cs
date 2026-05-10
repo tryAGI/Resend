@@ -42,5 +42,6 @@ namespace Resend
         public UpdateContactPropertyOptions()
         {
         }
+
     }
 }

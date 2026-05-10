@@ -40,5 +40,6 @@ namespace Resend
         public UpdateContactTopicsOptions()
         {
         }
+
     }
 }

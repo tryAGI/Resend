@@ -122,5 +122,6 @@ namespace Resend
         public Automation()
         {
         }
+
     }
 }

@@ -103,5 +103,6 @@ namespace Resend
         public GetSegmentResponseSuccess()
         {
         }
+
     }
 }

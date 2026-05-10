@@ -56,5 +56,6 @@ namespace Resend
         public EmailTemplateInput()
         {
         }
+
     }
 }

@@ -58,5 +58,6 @@ namespace Resend
         public UpdateContactPropertyResponseSuccess()
         {
         }
+
     }
 }

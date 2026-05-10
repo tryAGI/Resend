@@ -69,5 +69,6 @@ namespace Resend
         public ListReceivedEmailsResponse()
         {
         }
+
     }
 }

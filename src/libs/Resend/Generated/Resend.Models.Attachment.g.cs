@@ -96,5 +96,6 @@ namespace Resend
         public Attachment()
         {
         }
+
     }
 }

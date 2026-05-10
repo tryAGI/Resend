@@ -139,5 +139,6 @@ namespace Resend
         public GetContactResponseSuccess()
         {
         }
+
     }
 }

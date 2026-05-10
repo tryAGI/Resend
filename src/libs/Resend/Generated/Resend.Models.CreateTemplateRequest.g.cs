@@ -118,5 +118,6 @@ namespace Resend
         public CreateTemplateRequest()
         {
         }
+
     }
 }
