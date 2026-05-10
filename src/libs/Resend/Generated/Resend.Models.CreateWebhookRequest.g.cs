@@ -60,5 +60,6 @@ namespace Resend
         public CreateWebhookRequest()
         {
         }
+
     }
 }

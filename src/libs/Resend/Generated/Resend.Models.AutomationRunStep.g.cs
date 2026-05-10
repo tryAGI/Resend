@@ -119,5 +119,6 @@ namespace Resend
         public AutomationRunStep()
         {
         }
+
     }
 }

@@ -72,5 +72,6 @@ namespace Resend
         public DeleteWebhookResponse()
         {
         }
+
     }
 }

@@ -68,5 +68,6 @@ namespace Resend
         public AutomationConnection()
         {
         }
+
     }
 }

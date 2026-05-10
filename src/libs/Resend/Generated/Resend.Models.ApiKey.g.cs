@@ -74,5 +74,6 @@ namespace Resend
         public ApiKey()
         {
         }
+
     }
 }

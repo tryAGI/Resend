@@ -143,5 +143,6 @@ namespace Resend
         public ListAttachmentsResponseDataItem()
         {
         }
+
     }
 }

@@ -110,5 +110,6 @@ namespace Resend
         public DomainRecord()
         {
         }
+
     }
 }

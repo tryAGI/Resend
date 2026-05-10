@@ -86,5 +86,6 @@ namespace Resend
         public AutomationRunListItem()
         {
         }
+
     }
 }

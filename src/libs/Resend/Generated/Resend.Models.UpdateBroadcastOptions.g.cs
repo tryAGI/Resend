@@ -138,5 +138,6 @@ namespace Resend
         public UpdateBroadcastOptions()
         {
         }
+
     }
 }

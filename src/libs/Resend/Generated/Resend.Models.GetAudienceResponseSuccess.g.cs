@@ -91,5 +91,6 @@ namespace Resend
         public GetAudienceResponseSuccess()
         {
         }
+
     }
 }

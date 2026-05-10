@@ -125,5 +125,6 @@ namespace Resend
         public CreateDomainRequest()
         {
         }
+
     }
 }

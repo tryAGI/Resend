@@ -52,5 +52,6 @@ namespace Resend
         public CreateApiKeyResponse()
         {
         }
+
     }
 }

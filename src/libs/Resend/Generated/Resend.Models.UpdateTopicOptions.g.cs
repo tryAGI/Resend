@@ -64,5 +64,6 @@ namespace Resend
         public UpdateTopicOptions()
         {
         }
+
     }
 }

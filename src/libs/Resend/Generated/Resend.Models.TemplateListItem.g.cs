@@ -108,5 +108,6 @@ namespace Resend
         public TemplateListItem()
         {
         }
+
     }
 }

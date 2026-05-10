@@ -116,5 +116,6 @@ namespace Resend
         public UpdateTemplateOptions()
         {
         }
+
     }
 }

@@ -73,5 +73,6 @@ namespace Resend
         public UpdateWebhookRequest()
         {
         }
+
     }
 }
