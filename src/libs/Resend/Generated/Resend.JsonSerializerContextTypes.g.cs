@@ -964,11 +964,207 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type234 { get; set; }
+        public global::Resend.WebhookEventBounce? Type234 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetAutomationsStatus? Type235 { get; set; }
+        public global::Resend.WebhookEventBounceSubType? Type235 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventBounceType? Type236 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventClick? Type237 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventFailed? Type238 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventSuppressed? Type239 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventSuppressedReason? Type240 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventSuppressedType? Type241 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookEventAttachment? Type242 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookDomainRecord? Type243 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookDomainRecordRecord? Type244 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookDomainRecordType? Type245 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.WebhookDomainRecordStatus? Type246 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.OutboundEmailEventData? Type247 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, string>? Type248 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.OutboundEmailEventDataHeader>? Type249 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.OutboundEmailEventDataHeader? Type250 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailBouncedEventData? Type251 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailBouncedEventDataVariant2? Type252 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailClickedEventData? Type253 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailClickedEventDataVariant2? Type254 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailFailedEventData? Type255 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailFailedEventDataVariant2? Type256 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailSuppressedEventData? Type257 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailSuppressedEventDataVariant2? Type258 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailReceivedEventData? Type259 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.WebhookEventAttachment>? Type260 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ContactEventData? Type261 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainEventData? Type262 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainEventDataStatus? Type263 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainEventDataRegion? Type264 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.WebhookDomainRecord>? Type265 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailSentEvent? Type266 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailDeliveredEvent? Type267 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailDeliveryDelayedEvent? Type268 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailBouncedEvent? Type269 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailComplainedEvent? Type270 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailOpenedEvent? Type271 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailClickedEvent? Type272 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailFailedEvent? Type273 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailScheduledEvent? Type274 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailSuppressedEvent? Type275 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.EmailReceivedEvent? Type276 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ContactCreatedEvent? Type277 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ContactUpdatedEvent? Type278 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ContactDeletedEvent? Type279 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainCreatedEvent? Type280 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainUpdatedEvent? Type281 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.DomainDeletedEvent? Type282 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type283 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetAutomationsStatus? Type284 { get; set; }
 
         /// <summary>
         /// 
@@ -1125,6 +1321,18 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType38 { get; set; }
+        public global::System.Collections.Generic.List<global::Resend.OutboundEmailEventDataHeader>? ListType38 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.WebhookEventAttachment>? ListType39 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.WebhookDomainRecord>? ListType40 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType41 { get; set; }
     }
 }
