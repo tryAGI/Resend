@@ -193,9 +193,53 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.AutomationRunListItemStatusNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.WebhookEventBounceSubTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventBounceSubTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventBounceTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventBounceTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventSuppressedReasonJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventSuppressedReasonNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventSuppressedTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookEventSuppressedTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordRecordJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordRecordNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.WebhookDomainRecordStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainEventDataStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainEventDataStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainEventDataRegionJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainEventDataRegionNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.GetAutomationsStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetAutomationsStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailBouncedEventDataJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailClickedEventDataJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailFailedEventDataJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailSuppressedEventDataJsonConverter),
 
             typeof(global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
 
@@ -458,6 +502,55 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveEventResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendEventRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendEventResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventBounce))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventBounceSubType), TypeInfoPropertyName = "WebhookEventBounceSubType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventBounceType), TypeInfoPropertyName = "WebhookEventBounceType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventClick))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventFailed))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventSuppressed))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventSuppressedReason), TypeInfoPropertyName = "WebhookEventSuppressedReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventSuppressedType), TypeInfoPropertyName = "WebhookEventSuppressedType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookEventAttachment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecord))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecordRecord), TypeInfoPropertyName = "WebhookDomainRecordRecord2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecordType), TypeInfoPropertyName = "WebhookDomainRecordType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecordStatus), TypeInfoPropertyName = "WebhookDomainRecordStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OutboundEmailEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.OutboundEmailEventDataHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OutboundEmailEventDataHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBouncedEventData), TypeInfoPropertyName = "EmailBouncedEventData2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBouncedEventDataVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailClickedEventData), TypeInfoPropertyName = "EmailClickedEventData2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailClickedEventDataVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailFailedEventData), TypeInfoPropertyName = "EmailFailedEventData2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailFailedEventDataVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailSuppressedEventData), TypeInfoPropertyName = "EmailSuppressedEventData2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailSuppressedEventDataVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailReceivedEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.WebhookEventAttachment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainEventDataStatus), TypeInfoPropertyName = "DomainEventDataStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainEventDataRegion), TypeInfoPropertyName = "DomainEventDataRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.WebhookDomainRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailSentEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailDeliveredEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailDeliveryDelayedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBouncedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailComplainedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailOpenedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailClickedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailFailedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailScheduledEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailSuppressedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailReceivedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactCreatedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactUpdatedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactDeletedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainCreatedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainUpdatedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainDeletedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetAutomationsStatus), TypeInfoPropertyName = "GetAutomationsStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.List<string>>))]
@@ -498,6 +591,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationRunStep>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.AutomationRunListItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EventSummary>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.OutboundEmailEventDataHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.WebhookEventAttachment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.WebhookDomainRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.SendEmailRequest>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
