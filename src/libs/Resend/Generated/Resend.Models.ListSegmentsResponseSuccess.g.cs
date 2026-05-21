@@ -66,5 +66,6 @@ namespace Resend
         public ListSegmentsResponseSuccess()
         {
         }
+
     }
 }

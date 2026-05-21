@@ -100,5 +100,6 @@ namespace Resend
         public ListWebhooksResponseDataItem()
         {
         }
+
     }
 }

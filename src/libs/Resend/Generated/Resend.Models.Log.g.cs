@@ -133,5 +133,6 @@ namespace Resend
         public Log()
         {
         }
+
     }
 }

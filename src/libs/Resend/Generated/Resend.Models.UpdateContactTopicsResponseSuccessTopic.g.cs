@@ -53,5 +53,6 @@ namespace Resend
         public UpdateContactTopicsResponseSuccessTopic()
         {
         }
+
     }
 }

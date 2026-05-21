@@ -44,5 +44,6 @@ namespace Resend
         public CreateAudienceOptions()
         {
         }
+
     }
 }

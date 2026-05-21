@@ -114,5 +114,6 @@ namespace Resend
         public ListContactsResponseSuccessDataItem()
         {
         }
+
     }
 }

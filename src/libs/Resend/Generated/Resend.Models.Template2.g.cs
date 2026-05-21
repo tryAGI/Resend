@@ -208,5 +208,6 @@ namespace Resend
         public Template2()
         {
         }
+
     }
 }

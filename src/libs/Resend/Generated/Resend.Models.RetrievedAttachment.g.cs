@@ -157,5 +157,6 @@ namespace Resend
         public RetrievedAttachment()
         {
         }
+
     }
 }

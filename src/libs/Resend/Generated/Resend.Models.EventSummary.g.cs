@@ -85,5 +85,6 @@ namespace Resend
         public EventSummary()
         {
         }
+
     }
 }

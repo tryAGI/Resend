@@ -22,6 +22,20 @@ namespace Resend
         /// Update an existing contact property
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Resend.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateContactPropertyResponseSuccess>> EditContactPropertiesByIdAsResponseAsync(
+            string id,
+
+            global::Resend.UpdateContactPropertyOptions request,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update an existing contact property
+        /// </summary>
+        /// <param name="id"></param>
         /// <param name="fallbackValue">
         /// The default value to use when the property is not set for a contact. Must match the type of the property.
         /// </param>

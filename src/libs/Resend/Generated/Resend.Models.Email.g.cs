@@ -93,7 +93,8 @@ namespace Resend
         /// </summary>
         /// <example>delivered</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_event")]
-        public string? LastEvent { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.EmailLastEventJsonConverter))]
+        public global::Resend.EmailLastEvent? LastEvent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -162,7 +163,7 @@ namespace Resend
             global::System.Collections.Generic.IList<string>? bcc,
             global::System.Collections.Generic.IList<string>? cc,
             global::System.Collections.Generic.IList<string>? replyTo,
-            string? lastEvent)
+            global::Resend.EmailLastEvent? lastEvent)
         {
             this.Object = @object;
             this.Id = id;
@@ -184,5 +185,6 @@ namespace Resend
         public Email()
         {
         }
+
     }
 }

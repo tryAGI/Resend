@@ -55,5 +55,6 @@ namespace Resend
         public DuplicateTemplateResponseSuccess()
         {
         }
+
     }
 }

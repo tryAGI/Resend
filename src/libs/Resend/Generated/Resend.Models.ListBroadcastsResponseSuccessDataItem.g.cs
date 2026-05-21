@@ -153,5 +153,6 @@ namespace Resend
         public ListBroadcastsResponseSuccessDataItem()
         {
         }
+
     }
 }

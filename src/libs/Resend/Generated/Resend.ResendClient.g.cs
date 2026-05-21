@@ -47,7 +47,7 @@ namespace Resend
         /// <summary>
         /// Create and manage API Keys through the Resend API.
         /// </summary>
-        public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -57,7 +57,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Automations through the Resend API.
         /// </summary>
-        public AutomationsClient Automations => new AutomationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AutomationsClient Automations => new AutomationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -67,7 +67,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Broadcasts through the Resend API.
         /// </summary>
-        public BroadcastsClient Broadcasts => new BroadcastsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public BroadcastsClient Broadcasts => new BroadcastsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -77,7 +77,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Contact Properties through the Resend API.
         /// </summary>
-        public ContactPropertiesClient ContactProperties => new ContactPropertiesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ContactPropertiesClient ContactProperties => new ContactPropertiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -87,7 +87,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Contacts through the Resend API.
         /// </summary>
-        public ContactsClient Contacts => new ContactsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ContactsClient Contacts => new ContactsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -97,7 +97,7 @@ namespace Resend
         /// <summary>
         /// Create and manage domains through the Resend API.
         /// </summary>
-        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DomainsClient Domains => new DomainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -107,7 +107,7 @@ namespace Resend
         /// <summary>
         /// Start sending emails through the Resend API.
         /// </summary>
-        public EmailsClient Emails => new EmailsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EmailsClient Emails => new EmailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -117,7 +117,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Events through the Resend API.
         /// </summary>
-        public EventsClient Events => new EventsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EventsClient Events => new EventsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -127,7 +127,7 @@ namespace Resend
         /// <summary>
         /// Retrieve API request logs through the Resend API.
         /// </summary>
-        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public LogsClient Logs => new LogsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -137,7 +137,7 @@ namespace Resend
         /// <summary>
         /// Retrieve and manage received emails and attachments through the Resend API.
         /// </summary>
-        public ReceivingEmailsClient ReceivingEmails => new ReceivingEmailsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ReceivingEmailsClient ReceivingEmails => new ReceivingEmailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -147,7 +147,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Segments through the Resend API.
         /// </summary>
-        public SegmentsClient Segments => new SegmentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SegmentsClient Segments => new SegmentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -157,7 +157,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Templates through the Resend API.
         /// </summary>
-        public TemplatesClient Templates => new TemplatesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TemplatesClient Templates => new TemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -167,7 +167,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Topics through the Resend API.
         /// </summary>
-        public TopicsClient Topics => new TopicsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TopicsClient Topics => new TopicsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -177,7 +177,7 @@ namespace Resend
         /// <summary>
         /// Create and manage Webhooks through the Resend API.
         /// </summary>
-        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             CreateIdempotencyKey = CreateIdempotencyKey,
@@ -207,6 +207,27 @@ namespace Resend
         }
 
         /// <summary>
+        /// Creates a new instance of the ResendClient with explicit options but no base URL override.
+        /// Skips passing <c>baseUri</c> so the default base URL from the OpenAPI spec applies.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public ResendClient(
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Collections.Generic.List<global::Resend.EndPointAuthorization>? authorizations,
+            global::Resend.AutoSDKClientOptions? options,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri: null,
+                authorizations,
+                options,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
         /// Creates a new instance of the ResendClient.
         /// If no httpClient is provided, a new one will be created.
         /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
@@ -217,10 +238,10 @@ namespace Resend
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public ResendClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Resend.EndPointAuthorization>? authorizations = null,
-            global::Resend.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Resend.EndPointAuthorization>? authorizations,
+            global::Resend.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

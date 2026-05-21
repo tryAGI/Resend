@@ -76,5 +76,6 @@ namespace Resend
         public CreateAudienceResponseSuccess()
         {
         }
+
     }
 }

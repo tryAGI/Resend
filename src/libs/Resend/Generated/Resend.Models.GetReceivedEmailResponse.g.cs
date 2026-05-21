@@ -223,5 +223,6 @@ namespace Resend
         public GetReceivedEmailResponse()
         {
         }
+
     }
 }
