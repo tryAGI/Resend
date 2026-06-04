@@ -41,16 +41,6 @@ namespace Resend
         public global::Resend.CreateContactImportOptionsOnConflict? OnConflict { get; set; }
 
         /// <summary>
-        /// Strategy to use when an imported row fails validation.<br/>
-        /// Default Value: continue<br/>
-        /// Example: continue
-        /// </summary>
-        /// <example>continue</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("on_error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.CreateContactImportOptionsOnErrorJsonConverter))]
-        public global::Resend.CreateContactImportOptionsOnError? OnError { get; set; }
-
-        /// <summary>
         /// JSON-encoded array of segments to add imported contacts to.<br/>
         /// Example: [{"id":"78261eea-8f8b-4381-83c6-79fa7120f1cf"}]
         /// </summary>
@@ -90,11 +80,6 @@ namespace Resend
         /// Default Value: skip<br/>
         /// Example: skip
         /// </param>
-        /// <param name="onError">
-        /// Strategy to use when an imported row fails validation.<br/>
-        /// Default Value: continue<br/>
-        /// Example: continue
-        /// </param>
         /// <param name="segments">
         /// JSON-encoded array of segments to add imported contacts to.<br/>
         /// Example: [{"id":"78261eea-8f8b-4381-83c6-79fa7120f1cf"}]
@@ -111,7 +96,6 @@ namespace Resend
             string filename,
             string? columnMap,
             global::Resend.CreateContactImportOptionsOnConflict? onConflict,
-            global::Resend.CreateContactImportOptionsOnError? onError,
             string? segments,
             string? topics)
         {
@@ -119,7 +103,6 @@ namespace Resend
             this.Filename = filename ?? throw new global::System.ArgumentNullException(nameof(filename));
             this.ColumnMap = columnMap;
             this.OnConflict = onConflict;
-            this.OnError = onError;
             this.Segments = segments;
             this.Topics = topics;
         }

@@ -195,14 +195,6 @@ namespace Resend
                                     name: "\"on_conflict\"");
 
                             }
-                            if (request.OnError != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent((request.OnError).HasValue ? (request.OnError).GetValueOrDefault().ToValueString() : string.Empty),
-                                    name: "\"on_error\"");
-
-                            }
                             if (request.Segments != default)
                             {
 
@@ -526,11 +518,6 @@ namespace Resend
         /// Default Value: skip<br/>
         /// Example: skip
         /// </param>
-        /// <param name="onError">
-        /// Strategy to use when an imported row fails validation.<br/>
-        /// Default Value: continue<br/>
-        /// Example: continue
-        /// </param>
         /// <param name="segments">
         /// JSON-encoded array of segments to add imported contacts to.<br/>
         /// Example: [{"id":"78261eea-8f8b-4381-83c6-79fa7120f1cf"}]
@@ -547,7 +534,6 @@ namespace Resend
             string filename,
             string? columnMap = default,
             global::Resend.CreateContactImportOptionsOnConflict? onConflict = default,
-            global::Resend.CreateContactImportOptionsOnError? onError = default,
             string? segments = default,
             string? topics = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -559,7 +545,6 @@ namespace Resend
                 Filename = filename,
                 ColumnMap = columnMap,
                 OnConflict = onConflict,
-                OnError = onError,
                 Segments = segments,
                 Topics = topics,
             };
@@ -588,11 +573,6 @@ namespace Resend
         /// Default Value: skip<br/>
         /// Example: skip
         /// </param>
-        /// <param name="onError">
-        /// Strategy to use when an imported row fails validation.<br/>
-        /// Default Value: continue<br/>
-        /// Example: continue
-        /// </param>
         /// <param name="segments">
         /// JSON-encoded array of segments to add imported contacts to.<br/>
         /// Example: [{"id":"78261eea-8f8b-4381-83c6-79fa7120f1cf"}]
@@ -609,7 +589,6 @@ namespace Resend
             string filename,
             string? columnMap = default,
             global::Resend.CreateContactImportOptionsOnConflict? onConflict = default,
-            global::Resend.CreateContactImportOptionsOnError? onError = default,
             string? segments = default,
             string? topics = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -623,7 +602,6 @@ namespace Resend
                 Filename = filename,
                 ColumnMap = columnMap,
                 OnConflict = onConflict,
-                OnError = onError,
                 Segments = segments,
                 Topics = topics,
             };
@@ -742,14 +720,6 @@ namespace Resend
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((request.OnConflict).HasValue ? (request.OnConflict).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"on_conflict\"");
-
-                            }
-                            if (request.OnError != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent((request.OnError).HasValue ? (request.OnError).GetValueOrDefault().ToValueString() : string.Empty),
-                                    name: "\"on_error\"");
 
                             }
                             if (request.Segments != default)
@@ -1067,11 +1037,6 @@ namespace Resend
         /// Default Value: skip<br/>
         /// Example: skip
         /// </param>
-        /// <param name="onError">
-        /// Strategy to use when an imported row fails validation.<br/>
-        /// Default Value: continue<br/>
-        /// Example: continue
-        /// </param>
         /// <param name="segments">
         /// JSON-encoded array of segments to add imported contacts to.<br/>
         /// Example: [{"id":"78261eea-8f8b-4381-83c6-79fa7120f1cf"}]
@@ -1088,7 +1053,6 @@ namespace Resend
             string filename,
             string? columnMap = default,
             global::Resend.CreateContactImportOptionsOnConflict? onConflict = default,
-            global::Resend.CreateContactImportOptionsOnError? onError = default,
             string? segments = default,
             string? topics = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -1102,7 +1066,6 @@ namespace Resend
                 Filename = filename,
                 ColumnMap = columnMap,
                 OnConflict = onConflict,
-                OnError = onError,
                 Segments = segments,
                 Topics = topics,
             };
@@ -1221,14 +1184,6 @@ namespace Resend
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((request.OnConflict).HasValue ? (request.OnConflict).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"on_conflict\"");
-
-                            }
-                            if (request.OnError != default)
-                            {
-
-                                __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent((request.OnError).HasValue ? (request.OnError).GetValueOrDefault().ToValueString() : string.Empty),
-                                    name: "\"on_error\"");
 
                             }
                             if (request.Segments != default)

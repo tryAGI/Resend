@@ -69,10 +69,6 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.CreateContactImportOptionsOnConflictNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.CreateContactImportOptionsOnErrorJsonConverter),
-
-            typeof(global::Resend.JsonConverters.CreateContactImportOptionsOnErrorNullableJsonConverter),
-
             typeof(global::Resend.JsonConverters.ContactImportStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.ContactImportStatusNullableJsonConverter),
@@ -363,7 +359,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListContactsResponseSuccessDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportOptionsOnConflict), TypeInfoPropertyName = "CreateContactImportOptionsOnConflict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportOptionsOnError), TypeInfoPropertyName = "CreateContactImportOptionsOnError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactImportCounts))]
