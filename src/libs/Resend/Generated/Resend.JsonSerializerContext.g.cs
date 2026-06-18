@@ -53,6 +53,26 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.DomainStatusNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.CreateDomainClaimRequestRegionJsonConverter),
+
+            typeof(global::Resend.JsonConverters.CreateDomainClaimRequestRegionNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimRecordTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimRecordTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimRegionJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimRegionNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimBlockedReasonJsonConverter),
+
+            typeof(global::Resend.JsonConverters.DomainClaimBlockedReasonNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.ListDomainsItemStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.ListDomainsItemStatusNullableJsonConverter),
@@ -324,6 +344,14 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Domain))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainStatus), TypeInfoPropertyName = "DomainStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainClaimRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainClaimRequestRegion), TypeInfoPropertyName = "CreateDomainClaimRequestRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimRecord))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimRecordType), TypeInfoPropertyName = "DomainClaimRecordType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaim))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimStatus), TypeInfoPropertyName = "DomainClaimStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimRegion), TypeInfoPropertyName = "DomainClaimRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimBlockedReason), TypeInfoPropertyName = "DomainClaimBlockedReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.VerifyDomainResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListDomainsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>))]
