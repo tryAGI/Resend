@@ -50,9 +50,9 @@ namespace Resend
 
         /// <summary>
         /// The unique message ID from the email headers.<br/>
-        /// Example: &lt;message-id@example.com&gt;
+        /// Example: &lt;message-id@email.example.com&gt;
         /// </summary>
-        /// <example>&lt;message-id@example.com&gt;</example>
+        /// <example>&lt;message-id@email.example.com&gt;</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("message_id")]
         public string? MessageId { get; set; }
 
@@ -149,7 +149,7 @@ namespace Resend
         /// </param>
         /// <param name="messageId">
         /// The unique message ID from the email headers.<br/>
-        /// Example: &lt;message-id@example.com&gt;
+        /// Example: &lt;message-id@email.example.com&gt;
         /// </param>
         /// <param name="bcc">
         /// The BCC recipients.<br/>

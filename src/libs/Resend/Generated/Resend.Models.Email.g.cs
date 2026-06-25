@@ -25,6 +25,14 @@ namespace Resend
         public string? Id { get; set; }
 
         /// <summary>
+        /// The Message-ID header value of the email.<br/>
+        /// Example: &lt;202301010000.4ef9a417@email.example.com&gt;
+        /// </summary>
+        /// <example>&lt;202301010000.4ef9a417@email.example.com&gt;</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("message_id")]
+        public string? MessageId { get; set; }
+
+        /// <summary>
         /// Example: [delivered@resend.dev]
         /// </summary>
         /// <example>[delivered@resend.dev]</example>
@@ -113,6 +121,10 @@ namespace Resend
         /// The ID of the email.<br/>
         /// Example: 4ef9a417-02e9-4d39-ad75-9611e0fcc33c
         /// </param>
+        /// <param name="messageId">
+        /// The Message-ID header value of the email.<br/>
+        /// Example: &lt;202301010000.4ef9a417@email.example.com&gt;
+        /// </param>
         /// <param name="to">
         /// Example: [delivered@resend.dev]
         /// </param>
@@ -154,6 +166,7 @@ namespace Resend
         public Email(
             string? @object,
             string? id,
+            string? messageId,
             global::System.Collections.Generic.IList<string>? to,
             string? from,
             global::System.DateTime? createdAt,
@@ -167,6 +180,7 @@ namespace Resend
         {
             this.Object = @object;
             this.Id = id;
+            this.MessageId = messageId;
             this.To = to;
             this.From = from;
             this.CreatedAt = createdAt;
