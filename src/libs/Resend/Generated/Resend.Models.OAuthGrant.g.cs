@@ -27,12 +27,6 @@ namespace Resend
         public global::System.Collections.Generic.IList<string>? Scopes { get; set; }
 
         /// <summary>
-        /// The resource the grant is scoped to, if any.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resource")]
-        public string? Resource { get; set; }
-
-        /// <summary>
         /// The date and time the OAuth grant was created.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
@@ -74,9 +68,6 @@ namespace Resend
         /// <param name="scopes">
         /// The scopes granted to the OAuth client.
         /// </param>
-        /// <param name="resource">
-        /// The resource the grant is scoped to, if any.
-        /// </param>
         /// <param name="createdAt">
         /// The date and time the OAuth grant was created.
         /// </param>
@@ -96,7 +87,6 @@ namespace Resend
             string? id,
             string? clientId,
             global::System.Collections.Generic.IList<string>? scopes,
-            string? resource,
             global::System.DateTime? createdAt,
             global::System.DateTime? revokedAt,
             string? revokedReason,
@@ -105,7 +95,6 @@ namespace Resend
             this.Id = id;
             this.ClientId = clientId;
             this.Scopes = scopes;
-            this.Resource = resource;
             this.CreatedAt = createdAt;
             this.RevokedAt = revokedAt;
             this.RevokedReason = revokedReason;
