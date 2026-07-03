@@ -95,6 +95,11 @@ namespace Resend
         public LogsClient Logs { get; }
 
         /// <summary>
+        /// List and manage OAuth grants through the Resend API.
+        /// </summary>
+        public OAuthClient OAuth { get; }
+
+        /// <summary>
         /// Retrieve and manage received emails and attachments through the Resend API.
         /// </summary>
         public ReceivingEmailsClient ReceivingEmails { get; }

@@ -135,6 +135,16 @@ namespace Resend
         };
 
         /// <summary>
+        /// List and manage OAuth grants through the Resend API.
+        /// </summary>
+        public OAuthClient OAuth => new OAuthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Retrieve and manage received emails and attachments through the Resend API.
         /// </summary>
         public ReceivingEmailsClient ReceivingEmails => new ReceivingEmailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
