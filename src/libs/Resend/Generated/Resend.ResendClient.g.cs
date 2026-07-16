@@ -165,6 +165,16 @@ namespace Resend
         };
 
         /// <summary>
+        /// Create and manage Suppressions through the Resend API.
+        /// </summary>
+        public SuppressionsClient Suppressions => new SuppressionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
         /// Create and manage Templates through the Resend API.
         /// </summary>
         public TemplatesClient Templates => new TemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)

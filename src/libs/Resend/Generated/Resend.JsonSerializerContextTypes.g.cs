@@ -1248,15 +1248,87 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type305 { get; set; }
+        public global::Resend.CreateSuppressionOptions? Type305 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetContactsImportsStatus? Type306 { get; set; }
+        public global::Resend.CreateSuppressionResponseSuccess? Type306 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetAutomationsStatus? Type307 { get; set; }
+        public global::Resend.BatchAddSuppressionsOptions? Type307 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.BatchAddSuppressionsResponseSuccess? Type308 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.BatchAddSuppressionsResponseSuccessDataItem>? Type309 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.BatchAddSuppressionsResponseSuccessDataItem? Type310 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.BatchRemoveSuppressionsOptions? Type311 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.BatchRemoveSuppressionsResponseSuccess? Type312 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem>? Type313 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem? Type314 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.RemoveSuppressionResponseSuccess? Type315 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetSuppressionResponseSuccess? Type316 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetSuppressionResponseSuccessOrigin? Type317 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListSuppressionsResponseSuccess? Type318 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.ListSuppressionsResponseSuccessDataItem>? Type319 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListSuppressionsResponseSuccessDataItem? Type320 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.ListSuppressionsResponseSuccessDataItemOrigin? Type321 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type322 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetContactsImportsStatus? Type323 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetAutomationsStatus? Type324 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Resend.GetSuppressionsOrigin? Type325 { get; set; }
 
         /// <summary>
         /// 
@@ -1433,6 +1505,18 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType43 { get; set; }
+        public global::System.Collections.Generic.List<global::Resend.BatchAddSuppressionsResponseSuccessDataItem>? ListType43 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem>? ListType44 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.ListSuppressionsResponseSuccessDataItem>? ListType45 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Resend.SendEmailRequest>? ListType46 { get; set; }
     }
 }

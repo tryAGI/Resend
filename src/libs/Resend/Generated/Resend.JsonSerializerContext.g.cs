@@ -257,6 +257,14 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.DomainEventDataRegionNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.GetSuppressionResponseSuccessOriginJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetSuppressionResponseSuccessOriginNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListSuppressionsResponseSuccessDataItemOriginJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListSuppressionsResponseSuccessDataItemOriginNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.GetContactsImportsStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetContactsImportsStatusNullableJsonConverter),
@@ -264,6 +272,10 @@ namespace Resend
             typeof(global::Resend.JsonConverters.GetAutomationsStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetAutomationsStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetSuppressionsOriginJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetSuppressionsOriginNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetContactImportResponseSuccessJsonConverter),
 
@@ -607,9 +619,27 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainCreatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainUpdatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainDeletedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSuppressionOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSuppressionResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchAddSuppressionsOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchAddSuppressionsResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.BatchAddSuppressionsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchAddSuppressionsResponseSuccessDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchRemoveSuppressionsOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchRemoveSuppressionsResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveSuppressionResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSuppressionResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSuppressionResponseSuccessOrigin), TypeInfoPropertyName = "GetSuppressionResponseSuccessOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListSuppressionsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItemOrigin), TypeInfoPropertyName = "ListSuppressionsResponseSuccessDataItemOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetContactsImportsStatus), TypeInfoPropertyName = "GetContactsImportsStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetAutomationsStatus), TypeInfoPropertyName = "GetAutomationsStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSuppressionsOrigin), TypeInfoPropertyName = "GetSuppressionsOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.List<string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.Attachment>))]
@@ -653,6 +683,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.OutboundEmailEventDataHeader>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.WebhookEventAttachment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.WebhookDomainRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.BatchAddSuppressionsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListSuppressionsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.SendEmailRequest>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
