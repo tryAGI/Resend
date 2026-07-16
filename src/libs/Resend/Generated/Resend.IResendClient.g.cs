@@ -110,6 +110,11 @@ namespace Resend
         public SegmentsClient Segments { get; }
 
         /// <summary>
+        /// Create and manage Suppressions through the Resend API.
+        /// </summary>
+        public SuppressionsClient Suppressions { get; }
+
+        /// <summary>
         /// Create and manage Templates through the Resend API.
         /// </summary>
         public TemplatesClient Templates { get; }
