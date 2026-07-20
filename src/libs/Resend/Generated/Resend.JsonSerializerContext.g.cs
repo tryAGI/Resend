@@ -434,8 +434,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveBroadcastResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastResponseSuccess))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastMetricCounter))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetBroadcastMetricsResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RetrievedAttachment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RetrievedAttachmentContentDisposition), TypeInfoPropertyName = "RetrievedAttachmentContentDisposition2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
