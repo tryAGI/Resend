@@ -105,6 +105,12 @@ namespace Resend
         public global::Resend.EmailLastEvent? LastEvent { get; set; }
 
         /// <summary>
+        /// Details about the bounce, present only when `last_event` is `bounced`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bounce")]
+        public global::Resend.EmailBounce? Bounce { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -160,6 +166,9 @@ namespace Resend
         /// The status of the email.<br/>
         /// Example: delivered
         /// </param>
+        /// <param name="bounce">
+        /// Details about the bounce, present only when `last_event` is `bounced`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -176,7 +185,8 @@ namespace Resend
             global::System.Collections.Generic.IList<string>? bcc,
             global::System.Collections.Generic.IList<string>? cc,
             global::System.Collections.Generic.IList<string>? replyTo,
-            global::Resend.EmailLastEvent? lastEvent)
+            global::Resend.EmailLastEvent? lastEvent,
+            global::Resend.EmailBounce? bounce)
         {
             this.Object = @object;
             this.Id = id;
@@ -191,6 +201,7 @@ namespace Resend
             this.Cc = cc;
             this.ReplyTo = replyTo;
             this.LastEvent = lastEvent;
+            this.Bounce = bounce;
         }
 
         /// <summary>
