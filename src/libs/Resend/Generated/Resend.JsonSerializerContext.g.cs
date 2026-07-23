@@ -17,14 +17,6 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.EmailLastEventNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.EmailBounceTypeJsonConverter),
-
-            typeof(global::Resend.JsonConverters.EmailBounceTypeNullableJsonConverter),
-
-            typeof(global::Resend.JsonConverters.EmailBounceSubTypeJsonConverter),
-
-            typeof(global::Resend.JsonConverters.EmailBounceSubTypeNullableJsonConverter),
-
             typeof(global::Resend.JsonConverters.DomainCapabilitiesSendingJsonConverter),
 
             typeof(global::Resend.JsonConverters.DomainCapabilitiesSendingNullableJsonConverter),
@@ -341,9 +333,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Email))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailLastEvent), TypeInfoPropertyName = "EmailLastEvent2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBounce))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBounceType), TypeInfoPropertyName = "EmailBounceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBounceSubType), TypeInfoPropertyName = "EmailBounceSubType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListEmailsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.Email>))]
