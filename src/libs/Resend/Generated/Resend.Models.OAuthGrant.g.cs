@@ -27,16 +27,20 @@ namespace Resend
         public global::System.Collections.Generic.IList<string>? Scopes { get; set; }
 
         /// <summary>
-        /// The date and time the OAuth grant was created.
+        /// The date and time the OAuth grant was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// The date and time the OAuth grant was revoked, or null if it is still active.
+        /// The date and time the OAuth grant was revoked, or null if it is still active.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("revoked_at")]
-        public global::System.DateTime? RevokedAt { get; set; }
+        public string? RevokedAt { get; set; }
 
         /// <summary>
         /// The reason the OAuth grant was revoked, or null if it is still active.
@@ -69,10 +73,12 @@ namespace Resend
         /// The scopes granted to the OAuth client.
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the OAuth grant was created.
+        /// The date and time the OAuth grant was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="revokedAt">
-        /// The date and time the OAuth grant was revoked, or null if it is still active.
+        /// The date and time the OAuth grant was revoked, or null if it is still active.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="revokedReason">
         /// The reason the OAuth grant was revoked, or null if it is still active.
@@ -87,8 +93,8 @@ namespace Resend
             string? id,
             string? clientId,
             global::System.Collections.Generic.IList<string>? scopes,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? revokedAt,
+            string? createdAt,
+            string? revokedAt,
             string? revokedReason,
             global::Resend.OAuthGrantClient? client)
         {

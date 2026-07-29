@@ -15,10 +15,12 @@ namespace Resend
         public global::System.Guid? Id { get; set; }
 
         /// <summary>
-        /// The date the log was created.
+        /// The date the log was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The API endpoint that was called.
@@ -58,7 +60,8 @@ namespace Resend
         /// The log ID.
         /// </param>
         /// <param name="createdAt">
-        /// The date the log was created.
+        /// The date the log was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="endpoint">
         /// The API endpoint that was called.
@@ -77,7 +80,7 @@ namespace Resend
 #endif
         public LogSummary(
             global::System.Guid? id,
-            global::System.DateTime? createdAt,
+            string? createdAt,
             string? endpoint,
             global::Resend.LogSummaryMethod? method,
             int? responseStatus,

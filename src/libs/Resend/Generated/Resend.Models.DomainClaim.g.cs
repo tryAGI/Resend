@@ -83,19 +83,19 @@ namespace Resend
 
         /// <summary>
         /// The date and time the claim was created.<br/>
-        /// Example: 2023-04-26T20:21:26.347412+00:00
+        /// Example: 2023-04-26 20:21:26.347412+00
         /// </summary>
-        /// <example>2023-04-26T20:21:26.347412+00:00</example>
+        /// <example>2023-04-26 20:21:26.347412+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The date and time the claim expires if not verified.<br/>
-        /// Example: 2023-05-03T20:21:26.347412+00:00
+        /// Example: 2023-05-03 20:21:26.347412+00
         /// </summary>
-        /// <example>2023-05-03T20:21:26.347412+00:00</example>
+        /// <example>2023-05-03 20:21:26.347412+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("expires_at")]
-        public global::System.DateTime? ExpiresAt { get; set; }
+        public string? ExpiresAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -143,11 +143,11 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// The date and time the claim was created.<br/>
-        /// Example: 2023-04-26T20:21:26.347412+00:00
+        /// Example: 2023-04-26 20:21:26.347412+00
         /// </param>
         /// <param name="expiresAt">
         /// The date and time the claim expires if not verified.<br/>
-        /// Example: 2023-05-03T20:21:26.347412+00:00
+        /// Example: 2023-05-03 20:21:26.347412+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -162,8 +162,8 @@ namespace Resend
             global::Resend.DomainClaimRecord? record,
             global::Resend.DomainClaimBlockedReason? blockedReason,
             string? failureReason,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? expiresAt)
+            string? createdAt,
+            string? expiresAt)
         {
             this.Object = @object;
             this.Id = id;

@@ -79,27 +79,27 @@ namespace Resend
 
         /// <summary>
         /// Timestamp indicating when the broadcast was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </summary>
-        /// <example>2023-10-06T22:59:55.977Z</example>
+        /// <example>2023-10-06 22:59:55.977+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// Timestamp indicating when the broadcast is scheduled to be sent.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </summary>
-        /// <example>2023-10-06T22:59:55.977Z</example>
+        /// <example>2023-10-06 22:59:55.977+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("scheduled_at")]
-        public global::System.DateTime? ScheduledAt { get; set; }
+        public string? ScheduledAt { get; set; }
 
         /// <summary>
         /// Timestamp indicating when the broadcast was sent.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </summary>
-        /// <example>2023-10-06T22:59:55.977Z</example>
+        /// <example>2023-10-06 22:59:55.977+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("sent_at")]
-        public global::System.DateTime? SentAt { get; set; }
+        public string? SentAt { get; set; }
 
         /// <summary>
         /// The plain text version of the broadcast content.<br/>
@@ -166,15 +166,15 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// Timestamp indicating when the broadcast was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </param>
         /// <param name="scheduledAt">
         /// Timestamp indicating when the broadcast is scheduled to be sent.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </param>
         /// <param name="sentAt">
         /// Timestamp indicating when the broadcast was sent.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </param>
         /// <param name="text">
         /// The plain text version of the broadcast content.<br/>
@@ -200,9 +200,9 @@ namespace Resend
             global::System.Collections.Generic.IList<string>? replyTo,
             string? previewText,
             string? status,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? scheduledAt,
-            global::System.DateTime? sentAt,
+            string? createdAt,
+            string? scheduledAt,
+            string? sentAt,
             string? text,
             string? html,
             string? topicId)

@@ -23,8 +23,10 @@ namespace Resend
         public string? Id { get; set; }
 
         /// <summary>
-        /// The date and time the OAuth grant was revoked.
+        /// The date and time the OAuth grant was revoked.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("revoked_at")]
         public global::System.DateTime? RevokedAt { get; set; }
 
@@ -51,7 +53,8 @@ namespace Resend
         /// The ID of the OAuth grant.
         /// </param>
         /// <param name="revokedAt">
-        /// The date and time the OAuth grant was revoked.
+        /// The date and time the OAuth grant was revoked.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="revokedReason">
         /// The reason the OAuth grant was revoked.

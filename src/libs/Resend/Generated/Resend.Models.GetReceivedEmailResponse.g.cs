@@ -106,9 +106,9 @@ namespace Resend
 
         /// <summary>
         /// Timestamp when the email was received.<br/>
-        /// Example: 2023-10-06:23:47:56.678Z
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
-        /// <example>2023-10-06:23:47:56.678Z</example>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         public global::System.DateTime? CreatedAt { get; set; }
 
@@ -177,7 +177,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// Timestamp when the email was received.<br/>
-        /// Example: 2023-10-06:23:47:56.678Z
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="attachments">
         /// Array of attachments.

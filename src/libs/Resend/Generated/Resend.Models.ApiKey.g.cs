@@ -21,16 +21,20 @@ namespace Resend
         public string? Name { get; set; }
 
         /// <summary>
-        /// The date and time the API key was created.
+        /// The date and time the API key was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// The date and time the API key was last used.
+        /// The date and time the API key was last used.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_used_at")]
-        public global::System.DateTime? LastUsedAt { get; set; }
+        public string? LastUsedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,10 +52,12 @@ namespace Resend
         /// The name of the API key.
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the API key was created.
+        /// The date and time the API key was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="lastUsedAt">
-        /// The date and time the API key was last used.
+        /// The date and time the API key was last used.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -59,8 +65,8 @@ namespace Resend
         public ApiKey(
             string? id,
             string? name,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? lastUsedAt)
+            string? createdAt,
+            string? lastUsedAt)
         {
             this.Id = id;
             this.Name = name;

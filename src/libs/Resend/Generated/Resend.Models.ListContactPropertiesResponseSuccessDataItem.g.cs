@@ -34,10 +34,12 @@ namespace Resend
         public global::Resend.OneOf<string, double?>? FallbackValue { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the contact property was created.
+        /// Timestamp indicating when the contact property was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,7 +63,8 @@ namespace Resend
         /// The default value when the property is not set for a contact.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp indicating when the contact property was created.
+        /// Timestamp indicating when the contact property was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -71,7 +74,7 @@ namespace Resend
             string? key,
             string? type,
             global::Resend.OneOf<string, double?>? fallbackValue,
-            global::System.DateTime? createdAt)
+            string? createdAt)
         {
             this.Id = id;
             this.Key = key;

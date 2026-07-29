@@ -77,16 +77,20 @@ namespace Resend
         public global::System.Collections.Generic.IList<global::Resend.TemplateVariable>? Variables { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the template was created.
+        /// Timestamp indicating when the template was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the template was last updated.
+        /// Timestamp indicating when the template was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
-        public global::System.DateTime? UpdatedAt { get; set; }
+        public string? UpdatedAt { get; set; }
 
         /// <summary>
         /// The publication status of the template.
@@ -96,10 +100,12 @@ namespace Resend
         public global::Resend.TemplateStatus? Status { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the template was published.
+        /// Timestamp indicating when the template was published.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("published_at")]
-        public global::System.DateTime? PublishedAt { get; set; }
+        public string? PublishedAt { get; set; }
 
         /// <summary>
         /// Indicates whether the template has unpublished versions.
@@ -149,16 +155,19 @@ namespace Resend
         /// </param>
         /// <param name="variables"></param>
         /// <param name="createdAt">
-        /// Timestamp indicating when the template was created.
+        /// Timestamp indicating when the template was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="updatedAt">
-        /// Timestamp indicating when the template was last updated.
+        /// Timestamp indicating when the template was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="status">
         /// The publication status of the template.
         /// </param>
         /// <param name="publishedAt">
-        /// Timestamp indicating when the template was published.
+        /// Timestamp indicating when the template was published.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="hasUnpublishedVersions">
         /// Indicates whether the template has unpublished versions.
@@ -178,10 +187,10 @@ namespace Resend
             string? html,
             string? text,
             global::System.Collections.Generic.IList<global::Resend.TemplateVariable>? variables,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? updatedAt,
+            string? createdAt,
+            string? updatedAt,
             global::Resend.TemplateStatus? status,
-            global::System.DateTime? publishedAt,
+            string? publishedAt,
             bool? hasUnpublishedVersions)
         {
             this.Object = @object;

@@ -28,15 +28,19 @@ namespace Resend
         public global::System.Collections.Generic.IList<string>? SegmentIds { get; set; }
 
         /// <summary>
-        /// Timestamp when the contact was created.
+        /// Timestamp when the contact was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// Timestamp when the contact was last updated.
+        /// Timestamp when the contact was last updated.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime UpdatedAt { get; set; }
@@ -80,10 +84,12 @@ namespace Resend
         /// Unique identifier for the contact.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp when the contact was created.
+        /// Timestamp when the contact was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="updatedAt">
-        /// Timestamp when the contact was last updated.
+        /// Timestamp when the contact was last updated.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="email">
         /// Contact's email address.

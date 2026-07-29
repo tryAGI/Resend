@@ -50,11 +50,11 @@ namespace Resend
 
         /// <summary>
         /// Timestamp indicating when the webhook was created.<br/>
-        /// Example: 2023-10-06T23:47:56.678Z
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
-        /// <example>2023-10-06T23:47:56.678Z</example>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The secret key used to verify webhook payloads.<br/>
@@ -95,7 +95,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// Timestamp indicating when the webhook was created.<br/>
-        /// Example: 2023-10-06T23:47:56.678Z
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="signingSecret">
         /// The secret key used to verify webhook payloads.<br/>
@@ -110,7 +110,7 @@ namespace Resend
             string? endpoint,
             global::System.Collections.Generic.IList<string>? events,
             string? status,
-            global::System.DateTime? createdAt,
+            string? createdAt,
             string? signingSecret)
         {
             this.Object = @object;
