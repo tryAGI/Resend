@@ -49,11 +49,11 @@ namespace Resend
 
         /// <summary>
         /// The date and time the email was created.<br/>
-        /// Example: 2023-04-03T22:13:42.674981+00:00
+        /// Example: 2023-04-03 22:13:42.674981+00
         /// </summary>
-        /// <example>2023-04-03T22:13:42.674981+00:00</example>
+        /// <example>2023-04-03 22:13:42.674981+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The subject line of the email.<br/>
@@ -134,7 +134,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// The date and time the email was created.<br/>
-        /// Example: 2023-04-03T22:13:42.674981+00:00
+        /// Example: 2023-04-03 22:13:42.674981+00
         /// </param>
         /// <param name="subject">
         /// The subject line of the email.<br/>
@@ -169,7 +169,7 @@ namespace Resend
             string? messageId,
             global::System.Collections.Generic.IList<string>? to,
             string? from,
-            global::System.DateTime? createdAt,
+            string? createdAt,
             string? subject,
             string? html,
             string? text,

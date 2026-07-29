@@ -43,11 +43,11 @@ namespace Resend
 
         /// <summary>
         /// The date and time the domain was created.<br/>
-        /// Example: 2023-04-26T20:21:26.347412+00:00
+        /// Example: 2023-04-26 20:21:26.347412+00
         /// </summary>
-        /// <example>2023-04-26T20:21:26.347412+00:00</example>
+        /// <example>2023-04-26 20:21:26.347412+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The region where the domain is hosted.<br/>
@@ -114,7 +114,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// The date and time the domain was created.<br/>
-        /// Example: 2023-04-26T20:21:26.347412+00:00
+        /// Example: 2023-04-26 20:21:26.347412+00
         /// </param>
         /// <param name="region">
         /// The region where the domain is hosted.<br/>
@@ -141,7 +141,7 @@ namespace Resend
             string? id,
             string? name,
             global::Resend.DomainStatus? status,
-            global::System.DateTime? createdAt,
+            string? createdAt,
             string? region,
             bool? openTracking,
             bool? clickTracking,

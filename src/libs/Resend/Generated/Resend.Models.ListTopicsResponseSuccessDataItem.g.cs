@@ -41,10 +41,12 @@ namespace Resend
         public global::Resend.ListTopicsResponseSuccessDataItemVisibility? Visibility { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the topic was created.
+        /// Timestamp indicating when the topic was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -71,7 +73,8 @@ namespace Resend
         /// The visibility of the topic.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp indicating when the topic was created.
+        /// Timestamp indicating when the topic was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -82,7 +85,7 @@ namespace Resend
             string? description,
             global::Resend.ListTopicsResponseSuccessDataItemDefaultSubscription? defaultSubscription,
             global::Resend.ListTopicsResponseSuccessDataItemVisibility? visibility,
-            global::System.DateTime? createdAt)
+            string? createdAt)
         {
             this.Id = id;
             this.Name = name;

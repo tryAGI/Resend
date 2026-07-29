@@ -35,19 +35,19 @@ namespace Resend
 
         /// <summary>
         /// Timestamp indicating when the contact import was created.<br/>
-        /// Example: 2023-10-06T23:47:56.678Z
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
-        /// <example>2023-10-06T23:47:56.678Z</example>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// Timestamp indicating when the contact import completed.<br/>
-        /// Example: 2023-10-06T23:50:56.678Z
+        /// Example: 2023-10-06 23:50:56.678+00
         /// </summary>
-        /// <example>2023-10-06T23:50:56.678Z</example>
+        /// <example>2023-10-06 23:50:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
-        public global::System.DateTime? CompletedAt { get; set; }
+        public string? CompletedAt { get; set; }
 
         /// <summary>
         /// 
@@ -78,11 +78,11 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// Timestamp indicating when the contact import was created.<br/>
-        /// Example: 2023-10-06T23:47:56.678Z
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="completedAt">
         /// Timestamp indicating when the contact import completed.<br/>
-        /// Example: 2023-10-06T23:50:56.678Z
+        /// Example: 2023-10-06 23:50:56.678+00
         /// </param>
         /// <param name="counts"></param>
 #if NET7_0_OR_GREATER
@@ -92,8 +92,8 @@ namespace Resend
             string? @object,
             global::System.Guid? id,
             global::Resend.ContactImportStatus? status,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? completedAt,
+            string? createdAt,
+            string? completedAt,
             global::Resend.ContactImportCounts? counts)
         {
             this.Object = @object;

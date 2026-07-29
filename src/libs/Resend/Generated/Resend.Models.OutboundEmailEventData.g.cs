@@ -16,8 +16,10 @@ namespace Resend
         public required string EmailId { get; set; }
 
         /// <summary>
-        /// Timestamp when the email was created.
+        /// Timestamp when the email was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime CreatedAt { get; set; }
@@ -80,7 +82,8 @@ namespace Resend
         /// Unique identifier for the email.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp when the email was created.
+        /// Timestamp when the email was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="from">
         /// Sender email address and name in the format `Name &lt;email@domain.com&gt;`.

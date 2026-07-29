@@ -37,16 +37,20 @@ namespace Resend
         public global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>? FallbackValue { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the variable was created.
+        /// Timestamp indicating when the variable was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// Timestamp indicating when the variable was last updated.
+        /// Timestamp indicating when the variable was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
-        public global::System.DateTime? UpdatedAt { get; set; }
+        public string? UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -70,10 +74,12 @@ namespace Resend
         /// The fallback value of the variable.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp indicating when the variable was created.
+        /// Timestamp indicating when the variable was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="updatedAt">
-        /// Timestamp indicating when the variable was last updated.
+        /// Timestamp indicating when the variable was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -83,8 +89,8 @@ namespace Resend
             global::Resend.TemplateVariableType type,
             string? id,
             global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>? fallbackValue,
-            global::System.DateTime? createdAt,
-            global::System.DateTime? updatedAt)
+            string? createdAt,
+            string? updatedAt)
         {
             this.Id = id;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));

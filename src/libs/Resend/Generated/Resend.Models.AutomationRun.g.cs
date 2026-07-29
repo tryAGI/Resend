@@ -30,20 +30,26 @@ namespace Resend
         public global::Resend.AutomationRunStatus? Status { get; set; }
 
         /// <summary>
-        /// The date and time the run started.
+        /// The date and time the run started.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("started_at")]
         public string? StartedAt { get; set; }
 
         /// <summary>
-        /// The date and time the run completed.
+        /// The date and time the run completed.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
         public string? CompletedAt { get; set; }
 
         /// <summary>
-        /// The date and time the run was created.
+        /// The date and time the run was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         public string? CreatedAt { get; set; }
 
@@ -73,13 +79,16 @@ namespace Resend
         /// The current status of the automation run.
         /// </param>
         /// <param name="startedAt">
-        /// The date and time the run started.
+        /// The date and time the run started.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="completedAt">
-        /// The date and time the run completed.
+        /// The date and time the run completed.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the run was created.
+        /// The date and time the run was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="steps">
         /// The steps executed in this run, sorted in graph order.

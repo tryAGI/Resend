@@ -23,8 +23,10 @@ namespace Resend
         public required string Link { get; set; }
 
         /// <summary>
-        /// Timestamp when the click occurred.
+        /// Timestamp when the click occurred.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Timestamp { get; set; }
@@ -52,7 +54,8 @@ namespace Resend
         /// The URL that was clicked.
         /// </param>
         /// <param name="timestamp">
-        /// Timestamp when the click occurred.
+        /// Timestamp when the click occurred.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="userAgent">
         /// User agent string of the browser that clicked the link.

@@ -21,10 +21,12 @@ namespace Resend
         public string? Name { get; set; }
 
         /// <summary>
-        /// The date and time the domain was created.
+        /// The date and time the domain was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// The status of the domain.
@@ -85,7 +87,8 @@ namespace Resend
         /// The name of the domain.
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the domain was created.
+        /// The date and time the domain was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="status">
         /// The status of the domain.
@@ -112,7 +115,7 @@ namespace Resend
         public CreateDomainResponse(
             string? id,
             string? name,
-            global::System.DateTime? createdAt,
+            string? createdAt,
             global::Resend.CreateDomainResponseStatus? status,
             global::Resend.DomainCapabilities? capabilities,
             global::System.Collections.Generic.IList<global::Resend.DomainRecord>? records,

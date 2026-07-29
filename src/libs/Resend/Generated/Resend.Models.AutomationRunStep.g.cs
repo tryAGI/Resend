@@ -28,14 +28,18 @@ namespace Resend
         public string? Status { get; set; }
 
         /// <summary>
-        /// The date and time the step started executing.
+        /// The date and time the step started executing.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("started_at")]
         public string? StartedAt { get; set; }
 
         /// <summary>
-        /// The date and time the step completed executing.
+        /// The date and time the step completed executing.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
         public string? CompletedAt { get; set; }
 
@@ -52,8 +56,10 @@ namespace Resend
         public object? Error { get; set; }
 
         /// <summary>
-        /// The date and time the step record was created.
+        /// The date and time the step record was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         public string? CreatedAt { get; set; }
 
@@ -76,10 +82,12 @@ namespace Resend
         /// The execution status of this step.
         /// </param>
         /// <param name="startedAt">
-        /// The date and time the step started executing.
+        /// The date and time the step started executing.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="completedAt">
-        /// The date and time the step completed executing.
+        /// The date and time the step completed executing.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="output">
         /// The output produced by the step, if any.
@@ -88,7 +96,8 @@ namespace Resend
         /// The error produced by the step, if any.
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the step record was created.
+        /// The date and time the step record was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

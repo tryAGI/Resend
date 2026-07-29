@@ -28,14 +28,18 @@ namespace Resend
         public global::Resend.AutomationListItemStatus? Status { get; set; }
 
         /// <summary>
-        /// The date and time the automation was created.
+        /// The date and time the automation was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// The date and time the automation was last updated.
+        /// The date and time the automation was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </summary>
+        /// <example>2023-10-06 23:47:56.678+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
         public string? UpdatedAt { get; set; }
 
@@ -58,10 +62,12 @@ namespace Resend
         /// The current status of the automation.
         /// </param>
         /// <param name="createdAt">
-        /// The date and time the automation was created.
+        /// The date and time the automation was created.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
         /// <param name="updatedAt">
-        /// The date and time the automation was last updated.
+        /// The date and time the automation was last updated.<br/>
+        /// Example: 2023-10-06 23:47:56.678+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -38,9 +38,9 @@ namespace Resend
 
         /// <summary>
         /// The date that the object was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </summary>
-        /// <example>2023-10-06T22:59:55.977Z</example>
+        /// <example>2023-10-06 22:59:55.977+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public string? CreatedAt { get; set; }
@@ -68,7 +68,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// The date that the object was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

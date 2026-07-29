@@ -31,8 +31,10 @@ namespace Resend
         public required global::Resend.DomainEventDataStatus Status { get; set; }
 
         /// <summary>
-        /// Timestamp when the domain was created.
+        /// Timestamp when the domain was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </summary>
+        /// <example>2023-10-06T23:47:56.678Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime CreatedAt { get; set; }
@@ -71,7 +73,8 @@ namespace Resend
         /// Aggregated verification status of the domain.
         /// </param>
         /// <param name="createdAt">
-        /// Timestamp when the domain was created.
+        /// Timestamp when the domain was created.<br/>
+        /// Example: 2023-10-06T23:47:56.678Z
         /// </param>
         /// <param name="region">
         /// AWS region where the domain is configured.

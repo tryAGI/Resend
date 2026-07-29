@@ -26,11 +26,11 @@ namespace Resend
 
         /// <summary>
         /// Timestamp indicating when the audience was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </summary>
-        /// <example>2023-10-06T22:59:55.977Z</example>
+        /// <example>2023-10-06 22:59:55.977+00</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        public global::System.DateTime? CreatedAt { get; set; }
+        public string? CreatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,7 +51,7 @@ namespace Resend
         /// </param>
         /// <param name="createdAt">
         /// Timestamp indicating when the audience was created.<br/>
-        /// Example: 2023-10-06T22:59:55.977Z
+        /// Example: 2023-10-06 22:59:55.977+00
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -59,7 +59,7 @@ namespace Resend
         public ListAudiencesResponseSuccessDataItem(
             string? id,
             string? name,
-            global::System.DateTime? createdAt)
+            string? createdAt)
         {
             this.Id = id;
             this.Name = name;

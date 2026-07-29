@@ -96,207 +96,207 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::System.DateTime? Type17 { get; set; }
+        public global::Resend.EmailLastEvent? Type17 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.EmailLastEvent? Type18 { get; set; }
+        public global::Resend.ListEmailsResponse? Type18 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListEmailsResponse? Type19 { get; set; }
+        public bool? Type19 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public bool? Type20 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.Email>? Type20 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.Email>? Type21 { get; set; }
+        public global::Resend.CreateBatchEmailsResponse? Type21 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateBatchEmailsResponse? Type22 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.CreateBatchEmailsResponseDataItem>? Type22 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.CreateBatchEmailsResponseDataItem>? Type23 { get; set; }
+        public global::Resend.CreateBatchEmailsResponseDataItem? Type23 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateBatchEmailsResponseDataItem? Type24 { get; set; }
+        public global::Resend.DomainCapabilities? Type24 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainCapabilities? Type25 { get; set; }
+        public global::Resend.DomainCapabilitiesSending? Type25 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainCapabilitiesSending? Type26 { get; set; }
+        public global::Resend.DomainCapabilitiesReceiving? Type26 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainCapabilitiesReceiving? Type27 { get; set; }
+        public global::Resend.CreateDomainRequest? Type27 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainRequest? Type28 { get; set; }
+        public global::Resend.CreateDomainRequestRegion? Type28 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainRequestRegion? Type29 { get; set; }
+        public global::Resend.CreateDomainRequestTls? Type29 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainRequestTls? Type30 { get; set; }
+        public global::Resend.CreateDomainResponse? Type30 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainResponse? Type31 { get; set; }
+        public global::Resend.CreateDomainResponseStatus? Type31 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainResponseStatus? Type32 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.DomainRecord>? Type32 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.DomainRecord>? Type33 { get; set; }
+        public global::Resend.DomainRecord? Type33 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainRecord? Type34 { get; set; }
+        public global::Resend.UpdateDomainOptions? Type34 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.UpdateDomainOptions? Type35 { get; set; }
+        public global::Resend.DomainRecordRecord? Type35 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainRecordRecord? Type36 { get; set; }
+        public global::Resend.DomainRecordType? Type36 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainRecordType? Type37 { get; set; }
+        public global::Resend.DomainRecordStatus? Type37 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainRecordStatus? Type38 { get; set; }
+        public int? Type38 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int? Type39 { get; set; }
+        public global::Resend.Domain? Type39 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.Domain? Type40 { get; set; }
+        public global::Resend.DomainStatus? Type40 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainStatus? Type41 { get; set; }
+        public global::Resend.CreateDomainClaimRequest? Type41 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainClaimRequest? Type42 { get; set; }
+        public global::Resend.CreateDomainClaimRequestRegion? Type42 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateDomainClaimRequestRegion? Type43 { get; set; }
+        public global::Resend.DomainClaimRecord? Type43 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaimRecord? Type44 { get; set; }
+        public global::Resend.DomainClaimRecordType? Type44 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaimRecordType? Type45 { get; set; }
+        public global::Resend.DomainClaim? Type45 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaim? Type46 { get; set; }
+        public global::Resend.DomainClaimStatus? Type46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaimStatus? Type47 { get; set; }
+        public global::Resend.DomainClaimRegion? Type47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaimRegion? Type48 { get; set; }
+        public global::Resend.DomainClaimBlockedReason? Type48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DomainClaimBlockedReason? Type49 { get; set; }
+        public global::Resend.VerifyDomainResponse? Type49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.VerifyDomainResponse? Type50 { get; set; }
+        public global::Resend.ListDomainsResponse? Type50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListDomainsResponse? Type51 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>? Type51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>? Type52 { get; set; }
+        public global::Resend.ListDomainsItem? Type52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListDomainsItem? Type53 { get; set; }
+        public global::Resend.ListDomainsItemStatus? Type53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListDomainsItemStatus? Type54 { get; set; }
+        public global::Resend.UpdateDomainResponseSuccess? Type54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.UpdateDomainResponseSuccess? Type55 { get; set; }
+        public global::Resend.DeleteDomainResponse? Type55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.DeleteDomainResponse? Type56 { get; set; }
+        public global::Resend.CreateApiKeyRequest? Type56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateApiKeyRequest? Type57 { get; set; }
+        public global::Resend.CreateApiKeyRequestPermission? Type57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateApiKeyRequestPermission? Type58 { get; set; }
+        public global::Resend.CreateApiKeyResponse? Type58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.CreateApiKeyResponse? Type59 { get; set; }
+        public global::Resend.ListApiKeysResponse? Type59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListApiKeysResponse? Type60 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ApiKey>? Type60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ApiKey>? Type61 { get; set; }
+        public global::Resend.ApiKey? Type61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ApiKey? Type62 { get; set; }
+        public global::Resend.ListOAuthGrantsResponse? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.ListOAuthGrantsResponse? Type63 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.OAuthGrant>? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.OAuthGrant>? Type64 { get; set; }
+        public global::Resend.OAuthGrant? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.OAuthGrant? Type65 { get; set; }
+        public global::Resend.OAuthGrantClient? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.OAuthGrantClient? Type66 { get; set; }
+        public global::Resend.RevokeOAuthGrantResponse? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.RevokeOAuthGrantResponse? Type67 { get; set; }
+        public global::System.DateTime? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
