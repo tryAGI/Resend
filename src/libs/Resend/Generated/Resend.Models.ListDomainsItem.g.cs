@@ -50,6 +50,18 @@ namespace Resend
         public string? Region { get; set; }
 
         /// <summary>
+        /// Whether open tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("open_tracking")]
+        public bool? OpenTracking { get; set; }
+
+        /// <summary>
+        /// Whether click tracking is enabled for this domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("click_tracking")]
+        public bool? ClickTracking { get; set; }
+
+        /// <summary>
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("capabilities")]
@@ -84,6 +96,12 @@ namespace Resend
         /// The region where the domain is hosted.<br/>
         /// Example: us-east-1
         /// </param>
+        /// <param name="openTracking">
+        /// Whether open tracking is enabled for this domain.
+        /// </param>
+        /// <param name="clickTracking">
+        /// Whether click tracking is enabled for this domain.
+        /// </param>
         /// <param name="capabilities">
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
         /// </param>
@@ -96,6 +114,8 @@ namespace Resend
             global::Resend.ListDomainsItemStatus? status,
             string? createdAt,
             string? region,
+            bool? openTracking,
+            bool? clickTracking,
             global::Resend.DomainCapabilities? capabilities)
         {
             this.Id = id;
@@ -103,6 +123,8 @@ namespace Resend
             this.Status = status;
             this.CreatedAt = createdAt;
             this.Region = region;
+            this.OpenTracking = openTracking;
+            this.ClickTracking = clickTracking;
             this.Capabilities = capabilities;
         }
 
