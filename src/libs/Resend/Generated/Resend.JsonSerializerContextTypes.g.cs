@@ -1324,15 +1324,15 @@ namespace Resend
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetContactsImportsStatus? Type324 { get; set; }
+        public global::Resend.ContactsListImportsStatus? Type324 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetAutomationsStatus? Type325 { get; set; }
+        public global::Resend.AutomationsListStatus? Type325 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Resend.GetSuppressionsOrigin? Type326 { get; set; }
+        public global::Resend.SuppressionsListOrigin? Type326 { get; set; }
 
         /// <summary>
         /// 
