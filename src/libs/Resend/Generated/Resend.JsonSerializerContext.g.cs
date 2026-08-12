@@ -265,17 +265,17 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.ListSuppressionsResponseSuccessDataItemOriginNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetContactsImportsStatusJsonConverter),
+            typeof(global::Resend.JsonConverters.ContactsListImportsStatusJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetContactsImportsStatusNullableJsonConverter),
+            typeof(global::Resend.JsonConverters.ContactsListImportsStatusNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetAutomationsStatusJsonConverter),
+            typeof(global::Resend.JsonConverters.AutomationsListStatusJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetAutomationsStatusNullableJsonConverter),
+            typeof(global::Resend.JsonConverters.AutomationsListStatusNullableJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetSuppressionsOriginJsonConverter),
+            typeof(global::Resend.JsonConverters.SuppressionsListOriginJsonConverter),
 
-            typeof(global::Resend.JsonConverters.GetSuppressionsOriginNullableJsonConverter),
+            typeof(global::Resend.JsonConverters.SuppressionsListOriginNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetContactImportResponseSuccessJsonConverter),
 
@@ -638,9 +638,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItemOrigin), TypeInfoPropertyName = "ListSuppressionsResponseSuccessDataItemOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetContactsImportsStatus), TypeInfoPropertyName = "GetContactsImportsStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetAutomationsStatus), TypeInfoPropertyName = "GetAutomationsStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSuppressionsOrigin), TypeInfoPropertyName = "GetSuppressionsOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactsListImportsStatus), TypeInfoPropertyName = "ContactsListImportsStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationsListStatus), TypeInfoPropertyName = "AutomationsListStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionsListOrigin), TypeInfoPropertyName = "SuppressionsListOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.List<string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.Attachment>))]
