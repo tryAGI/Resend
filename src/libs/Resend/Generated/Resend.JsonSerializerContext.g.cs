@@ -550,6 +550,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.PatchAutomationRequestStatus), TypeInfoPropertyName = "PatchAutomationRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.PatchAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteAutomationResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DuplicateAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.StopAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationRunStep))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationRunStepType), TypeInfoPropertyName = "AutomationRunStepType2")]
