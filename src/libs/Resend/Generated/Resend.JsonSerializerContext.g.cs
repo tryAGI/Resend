@@ -17,6 +17,14 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.EmailLastEventNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.GetEmailsMetricsResponseDimensionJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetEmailsMetricsResponseDimensionNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetEmailsMetricsResponseGranularityJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetEmailsMetricsResponseGranularityNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.DomainCapabilitiesSendingJsonConverter),
 
             typeof(global::Resend.JsonConverters.DomainCapabilitiesSendingNullableJsonConverter),
@@ -92,6 +100,10 @@ namespace Resend
             typeof(global::Resend.JsonConverters.ContactImportStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.ContactImportStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListBroadcastRecipientsResponseSuccessDataItemBounceTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListBroadcastRecipientsResponseSuccessDataItemBounceTypeNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.RetrievedAttachmentContentDispositionJsonConverter),
 
@@ -265,9 +277,29 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.ListSuppressionsResponseSuccessDataItemOriginNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.EmailsMetricsGranularityJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailsMetricsGranularityNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailsMetricsMetricJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailsMetricsMetricNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailsMetricsDimensionJsonConverter),
+
+            typeof(global::Resend.JsonConverters.EmailsMetricsDimensionNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.ContactsListImportsStatusJsonConverter),
 
             typeof(global::Resend.JsonConverters.ContactsListImportsStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.BroadcastsRecipientsTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.BroadcastsRecipientsTypeNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.BroadcastsRecipientsBounceTypeJsonConverter),
+
+            typeof(global::Resend.JsonConverters.BroadcastsRecipientsBounceTypeNullableJsonConverter),
 
             typeof(global::Resend.JsonConverters.AutomationsListStatusJsonConverter),
 
@@ -337,6 +369,14 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListEmailsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.Email>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetEmailsMetricsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.GetEmailsMetricsResponseDimension>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetEmailsMetricsResponseDimension), TypeInfoPropertyName = "GetEmailsMetricsResponseDimension2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetEmailsMetricsResponseGranularity), TypeInfoPropertyName = "GetEmailsMetricsResponseGranularity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailMetricsDataRow>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailMetricsDataRow))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateBatchEmailsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.CreateBatchEmailsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateBatchEmailsResponseDataItem))]
@@ -409,7 +449,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportOptionsOnConflict), TypeInfoPropertyName = "CreateContactImportOptionsOnConflict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactImportResponseSuccess))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactImportCounts))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactImport))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactImportStatus), TypeInfoPropertyName = "ContactImportStatus2")]
@@ -428,6 +467,15 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CancelBroadcastResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccessDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccessDataItemBounceType), TypeInfoPropertyName = "ListBroadcastRecipientsResponseSuccessDataItemBounceType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastClickedLinksResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RetrievedAttachment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RetrievedAttachmentContentDisposition), TypeInfoPropertyName = "RetrievedAttachmentContentDisposition2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
@@ -643,7 +691,15 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItemOrigin), TypeInfoPropertyName = "ListSuppressionsResponseSuccessDataItemOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsGranularity), TypeInfoPropertyName = "EmailsMetricsGranularity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsMetric), TypeInfoPropertyName = "EmailsMetricsMetric2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsDimension), TypeInfoPropertyName = "EmailsMetricsDimension2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactsListImportsStatus), TypeInfoPropertyName = "ContactsListImportsStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastsRecipientsType), TypeInfoPropertyName = "BroadcastsRecipientsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastsRecipientsBounceType), TypeInfoPropertyName = "BroadcastsRecipientsBounceType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationsListStatus), TypeInfoPropertyName = "AutomationsListStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionsListOrigin), TypeInfoPropertyName = "SuppressionsListOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.List<string>>))]
@@ -651,6 +707,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.Attachment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.Tag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.Email>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.GetEmailsMetricsResponseDimension>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailMetricsDataRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.CreateBatchEmailsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.DomainRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListDomainsItem>))]
@@ -661,6 +719,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListContactsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ContactImport>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListBroadcastsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListBroadcastRecipientsResponseSuccessDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListAttachmentsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.GetReceivedEmailResponseAttachment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListReceivedEmailsResponseDataItem>))]
@@ -693,6 +754,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.BatchRemoveSuppressionsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListSuppressionsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.SendEmailRequest>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailsMetricsMetric>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailsMetricsDimension>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
