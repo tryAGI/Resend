@@ -67,6 +67,14 @@ namespace Resend
         public required global::System.Collections.Generic.IList<string> Cc { get; set; }
 
         /// <summary>
+        /// The recipient addresses the email was forwarded for, taken from the `for` clause of the message's `Received` headers.<br/>
+        /// Example: [forwarded@example.com]
+        /// </summary>
+        /// <example>[forwarded@example.com]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("received_for")]
+        public global::System.Collections.Generic.IList<string>? ReceivedFor { get; set; }
+
+        /// <summary>
         /// Array of attachment metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attachments")]
@@ -110,6 +118,10 @@ namespace Resend
         /// <param name="attachments">
         /// Array of attachment metadata.
         /// </param>
+        /// <param name="receivedFor">
+        /// The recipient addresses the email was forwarded for, taken from the `for` clause of the message's `Received` headers.<br/>
+        /// Example: [forwarded@example.com]
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -122,7 +134,8 @@ namespace Resend
             string messageId,
             global::System.Collections.Generic.IList<string> bcc,
             global::System.Collections.Generic.IList<string> cc,
-            global::System.Collections.Generic.IList<global::Resend.WebhookEventAttachment> attachments)
+            global::System.Collections.Generic.IList<global::Resend.WebhookEventAttachment> attachments,
+            global::System.Collections.Generic.IList<string>? receivedFor)
         {
             this.EmailId = emailId ?? throw new global::System.ArgumentNullException(nameof(emailId));
             this.CreatedAt = createdAt;
@@ -132,6 +145,7 @@ namespace Resend
             this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
             this.Bcc = bcc ?? throw new global::System.ArgumentNullException(nameof(bcc));
             this.Cc = cc ?? throw new global::System.ArgumentNullException(nameof(cc));
+            this.ReceivedFor = receivedFor;
             this.Attachments = attachments ?? throw new global::System.ArgumentNullException(nameof(attachments));
         }
 
