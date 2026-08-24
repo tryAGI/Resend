@@ -81,6 +81,14 @@ namespace Resend
         public global::System.Collections.Generic.IList<string>? ReplyTo { get; set; }
 
         /// <summary>
+        /// The recipient addresses the email was forwarded for, taken from the `for` clause of the message's `Received` headers.<br/>
+        /// Example: [forwarded@example.com]
+        /// </summary>
+        /// <example>[forwarded@example.com]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("received_for")]
+        public global::System.Collections.Generic.IList<string>? ReceivedFor { get; set; }
+
+        /// <summary>
         /// The HTML content of the email.<br/>
         /// Example: &lt;p&gt;Email content&lt;/p&gt;
         /// </summary>
@@ -163,6 +171,10 @@ namespace Resend
         /// The reply-to addresses.<br/>
         /// Example: []
         /// </param>
+        /// <param name="receivedFor">
+        /// The recipient addresses the email was forwarded for, taken from the `for` clause of the message's `Received` headers.<br/>
+        /// Example: [forwarded@example.com]
+        /// </param>
         /// <param name="html">
         /// The HTML content of the email.<br/>
         /// Example: &lt;p&gt;Email content&lt;/p&gt;
@@ -195,6 +207,7 @@ namespace Resend
             global::System.Collections.Generic.IList<string>? bcc,
             global::System.Collections.Generic.IList<string>? cc,
             global::System.Collections.Generic.IList<string>? replyTo,
+            global::System.Collections.Generic.IList<string>? receivedFor,
             string? html,
             string? text,
             object? headers,
@@ -210,6 +223,7 @@ namespace Resend
             this.Bcc = bcc;
             this.Cc = cc;
             this.ReplyTo = replyTo;
+            this.ReceivedFor = receivedFor;
             this.Html = html;
             this.Text = text;
             this.Headers = headers;
