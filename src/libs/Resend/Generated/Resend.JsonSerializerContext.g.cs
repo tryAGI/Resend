@@ -125,6 +125,14 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.UpdateWebhookRequestStatusNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.ListWebhookEventsResponseDataItemStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.ListWebhookEventsResponseDataItemStatusNullableJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetWebhookEventResponseStatusJsonConverter),
+
+            typeof(global::Resend.JsonConverters.GetWebhookEventResponseStatusNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.TemplateVariableTypeJsonConverter),
 
             typeof(global::Resend.JsonConverters.TemplateVariableTypeNullableJsonConverter),
@@ -503,6 +511,15 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateWebhookRequestStatus), TypeInfoPropertyName = "UpdateWebhookRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateWebhookResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteWebhookResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListWebhookEventsResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventsResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventsResponseDataItemStatus), TypeInfoPropertyName = "ListWebhookEventsResponseDataItemStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetWebhookEventResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetWebhookEventResponseStatus), TypeInfoPropertyName = "GetWebhookEventResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventAttemptsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListWebhookEventAttemptsResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventAttemptsResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariable))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariableType), TypeInfoPropertyName = "TemplateVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>), TypeInfoPropertyName = "OneOfStringDoubleBooleanObjectIListObject2")]
@@ -727,6 +744,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListReceivedEmailsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListReceivedEmailsResponseDataItemAttachment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListWebhooksResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListWebhookEventsResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListWebhookEventAttemptsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.List<object>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.TemplateVariable>))]
