@@ -20,7 +20,7 @@ public static class ResendClientTools
                    [Description("Plain text body of the email (optional)")] string? text,
                    CancellationToken cancellationToken) =>
             {
-                var response = await client.Emails.CreateEmailsAsync(
+                var response = await client.Emails.EmailsSendAsync(
                     from: from,
                     to: to,
                     subject: subject,
@@ -46,7 +46,7 @@ public static class ResendClientTools
             async ([Description("The ID of the email to retrieve")] string emailId,
                    CancellationToken cancellationToken) =>
             {
-                var response = await client.Emails.GetEmailsByEmailIdAsync(
+                var response = await client.Emails.EmailsGetAsync(
                     emailId: emailId,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
@@ -64,7 +64,7 @@ public static class ResendClientTools
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.Emails.GetEmailsAsync(
+                var response = await client.Emails.EmailsListAsync(
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
                 return response;
@@ -81,7 +81,7 @@ public static class ResendClientTools
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.Domains.GetDomainsAsync(
+                var response = await client.Domains.DomainsListAsync(
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
                 return response;
@@ -98,7 +98,7 @@ public static class ResendClientTools
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.Contacts.GetContactsAsync(
+                var response = await client.Contacts.ContactsListAsync(
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
                 return response;
@@ -115,7 +115,7 @@ public static class ResendClientTools
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.Templates.GetTemplatesAsync(
+                var response = await client.Templates.TemplatesListAsync(
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
                 return response;
