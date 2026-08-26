@@ -544,6 +544,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSegmentOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSegmentResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSegmentResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateSegmentOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateSegmentResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSegmentsResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListSegmentsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSegmentsResponseSuccessDataItem))]
