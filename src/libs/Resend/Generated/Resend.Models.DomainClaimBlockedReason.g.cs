@@ -10,19 +10,19 @@ namespace Resend
     public enum DomainClaimBlockedReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GracePeriod,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingScheduledEmails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecentOwnerActivity,
     }

@@ -10,51 +10,51 @@ namespace Resend
     public enum EmailLastEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bounced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clicked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complained,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delivered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeliveryDelayed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opened,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queued,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheduled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suppressed,
     }

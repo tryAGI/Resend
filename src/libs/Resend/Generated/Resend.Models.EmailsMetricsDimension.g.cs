@@ -4,24 +4,24 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EmailsMetricsDimension
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Broadcast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Period,
     }

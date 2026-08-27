@@ -9,11 +9,11 @@ namespace Resend
     public enum TemplateStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Draft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Published,
     }

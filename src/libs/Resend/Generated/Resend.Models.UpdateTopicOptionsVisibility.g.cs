@@ -9,11 +9,11 @@ namespace Resend
     public enum UpdateTopicOptionsVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

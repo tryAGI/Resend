@@ -10,11 +10,11 @@ namespace Resend
     public enum CreateTopicOptionsVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

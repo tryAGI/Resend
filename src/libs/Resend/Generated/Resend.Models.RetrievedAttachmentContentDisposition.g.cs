@@ -10,11 +10,11 @@ namespace Resend
     public enum RetrievedAttachmentContentDisposition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attachment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
     }

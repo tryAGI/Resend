@@ -10,15 +10,15 @@ namespace Resend
     public enum GetSuppressionResponseSuccessOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complaint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
     }

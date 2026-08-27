@@ -10,7 +10,7 @@ namespace Resend
     public enum DomainClaimRecordType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Txt,
     }

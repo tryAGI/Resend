@@ -9,11 +9,11 @@ namespace Resend
     public enum ListTopicsResponseSuccessDataItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

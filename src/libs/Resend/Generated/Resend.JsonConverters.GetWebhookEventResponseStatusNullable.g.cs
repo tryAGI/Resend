@@ -20,7 +20,7 @@ namespace Resend.JsonConverters
                     {
                         return global::Resend.GetWebhookEventResponseStatusExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

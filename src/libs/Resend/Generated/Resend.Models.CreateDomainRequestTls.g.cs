@@ -10,11 +10,11 @@ namespace Resend
     public enum CreateDomainRequestTls
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enforced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opportunistic,
     }

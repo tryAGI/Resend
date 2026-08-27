@@ -9,23 +9,23 @@ namespace Resend
     public enum WebhookDomainRecordRecord
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dkim,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReceivingMx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tracking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrackingCAA,
     }

@@ -9,11 +9,11 @@ namespace Resend
     public enum CreateApiKeyRequestPermission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FullAccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SendingAccess,
     }

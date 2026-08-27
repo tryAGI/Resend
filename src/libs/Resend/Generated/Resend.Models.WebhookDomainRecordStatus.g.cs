@@ -9,23 +9,23 @@ namespace Resend
     public enum WebhookDomainRecordStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TemporaryFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Verified,
     }

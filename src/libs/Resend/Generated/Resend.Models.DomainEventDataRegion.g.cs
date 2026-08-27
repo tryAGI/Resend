@@ -9,19 +9,19 @@ namespace Resend
     public enum DomainEventDataRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApNortheast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EuWest1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SaEast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsEast1,
     }

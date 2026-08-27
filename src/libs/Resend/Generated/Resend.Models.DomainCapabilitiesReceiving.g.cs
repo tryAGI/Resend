@@ -9,11 +9,11 @@ namespace Resend
     public enum DomainCapabilitiesReceiving
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

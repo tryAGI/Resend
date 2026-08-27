@@ -10,19 +10,19 @@ namespace Resend
     public enum GetWebhookEventResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attempting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

@@ -5,12 +5,12 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct EmailBouncedEventData : global::System.IEquatable<EmailBouncedEventData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Resend.OutboundEmailEventData? Outbound { get; init; }
@@ -19,7 +19,7 @@ namespace Resend
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Outbound))]
@@ -27,7 +27,7 @@ namespace Resend
         public bool IsOutbound => Outbound != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOutbound(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Resend.OutboundEmailEventData PickOutbound() => IsOutbound
             ? Outbound!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Outbound' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Resend.EmailBouncedEventDataVariant2? EmailBouncedEventDataVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Resend
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EmailBouncedEventDataVariant2))]
@@ -64,7 +64,7 @@ namespace Resend
         public bool IsEmailBouncedEventDataVariant2 => EmailBouncedEventDataVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEmailBouncedEventDataVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Resend.EmailBouncedEventDataVariant2 PickEmailBouncedEventDataVariant2() => IsEmailBouncedEventDataVariant2
             ? EmailBouncedEventDataVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'EmailBouncedEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EmailBouncedEventData(global::Resend.OutboundEmailEventData value) => new EmailBouncedEventData((global::Resend.OutboundEmailEventData?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Resend.OutboundEmailEventData?(EmailBouncedEventData @this) => @this.Outbound;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmailBouncedEventData(global::Resend.OutboundEmailEventData? value)
         {
@@ -101,22 +101,22 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EmailBouncedEventData FromOutbound(global::Resend.OutboundEmailEventData? value) => new EmailBouncedEventData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EmailBouncedEventData(global::Resend.EmailBouncedEventDataVariant2 value) => new EmailBouncedEventData((global::Resend.EmailBouncedEventDataVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Resend.EmailBouncedEventDataVariant2?(EmailBouncedEventData @this) => @this.EmailBouncedEventDataVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmailBouncedEventData(global::Resend.EmailBouncedEventDataVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EmailBouncedEventData FromEmailBouncedEventDataVariant2(global::Resend.EmailBouncedEventDataVariant2? value) => new EmailBouncedEventData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmailBouncedEventData(
             global::Resend.OutboundEmailEventData? outbound,
@@ -141,23 +141,23 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             EmailBouncedEventDataVariant2 as object ??
-            Outbound as object 
+            Outbound as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Outbound?.ToString() ??
-            EmailBouncedEventDataVariant2?.ToString() 
+            EmailBouncedEventDataVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Resend.OutboundEmailEventData, TResult>? outbound = null,
@@ -190,7 +190,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Resend.OutboundEmailEventData>? outbound = null,
@@ -214,7 +214,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Resend.OutboundEmailEventData>? outbound = null,
@@ -237,7 +237,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(EmailBouncedEventData other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Resend.OutboundEmailEventData?>.Default.Equals(Outbound, other.Outbound) &&
-                global::System.Collections.Generic.EqualityComparer<global::Resend.EmailBouncedEventDataVariant2?>.Default.Equals(EmailBouncedEventDataVariant2, other.EmailBouncedEventDataVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Resend.EmailBouncedEventDataVariant2?>.Default.Equals(EmailBouncedEventDataVariant2, other.EmailBouncedEventDataVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(EmailBouncedEventData obj1, EmailBouncedEventData obj2)
         {
@@ -277,7 +277,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(EmailBouncedEventData obj1, EmailBouncedEventData obj2)
         {
@@ -285,7 +285,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

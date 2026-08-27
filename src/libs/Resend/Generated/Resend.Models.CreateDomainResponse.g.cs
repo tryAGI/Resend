@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateDomainResponse
     {
@@ -42,7 +42,7 @@ namespace Resend
         public global::Resend.DomainCapabilities? Capabilities { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("records")]
         public global::System.Collections.Generic.IList<global::Resend.DomainRecord>? Records { get; set; }

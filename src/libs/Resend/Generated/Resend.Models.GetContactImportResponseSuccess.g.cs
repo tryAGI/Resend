@@ -5,12 +5,12 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct GetContactImportResponseSuccess : global::System.IEquatable<GetContactImportResponseSuccess>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Resend.ContactImport? ContactImport { get; init; }
@@ -19,7 +19,7 @@ namespace Resend
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ContactImport))]
@@ -27,7 +27,7 @@ namespace Resend
         public bool IsContactImport => ContactImport != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickContactImport(
 #if NET6_0_OR_GREATER
@@ -40,23 +40,23 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Resend.ContactImport PickContactImport() => IsContactImport
             ? ContactImport!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ContactImport' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GetContactImportResponseSuccess(global::Resend.ContactImport value) => new GetContactImportResponseSuccess((global::Resend.ContactImport?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Resend.ContactImport?(GetContactImportResponseSuccess @this) => @this.ContactImport;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GetContactImportResponseSuccess(global::Resend.ContactImport? value)
         {
@@ -64,26 +64,26 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GetContactImportResponseSuccess FromContactImport(global::Resend.ContactImport? value) => new GetContactImportResponseSuccess(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
-            ContactImport as object 
+            ContactImport as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
-            ContactImport?.ToString() 
+            ContactImport?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -91,7 +91,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Resend.ContactImport, TResult>? contactImport = null,
@@ -111,7 +111,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Resend.ContactImport>? contactImport = null,
@@ -129,7 +129,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Resend.ContactImport>? contactImport = null,
@@ -147,7 +147,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -166,17 +166,17 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(GetContactImportResponseSuccess other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Resend.ContactImport?>.Default.Equals(ContactImport, other.ContactImport) 
+                global::System.Collections.Generic.EqualityComparer<global::Resend.ContactImport?>.Default.Equals(ContactImport, other.ContactImport)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(GetContactImportResponseSuccess obj1, GetContactImportResponseSuccess obj2)
         {
@@ -184,7 +184,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(GetContactImportResponseSuccess obj1, GetContactImportResponseSuccess obj2)
         {
@@ -192,7 +192,7 @@ namespace Resend
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

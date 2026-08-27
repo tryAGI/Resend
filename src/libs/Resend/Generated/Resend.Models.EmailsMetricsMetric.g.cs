@@ -4,96 +4,96 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EmailsMetricsMetric
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BounceRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bounced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BouncedPermanent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BouncedTransient,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BouncedUndetermined,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClickRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clicked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complained,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComplaintRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delivered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeliveryDelayed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeliveryRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opened,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Received,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suppressed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UniqueClicked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UniqueOpened,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnsubscribeRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unsubscribed,
     }

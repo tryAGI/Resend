@@ -9,19 +9,19 @@ namespace Resend
     public enum DomainRecordType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Caa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Txt,
     }

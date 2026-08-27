@@ -4,40 +4,40 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BroadcastsRecipientsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bounced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clicked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complained,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delivered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opened,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suppressed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unsubscribed,
     }

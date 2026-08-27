@@ -4,12 +4,12 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateContactTopicsOptions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topics")]
         [global::System.Text.Json.Serialization.JsonRequired]

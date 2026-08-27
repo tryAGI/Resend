@@ -9,11 +9,11 @@ namespace Resend
     public enum GetTopicResponseSuccessDefaultSubscription
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptOut,
     }

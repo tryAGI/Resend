@@ -20,7 +20,7 @@ namespace Resend.JsonConverters
                     {
                         return global::Resend.CreateApiKeyRequestPermissionExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:
