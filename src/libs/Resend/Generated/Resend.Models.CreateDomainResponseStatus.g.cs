@@ -9,27 +9,27 @@ namespace Resend
     public enum CreateDomainResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PartiallyFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PartiallyVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Verified,
     }

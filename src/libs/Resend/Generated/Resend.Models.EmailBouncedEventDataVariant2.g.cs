@@ -4,12 +4,12 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class EmailBouncedEventDataVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounce")]
         [global::System.Text.Json.Serialization.JsonRequired]

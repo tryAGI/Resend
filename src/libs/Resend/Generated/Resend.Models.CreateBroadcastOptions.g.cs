@@ -6,7 +6,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateBroadcastOptions
     {

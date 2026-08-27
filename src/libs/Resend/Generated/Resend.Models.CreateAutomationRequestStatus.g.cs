@@ -10,11 +10,11 @@ namespace Resend
     public enum CreateAutomationRequestStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

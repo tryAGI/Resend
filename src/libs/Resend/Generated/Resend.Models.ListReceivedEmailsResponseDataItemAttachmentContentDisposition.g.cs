@@ -9,11 +9,11 @@ namespace Resend
     public enum ListReceivedEmailsResponseDataItemAttachmentContentDisposition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attachment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
     }

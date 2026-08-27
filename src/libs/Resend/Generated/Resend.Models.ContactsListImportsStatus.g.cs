@@ -4,24 +4,24 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ContactsListImportsStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queued,
     }

@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateTemplateOptions
     {
@@ -51,7 +51,7 @@ namespace Resend
         public string? Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variables")]
         public global::System.Collections.Generic.IList<global::Resend.TemplateVariableInput>? Variables { get; set; }

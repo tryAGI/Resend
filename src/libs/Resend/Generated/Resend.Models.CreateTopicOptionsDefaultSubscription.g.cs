@@ -9,11 +9,11 @@ namespace Resend
     public enum CreateTopicOptionsDefaultSubscription
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptOut,
     }

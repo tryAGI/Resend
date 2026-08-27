@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListApiKeysResponse
     {
@@ -25,7 +25,7 @@ namespace Resend
         public bool? HasMore { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::System.Collections.Generic.IList<global::Resend.ApiKey>? Data { get; set; }

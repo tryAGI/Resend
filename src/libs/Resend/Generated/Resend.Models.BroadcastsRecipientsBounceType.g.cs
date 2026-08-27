@@ -4,20 +4,20 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BroadcastsRecipientsBounceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Permanent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transient,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undetermined,
     }

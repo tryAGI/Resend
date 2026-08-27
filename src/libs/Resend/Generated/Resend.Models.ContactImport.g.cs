@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ContactImport
     {
@@ -50,7 +50,7 @@ namespace Resend
         public string? CompletedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("counts")]
         public global::Resend.ContactImportCounts? Counts { get; set; }

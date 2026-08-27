@@ -9,35 +9,35 @@ namespace Resend
     public enum AutomationRunStepType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddToSegment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Condition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SendEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Trigger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitForEvent,
     }

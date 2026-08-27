@@ -4,16 +4,16 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AutomationsListStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

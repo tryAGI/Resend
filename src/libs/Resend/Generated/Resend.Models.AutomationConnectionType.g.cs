@@ -10,23 +10,23 @@ namespace Resend
     public enum AutomationConnectionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConditionMet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConditionNotMet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventReceived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Timeout,
     }

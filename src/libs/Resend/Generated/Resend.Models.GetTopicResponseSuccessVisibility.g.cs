@@ -9,11 +9,11 @@ namespace Resend
     public enum GetTopicResponseSuccessVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

@@ -9,15 +9,15 @@ namespace Resend
     public enum ListBroadcastRecipientsResponseSuccessDataItemBounceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Permanent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transient,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undetermined,
     }

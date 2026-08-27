@@ -9,23 +9,23 @@ namespace Resend
     public enum DomainRecordRecord
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dkim,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Receiving,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tracking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrackingCAA,
     }

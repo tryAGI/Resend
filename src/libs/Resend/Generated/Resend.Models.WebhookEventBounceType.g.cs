@@ -9,15 +9,15 @@ namespace Resend
     public enum WebhookEventBounceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Permanent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transient,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undetermined,
     }

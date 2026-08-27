@@ -20,7 +20,7 @@ namespace Resend.JsonConverters
                     {
                         return global::Resend.RetrievedAttachmentContentDispositionExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

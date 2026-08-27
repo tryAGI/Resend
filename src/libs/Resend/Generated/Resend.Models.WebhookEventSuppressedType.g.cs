@@ -9,11 +9,11 @@ namespace Resend
     public enum WebhookEventSuppressedType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnAccountSuppressionList,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suppressed,
     }

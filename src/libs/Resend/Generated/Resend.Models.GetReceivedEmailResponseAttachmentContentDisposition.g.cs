@@ -9,11 +9,11 @@ namespace Resend
     public enum GetReceivedEmailResponseAttachmentContentDisposition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attachment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
     }

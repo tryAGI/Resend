@@ -9,11 +9,11 @@ namespace Resend
     public enum AutomationListItemStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

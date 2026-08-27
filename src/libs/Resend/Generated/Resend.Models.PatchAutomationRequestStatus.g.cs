@@ -9,11 +9,11 @@ namespace Resend
     public enum PatchAutomationRequestStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Obsolete("This model marked as deprecated.")]
     public sealed partial class CreateAudienceResponseSuccess

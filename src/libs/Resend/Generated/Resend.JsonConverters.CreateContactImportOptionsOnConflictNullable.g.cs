@@ -20,7 +20,7 @@ namespace Resend.JsonConverters
                     {
                         return global::Resend.CreateContactImportOptionsOnConflictExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

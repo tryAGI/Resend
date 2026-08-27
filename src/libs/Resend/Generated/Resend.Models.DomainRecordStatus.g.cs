@@ -9,23 +9,23 @@ namespace Resend
     public enum DomainRecordStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TemporaryFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Verified,
     }

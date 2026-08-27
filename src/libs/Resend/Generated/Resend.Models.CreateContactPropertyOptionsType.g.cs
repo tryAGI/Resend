@@ -9,11 +9,11 @@ namespace Resend
     public enum CreateContactPropertyOptionsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Number,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         String,
     }

@@ -9,23 +9,23 @@ namespace Resend
     public enum TemplateVariableInputType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Boolean,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         List,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Number,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Object,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         String,
     }

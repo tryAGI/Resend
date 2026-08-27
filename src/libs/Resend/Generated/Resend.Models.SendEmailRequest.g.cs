@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SendEmailRequest
     {
@@ -64,7 +64,7 @@ namespace Resend
         public string? Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("template")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.AllOfJsonConverter<global::Resend.EmailTemplateInput, object>))]
@@ -83,13 +83,13 @@ namespace Resend
         public string? ScheduledAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attachments")]
         public global::System.Collections.Generic.IList<global::Resend.Attachment>? Attachments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         public global::System.Collections.Generic.IList<global::Resend.Tag>? Tags { get; set; }

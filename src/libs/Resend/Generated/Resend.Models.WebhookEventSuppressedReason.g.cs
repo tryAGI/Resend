@@ -9,11 +9,11 @@ namespace Resend
     public enum WebhookEventSuppressedReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviousBounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviousComplaint,
     }

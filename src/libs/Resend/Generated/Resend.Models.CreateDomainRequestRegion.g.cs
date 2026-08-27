@@ -10,19 +10,19 @@ namespace Resend
     public enum CreateDomainRequestRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApNortheast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EuWest1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SaEast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsEast1,
     }

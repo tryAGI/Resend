@@ -10,11 +10,11 @@ namespace Resend
     public enum UpdateWebhookRequestStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

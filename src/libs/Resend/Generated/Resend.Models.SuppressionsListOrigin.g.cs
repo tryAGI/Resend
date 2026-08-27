@@ -4,20 +4,20 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SuppressionsListOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bounce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complaint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
     }

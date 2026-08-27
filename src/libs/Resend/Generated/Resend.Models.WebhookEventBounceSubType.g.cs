@@ -9,31 +9,31 @@ namespace Resend
     public enum WebhookEventBounceSubType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AttachmentRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContentRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         General,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MailboxFull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageTooLarge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undetermined,
     }

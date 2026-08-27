@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class EmailSuppressedEvent
     {
@@ -25,7 +25,7 @@ namespace Resend
         public required global::System.DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.EmailSuppressedEventDataJsonConverter))]

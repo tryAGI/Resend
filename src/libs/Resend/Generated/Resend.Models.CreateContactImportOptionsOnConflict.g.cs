@@ -11,11 +11,11 @@ namespace Resend
     public enum CreateContactImportOptionsOnConflict
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Skip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Upsert,
     }

@@ -4,12 +4,12 @@
 namespace Resend
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class EmailSuppressedEventDataVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("suppressed")]
         [global::System.Text.Json.Serialization.JsonRequired]

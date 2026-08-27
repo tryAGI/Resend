@@ -10,23 +10,23 @@ namespace Resend
     public enum DomainClaimRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApNortheast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EuWest1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SaEast1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsEast1,
     }
