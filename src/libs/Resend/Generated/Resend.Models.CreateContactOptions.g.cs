@@ -53,7 +53,7 @@ namespace Resend
         /// Array of segment IDs to add the contact to.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segments")]
-        public global::System.Collections.Generic.IList<string>? Segments { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? Segments { get; set; }
 
         /// <summary>
         /// Array of topic subscriptions for the contact.
@@ -113,7 +113,7 @@ namespace Resend
             string? lastName,
             bool? unsubscribed,
             object? properties,
-            global::System.Collections.Generic.IList<string>? segments,
+            global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? segments,
             global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? topics)
         {
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
