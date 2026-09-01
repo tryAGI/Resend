@@ -470,7 +470,7 @@ namespace Resend
             string? lastName = default,
             bool? unsubscribed = default,
             object? properties = default,
-            global::System.Collections.Generic.IList<string>? segments = default,
+            global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? segments = default,
             global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? topics = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
