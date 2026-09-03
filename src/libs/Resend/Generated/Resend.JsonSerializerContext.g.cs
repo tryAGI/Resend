@@ -523,6 +523,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventAttemptsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListWebhookEventAttemptsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventAttemptsResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ReplayWebhookEventResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariable))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariableType), TypeInfoPropertyName = "TemplateVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>), TypeInfoPropertyName = "OneOfStringDoubleBooleanObjectIListObject2")]
