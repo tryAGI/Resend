@@ -513,6 +513,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateWebhookRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateWebhookRequestStatus), TypeInfoPropertyName = "UpdateWebhookRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateWebhookResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RotateWebhookSigningSecretResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteWebhookResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListWebhookEventsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListWebhookEventsResponseDataItem>))]
