@@ -478,6 +478,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendBroadcastResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CancelBroadcastResponseSuccess))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DuplicateBroadcastResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListBroadcastRecipientsResponseSuccessDataItem))]
