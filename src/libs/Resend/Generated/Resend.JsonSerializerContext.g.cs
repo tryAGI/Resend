@@ -277,6 +277,10 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.DomainEventDataRegionNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.SuppressionEventDataOriginJsonConverter),
+
+            typeof(global::Resend.JsonConverters.SuppressionEventDataOriginNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.GetSuppressionResponseSuccessOriginJsonConverter),
 
             typeof(global::Resend.JsonConverters.GetSuppressionResponseSuccessOriginNullableJsonConverter),
@@ -681,6 +685,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainEventDataStatus), TypeInfoPropertyName = "DomainEventDataStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainEventDataRegion), TypeInfoPropertyName = "DomainEventDataRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.WebhookDomainRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionEventData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionEventDataOrigin), TypeInfoPropertyName = "SuppressionEventDataOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailSentEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailDeliveredEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailDeliveryDelayedEvent))]
@@ -698,6 +704,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainCreatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainUpdatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainDeletedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionAddedEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionRemovedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSuppressionOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateSuppressionResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BatchAddSuppressionsOptions))]
