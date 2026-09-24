@@ -59,7 +59,7 @@ namespace Resend
             string domainId,
             bool? openTracking = default,
             bool? clickTracking = default,
-            string? tls = default,
+            global::Resend.UpdateDomainOptionsTls? tls = default,
             global::Resend.DomainCapabilities? capabilities = default,
             string? trackingSubdomain = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,

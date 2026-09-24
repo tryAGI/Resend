@@ -3,11 +3,11 @@
 
 namespace Resend
 {
-    public partial class ContactsClient
+    public partial class SegmentsClient
     {
 
 
-        private static readonly global::Resend.EndPointSecurityRequirement s_ContactsListSecurityRequirement0 =
+        private static readonly global::Resend.EndPointSecurityRequirement s_SegmentsListContactsSecurityRequirement0 =
             new global::Resend.EndPointSecurityRequirement
             {
                 Authorizations = new global::Resend.EndPointAuthorizationRequirement[]
@@ -21,47 +21,52 @@ namespace Resend
                     },
                 },
             };
-        private static readonly global::Resend.EndPointSecurityRequirement[] s_ContactsListSecurityRequirements =
+        private static readonly global::Resend.EndPointSecurityRequirement[] s_SegmentsListContactsSecurityRequirements =
             new global::Resend.EndPointSecurityRequirement[]
-            {                s_ContactsListSecurityRequirement0,
+            {                s_SegmentsListContactsSecurityRequirement0,
             };
-        partial void PrepareContactsListArguments(
+        partial void PrepareSegmentsListContactsArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::System.Guid id,
             ref int? limit,
             ref string? after,
             ref string? before);
-        partial void PrepareContactsListRequest(
+        partial void PrepareSegmentsListContactsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::System.Guid id,
             int? limit,
             string? after,
             string? before);
-        partial void ProcessContactsListResponse(
+        partial void ProcessSegmentsListContactsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessContactsListResponseContent(
+        partial void ProcessSegmentsListContactsResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Retrieve a list of contacts
+        /// Retrieve a list of contacts in a segment
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="limit"></param>
         /// <param name="after"></param>
         /// <param name="before"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.ListContactsResponseSuccess> ContactsListAsync(
+        public async global::System.Threading.Tasks.Task<global::Resend.ListContactsResponseSuccess> SegmentsListContactsAsync(
+            global::System.Guid id,
             int? limit = default,
             string? after = default,
             string? before = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await ContactsListAsResponseAsync(
+            var __response = await SegmentsListContactsAsResponseAsync(
+                id: id,
                 limit: limit,
                 after: after,
                 before: before,
@@ -72,15 +77,17 @@ namespace Resend
             return __response.Body;
         }
         /// <summary>
-        /// Retrieve a list of contacts
+        /// Retrieve a list of contacts in a segment
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="limit"></param>
         /// <param name="after"></param>
         /// <param name="before"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListContactsResponseSuccess>> ContactsListAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListContactsResponseSuccess>> SegmentsListContactsAsResponseAsync(
+            global::System.Guid id,
             int? limit = default,
             string? after = default,
             string? before = default,
@@ -89,8 +96,9 @@ namespace Resend
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareContactsListArguments(
+            PrepareSegmentsListContactsArguments(
                 httpClient: HttpClient,
+                id: ref id,
                 limit: ref limit,
                 after: ref after,
                 before: ref before);
@@ -98,8 +106,8 @@ namespace Resend
 
             var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_ContactsListSecurityRequirements,
-                operationName: "ContactsListAsync");
+                securityRequirements: s_SegmentsListContactsSecurityRequirements,
+                operationName: "SegmentsListContactsAsync");
 
             using var __timeoutCancellationTokenSource = global::Resend.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -119,7 +127,7 @@ namespace Resend
             {
 
                             var __pathBuilder = new global::Resend.PathBuilder(
-                                path: "/contacts",
+                                path: $"/segments/{id}/contacts",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("limit", limit?.ToString())
@@ -163,9 +171,10 @@ namespace Resend
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareContactsListRequest(
+                PrepareSegmentsListContactsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    id: id!,
                     limit: limit,
                     after: after,
                     before: before);
@@ -185,9 +194,9 @@ namespace Resend
                     await global::Resend.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Resend.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ContactsList",
-                                methodName: "ContactsListAsync",
-                                pathTemplate: "\"/contacts\"",
+                                operationId: "SegmentsListContacts",
+                                methodName: "SegmentsListContactsAsync",
+                                pathTemplate: "$\"/segments/{id}/contacts\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -219,9 +228,9 @@ namespace Resend
                         await global::Resend.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Resend.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ContactsList",
-                                methodName: "ContactsListAsync",
-                                pathTemplate: "\"/contacts\"",
+                                operationId: "SegmentsListContacts",
+                                methodName: "SegmentsListContactsAsync",
+                                pathTemplate: "$\"/segments/{id}/contacts\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -260,9 +269,9 @@ namespace Resend
                         await global::Resend.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Resend.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ContactsList",
-                                methodName: "ContactsListAsync",
-                                pathTemplate: "\"/contacts\"",
+                                operationId: "SegmentsListContacts",
+                                methodName: "SegmentsListContactsAsync",
+                                pathTemplate: "$\"/segments/{id}/contacts\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -300,7 +309,7 @@ namespace Resend
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessContactsListResponse(
+                ProcessSegmentsListContactsResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -308,9 +317,9 @@ namespace Resend
                     await global::Resend.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Resend.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ContactsList",
-                                methodName: "ContactsListAsync",
-                                pathTemplate: "\"/contacts\"",
+                                operationId: "SegmentsListContacts",
+                                methodName: "SegmentsListContactsAsync",
+                                pathTemplate: "$\"/segments/{id}/contacts\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -330,9 +339,9 @@ namespace Resend
                     await global::Resend.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Resend.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ContactsList",
-                                methodName: "ContactsListAsync",
-                                pathTemplate: "\"/contacts\"",
+                                operationId: "SegmentsListContacts",
+                                methodName: "SegmentsListContactsAsync",
+                                pathTemplate: "$\"/segments/{id}/contacts\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -360,7 +369,7 @@ namespace Resend
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessContactsListResponseContent(
+                                ProcessSegmentsListContactsResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);

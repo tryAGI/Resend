@@ -17,6 +17,14 @@ namespace Resend
         public string? Object { get; set; }
 
         /// <summary>
+        /// Indicates if there are more results available.<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("has_more")]
+        public bool? HasMore { get; set; }
+
+        /// <summary>
         /// Array containing contact information.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
@@ -35,6 +43,10 @@ namespace Resend
         /// Type of the response object.<br/>
         /// Example: list
         /// </param>
+        /// <param name="hasMore">
+        /// Indicates if there are more results available.<br/>
+        /// Example: false
+        /// </param>
         /// <param name="data">
         /// Array containing contact information.
         /// </param>
@@ -43,9 +55,11 @@ namespace Resend
 #endif
         public ListContactsResponseSuccess(
             string? @object,
+            bool? hasMore,
             global::System.Collections.Generic.IList<global::Resend.ListContactsResponseSuccessDataItem>? data)
         {
             this.Object = @object;
+            this.HasMore = hasMore;
             this.Data = data;
         }
 
