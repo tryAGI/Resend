@@ -31,6 +31,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.DomainRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecord))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptionsTls), TypeInfoPropertyName = "UpdateDomainOptionsTls2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordRecord), TypeInfoPropertyName = "DomainRecordRecord2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordType), TypeInfoPropertyName = "DomainRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus), TypeInfoPropertyName = "DomainRecordStatus2")]
@@ -58,6 +59,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainRequestRegion?), TypeInfoPropertyName = "NullableCreateDomainRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainRequestTls?), TypeInfoPropertyName = "NullableCreateDomainRequestTls2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainResponseStatus?), TypeInfoPropertyName = "NullableCreateDomainResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptionsTls?), TypeInfoPropertyName = "NullableUpdateDomainOptionsTls2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordRecord?), TypeInfoPropertyName = "NullableDomainRecordRecord2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordType?), TypeInfoPropertyName = "NullableDomainRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus?), TypeInfoPropertyName = "NullableDomainRecordStatus2")]
@@ -168,6 +170,10 @@ namespace Resend
 
                     || typeToConvert == typeof(global::Resend.CreateDomainResponseStatus?)
 
+                    || typeToConvert == typeof(global::Resend.UpdateDomainOptionsTls)
+
+                    || typeToConvert == typeof(global::Resend.UpdateDomainOptionsTls?)
+
                     || typeToConvert == typeof(global::Resend.DomainRecordRecord)
 
                     || typeToConvert == typeof(global::Resend.DomainRecordRecord?)
@@ -261,6 +267,16 @@ namespace Resend
                 if (typeToConvert == typeof(global::Resend.CreateDomainResponseStatus?))
                 {
                     return new global::Resend.JsonConverters.CreateDomainResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateDomainOptionsTls))
+                {
+                    return new global::Resend.JsonConverters.UpdateDomainOptionsTlsJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateDomainOptionsTls?))
+                {
+                    return new global::Resend.JsonConverters.UpdateDomainOptionsTlsNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Resend.DomainRecordRecord))

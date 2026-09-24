@@ -47,7 +47,7 @@ namespace Resend
         /// A map of custom property keys and values to create.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
-        public object? Properties { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string?>? Properties { get; set; }
 
         /// <summary>
         /// Array of segment IDs to add the contact to.
@@ -112,7 +112,7 @@ namespace Resend
             string? firstName,
             string? lastName,
             bool? unsubscribed,
-            object? properties,
+            global::System.Collections.Generic.Dictionary<string, string?>? properties,
             global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? segments,
             global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? topics)
         {

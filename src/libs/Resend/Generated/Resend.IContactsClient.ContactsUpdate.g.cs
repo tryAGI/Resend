@@ -64,7 +64,7 @@ namespace Resend
             string? firstName = default,
             string? lastName = default,
             bool? unsubscribed = default,
-            object? properties = default,
+            global::System.Collections.Generic.Dictionary<string, string?>? properties = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -25,7 +25,8 @@ namespace Resend
         /// Default Value: opportunistic
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tls")]
-        public string? Tls { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.UpdateDomainOptionsTlsJsonConverter))]
+        public global::Resend.UpdateDomainOptionsTls? Tls { get; set; }
 
         /// <summary>
         /// Configure the domain capabilities for sending and receiving emails. At least one capability must be enabled.
@@ -70,7 +71,7 @@ namespace Resend
         public UpdateDomainOptions(
             bool? openTracking,
             bool? clickTracking,
-            string? tls,
+            global::Resend.UpdateDomainOptionsTls? tls,
             global::Resend.DomainCapabilities? capabilities,
             string? trackingSubdomain)
         {
