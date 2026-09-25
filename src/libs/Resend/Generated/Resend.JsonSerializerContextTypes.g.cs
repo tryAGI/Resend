@@ -213,1059 +213,1059 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainRecordRecord? Type45 { get; set; }
+        public global::Resend.UpdateDomainOptionsTls? Type45 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainRecordType? Type46 { get; set; }
+        public global::Resend.DomainRecordRecord? Type46 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainRecordStatus? Type47 { get; set; }
+        public global::Resend.DomainRecordType? Type47 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public int? Type48 { get; set; }
+        public global::Resend.DomainRecordStatus? Type48 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Domain? Type49 { get; set; }
+        public int? Type49 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainStatus? Type50 { get; set; }
+        public global::Resend.Domain? Type50 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateDomainClaimRequest? Type51 { get; set; }
+        public global::Resend.DomainStatus? Type51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateDomainClaimRequestRegion? Type52 { get; set; }
+        public global::Resend.CreateDomainClaimRequest? Type52 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaimRecord? Type53 { get; set; }
+        public global::Resend.CreateDomainClaimRequestRegion? Type53 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaimRecordType? Type54 { get; set; }
+        public global::Resend.DomainClaimRecord? Type54 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaim? Type55 { get; set; }
+        public global::Resend.DomainClaimRecordType? Type55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaimStatus? Type56 { get; set; }
+        public global::Resend.DomainClaim? Type56 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaimRegion? Type57 { get; set; }
+        public global::Resend.DomainClaimStatus? Type57 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DomainClaimBlockedReason? Type58 { get; set; }
+        public global::Resend.DomainClaimRegion? Type58 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.VerifyDomainResponse? Type59 { get; set; }
+        public global::Resend.DomainClaimBlockedReason? Type59 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListDomainsResponse? Type60 { get; set; }
+        public global::Resend.VerifyDomainResponse? Type60 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>? Type61 { get; set; }
+        public global::Resend.ListDomainsResponse? Type61 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListDomainsItem? Type62 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListDomainsItem>? Type62 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListDomainsItemStatus? Type63 { get; set; }
+        public global::Resend.ListDomainsItem? Type63 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateDomainResponseSuccess? Type64 { get; set; }
+        public global::Resend.ListDomainsItemStatus? Type64 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DeleteDomainResponse? Type65 { get; set; }
+        public global::Resend.UpdateDomainResponseSuccess? Type65 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateApiKeyRequest? Type66 { get; set; }
+        public global::Resend.DeleteDomainResponse? Type66 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateApiKeyRequestPermission? Type67 { get; set; }
+        public global::Resend.CreateApiKeyRequest? Type67 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateApiKeyResponse? Type68 { get; set; }
+        public global::Resend.CreateApiKeyRequestPermission? Type68 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListApiKeysResponse? Type69 { get; set; }
+        public global::Resend.CreateApiKeyResponse? Type69 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ApiKey>? Type70 { get; set; }
+        public global::Resend.ListApiKeysResponse? Type70 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ApiKey? Type71 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ApiKey>? Type71 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListOAuthGrantsResponse? Type72 { get; set; }
+        public global::Resend.ApiKey? Type72 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.OAuthGrant>? Type73 { get; set; }
+        public global::Resend.ListOAuthGrantsResponse? Type73 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OAuthGrant? Type74 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.OAuthGrant>? Type74 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OAuthGrantClient? Type75 { get; set; }
+        public global::Resend.OAuthGrant? Type75 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RevokeOAuthGrantResponse? Type76 { get; set; }
+        public global::Resend.OAuthGrantClient? Type76 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.DateTime? Type77 { get; set; }
+        public global::Resend.RevokeOAuthGrantResponse? Type77 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DeleteApiKeyResponse? Type78 { get; set; }
+        public global::System.DateTime? Type78 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateApiKeyRequest? Type79 { get; set; }
+        public global::Resend.DeleteApiKeyResponse? Type79 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateApiKeyResponse? Type80 { get; set; }
+        public global::Resend.UpdateApiKeyRequest? Type80 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateAudienceOptions? Type81 { get; set; }
+        public global::Resend.UpdateApiKeyResponse? Type81 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateAudienceResponseSuccess? Type82 { get; set; }
+        public global::Resend.CreateAudienceOptions? Type82 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetAudienceResponseSuccess? Type83 { get; set; }
+        public global::Resend.CreateAudienceResponseSuccess? Type83 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveAudienceResponseSuccess? Type84 { get; set; }
+        public global::Resend.GetAudienceResponseSuccess? Type84 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAudiencesResponseSuccess? Type85 { get; set; }
+        public global::Resend.RemoveAudienceResponseSuccess? Type85 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListAudiencesResponseSuccessDataItem>? Type86 { get; set; }
+        public global::Resend.ListAudiencesResponseSuccess? Type86 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAudiencesResponseSuccessDataItem? Type87 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListAudiencesResponseSuccessDataItem>? Type87 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactOptions? Type88 { get; set; }
+        public global::Resend.ListAudiencesResponseSuccessDataItem? Type88 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? Type89 { get; set; }
+        public global::Resend.CreateContactOptions? Type89 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactOptionsSegment? Type90 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>? Type90 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? Type91 { get; set; }
+        public global::Resend.CreateContactOptionsSegment? Type91 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactOptionsTopic? Type92 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>? Type92 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactOptionsTopicSubscription? Type93 { get; set; }
+        public global::Resend.CreateContactOptionsTopic? Type93 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactResponseSuccess? Type94 { get; set; }
+        public global::Resend.CreateContactOptionsTopicSubscription? Type94 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactResponseSuccess? Type95 { get; set; }
+        public global::Resend.CreateContactResponseSuccess? Type95 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactOptions? Type96 { get; set; }
+        public global::Resend.GetContactResponseSuccess? Type96 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactResponseSuccess? Type97 { get; set; }
+        public global::Resend.UpdateContactOptions? Type97 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveContactResponseSuccess? Type98 { get; set; }
+        public global::Resend.UpdateContactResponseSuccess? Type98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactsResponseSuccess? Type99 { get; set; }
+        public global::Resend.RemoveContactResponseSuccess? Type99 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListContactsResponseSuccessDataItem>? Type100 { get; set; }
+        public global::Resend.ListContactsResponseSuccess? Type100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactsResponseSuccessDataItem? Type101 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListContactsResponseSuccessDataItem>? Type101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactImportOptions? Type102 { get; set; }
+        public global::Resend.ListContactsResponseSuccessDataItem? Type102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactImportOptionsOnConflict? Type103 { get; set; }
+        public global::Resend.CreateContactImportOptions? Type103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactImportResponseSuccess? Type104 { get; set; }
+        public global::Resend.CreateContactImportOptionsOnConflict? Type104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ContactImportCounts? Type105 { get; set; }
+        public global::Resend.CreateContactImportResponseSuccess? Type105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ContactImport? Type106 { get; set; }
+        public global::Resend.ContactImportCounts? Type106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ContactImportStatus? Type107 { get; set; }
+        public global::Resend.ContactImport? Type107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactImportResponseSuccess? Type108 { get; set; }
+        public global::Resend.ContactImportStatus? Type108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactImportsResponseSuccess? Type109 { get; set; }
+        public global::Resend.GetContactImportResponseSuccess? Type109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ContactImport>? Type110 { get; set; }
+        public global::Resend.ListContactImportsResponseSuccess? Type110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateBroadcastOptions? Type111 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ContactImport>? Type111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateBroadcastResponseSuccess? Type112 { get; set; }
+        public global::Resend.CreateBroadcastOptions? Type112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastsResponseSuccess? Type113 { get; set; }
+        public global::Resend.CreateBroadcastResponseSuccess? Type113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastsResponseSuccessDataItem>? Type114 { get; set; }
+        public global::Resend.ListBroadcastsResponseSuccess? Type114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastsResponseSuccessDataItem? Type115 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastsResponseSuccessDataItem>? Type115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetBroadcastResponseSuccess? Type116 { get; set; }
+        public global::Resend.ListBroadcastsResponseSuccessDataItem? Type116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateBroadcastOptions? Type117 { get; set; }
+        public global::Resend.GetBroadcastResponseSuccess? Type117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateBroadcastResponseSuccess? Type118 { get; set; }
+        public global::Resend.UpdateBroadcastOptions? Type118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveBroadcastResponseSuccess? Type119 { get; set; }
+        public global::Resend.UpdateBroadcastResponseSuccess? Type119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendBroadcastOptions? Type120 { get; set; }
+        public global::Resend.RemoveBroadcastResponseSuccess? Type120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendBroadcastResponseSuccess? Type121 { get; set; }
+        public global::Resend.SendBroadcastOptions? Type121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CancelBroadcastResponseSuccess? Type122 { get; set; }
+        public global::Resend.SendBroadcastResponseSuccess? Type122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DuplicateBroadcastResponseSuccess? Type123 { get; set; }
+        public global::Resend.CancelBroadcastResponseSuccess? Type123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastRecipientsResponseSuccess? Type124 { get; set; }
+        public global::Resend.DuplicateBroadcastResponseSuccess? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItem>? Type125 { get; set; }
+        public global::Resend.ListBroadcastRecipientsResponseSuccess? Type125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItem? Type126 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItem>? Type126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItemBounceType? Type127 { get; set; }
+        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItem? Type127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink>? Type128 { get; set; }
+        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItemBounceType? Type128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink? Type129 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink>? Type129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastClickedLinksResponseSuccess? Type130 { get; set; }
+        public global::Resend.ListBroadcastRecipientsResponseSuccessDataItemClickedLink? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem>? Type131 { get; set; }
+        public global::Resend.ListBroadcastClickedLinksResponseSuccess? Type131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem? Type132 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem>? Type132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RetrievedAttachment? Type133 { get; set; }
+        public global::Resend.ListBroadcastClickedLinksResponseSuccessDataItem? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RetrievedAttachmentContentDisposition? Type134 { get; set; }
+        public global::Resend.RetrievedAttachment? Type134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public long? Type135 { get; set; }
+        public global::Resend.RetrievedAttachmentContentDisposition? Type135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAttachmentsResponse? Type136 { get; set; }
+        public long? Type136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListAttachmentsResponseDataItem>? Type137 { get; set; }
+        public global::Resend.ListAttachmentsResponse? Type137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAttachmentsResponseDataItem? Type138 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListAttachmentsResponseDataItem>? Type138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAttachmentsResponseDataItemContentDisposition? Type139 { get; set; }
+        public global::Resend.ListAttachmentsResponseDataItem? Type139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetReceivedEmailResponse? Type140 { get; set; }
+        public global::Resend.ListAttachmentsResponseDataItemContentDisposition? Type140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.GetReceivedEmailResponseAttachment>? Type141 { get; set; }
+        public global::Resend.GetReceivedEmailResponse? Type141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetReceivedEmailResponseAttachment? Type142 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.GetReceivedEmailResponseAttachment>? Type142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetReceivedEmailResponseAttachmentContentDisposition? Type143 { get; set; }
+        public global::Resend.GetReceivedEmailResponseAttachment? Type143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListReceivedEmailsResponse? Type144 { get; set; }
+        public global::Resend.GetReceivedEmailResponseAttachmentContentDisposition? Type144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListReceivedEmailsResponseDataItem>? Type145 { get; set; }
+        public global::Resend.ListReceivedEmailsResponse? Type145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListReceivedEmailsResponseDataItem? Type146 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListReceivedEmailsResponseDataItem>? Type146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListReceivedEmailsResponseDataItemAttachment>? Type147 { get; set; }
+        public global::Resend.ListReceivedEmailsResponseDataItem? Type147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListReceivedEmailsResponseDataItemAttachment? Type148 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListReceivedEmailsResponseDataItemAttachment>? Type148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListReceivedEmailsResponseDataItemAttachmentContentDisposition? Type149 { get; set; }
+        public global::Resend.ListReceivedEmailsResponseDataItemAttachment? Type149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateWebhookRequest? Type150 { get; set; }
+        public global::Resend.ListReceivedEmailsResponseDataItemAttachmentContentDisposition? Type150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateWebhookResponse? Type151 { get; set; }
+        public global::Resend.CreateWebhookRequest? Type151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetWebhookResponse? Type152 { get; set; }
+        public global::Resend.CreateWebhookResponse? Type152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhooksResponse? Type153 { get; set; }
+        public global::Resend.GetWebhookResponse? Type153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListWebhooksResponseDataItem>? Type154 { get; set; }
+        public global::Resend.ListWebhooksResponse? Type154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhooksResponseDataItem? Type155 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListWebhooksResponseDataItem>? Type155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateWebhookRequest? Type156 { get; set; }
+        public global::Resend.ListWebhooksResponseDataItem? Type156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateWebhookRequestStatus? Type157 { get; set; }
+        public global::Resend.UpdateWebhookRequest? Type157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateWebhookResponse? Type158 { get; set; }
+        public global::Resend.UpdateWebhookRequestStatus? Type158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RotateWebhookSigningSecretResponse? Type159 { get; set; }
+        public global::Resend.UpdateWebhookResponse? Type159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DeleteWebhookResponse? Type160 { get; set; }
+        public global::Resend.RotateWebhookSigningSecretResponse? Type160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhookEventsResponse? Type161 { get; set; }
+        public global::Resend.DeleteWebhookResponse? Type161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListWebhookEventsResponseDataItem>? Type162 { get; set; }
+        public global::Resend.ListWebhookEventsResponse? Type162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhookEventsResponseDataItem? Type163 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListWebhookEventsResponseDataItem>? Type163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhookEventsResponseDataItemStatus? Type164 { get; set; }
+        public global::Resend.ListWebhookEventsResponseDataItem? Type164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetWebhookEventResponse? Type165 { get; set; }
+        public global::Resend.ListWebhookEventsResponseDataItemStatus? Type165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetWebhookEventResponseStatus? Type166 { get; set; }
+        public global::Resend.GetWebhookEventResponse? Type166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhookEventAttemptsResponse? Type167 { get; set; }
+        public global::Resend.GetWebhookEventResponseStatus? Type167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListWebhookEventAttemptsResponseDataItem>? Type168 { get; set; }
+        public global::Resend.ListWebhookEventAttemptsResponse? Type168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListWebhookEventAttemptsResponseDataItem? Type169 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListWebhookEventAttemptsResponseDataItem>? Type169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ReplayWebhookEventResponse? Type170 { get; set; }
+        public global::Resend.ListWebhookEventAttemptsResponseDataItem? Type170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateVariable? Type171 { get; set; }
+        public global::Resend.ReplayWebhookEventResponse? Type171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateVariableType? Type172 { get; set; }
+        public global::Resend.TemplateVariable? Type172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>? Type173 { get; set; }
+        public global::Resend.TemplateVariableType? Type173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<object>? Type174 { get; set; }
+        public global::Resend.OneOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>>? Type174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateVariableInput? Type175 { get; set; }
+        public global::System.Collections.Generic.IList<object>? Type175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateVariableInputType? Type176 { get; set; }
+        public global::Resend.TemplateVariableInput? Type176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Template2? Type177 { get; set; }
+        public global::Resend.TemplateVariableInputType? Type177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.TemplateVariable>? Type178 { get; set; }
+        public global::Resend.Template2? Type178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateStatus? Type179 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.TemplateVariable>? Type179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateListItem? Type180 { get; set; }
+        public global::Resend.TemplateStatus? Type180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.TemplateListItemStatus? Type181 { get; set; }
+        public global::Resend.TemplateListItem? Type181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTemplateRequest? Type182 { get; set; }
+        public global::Resend.TemplateListItemStatus? Type182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.TemplateVariableInput>? Type183 { get; set; }
+        public global::Resend.CreateTemplateRequest? Type183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTemplateResponseSuccess? Type184 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.TemplateVariableInput>? Type184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListTemplatesResponseSuccess? Type185 { get; set; }
+        public global::Resend.CreateTemplateResponseSuccess? Type185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.TemplateListItem>? Type186 { get; set; }
+        public global::Resend.ListTemplatesResponseSuccess? Type186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateTemplateOptions? Type187 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.TemplateListItem>? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateTemplateResponseSuccess? Type188 { get; set; }
+        public global::Resend.UpdateTemplateOptions? Type188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveTemplateResponseSuccess? Type189 { get; set; }
+        public global::Resend.UpdateTemplateResponseSuccess? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.PublishTemplateResponseSuccess? Type190 { get; set; }
+        public global::Resend.RemoveTemplateResponseSuccess? Type190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DuplicateTemplateResponseSuccess? Type191 { get; set; }
+        public global::Resend.PublishTemplateResponseSuccess? Type191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateSegmentOptions? Type192 { get; set; }
+        public global::Resend.DuplicateTemplateResponseSuccess? Type192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateSegmentResponseSuccess? Type193 { get; set; }
+        public global::Resend.CreateSegmentOptions? Type193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetSegmentResponseSuccess? Type194 { get; set; }
+        public global::Resend.CreateSegmentResponseSuccess? Type194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateSegmentOptions? Type195 { get; set; }
+        public global::Resend.GetSegmentResponseSuccess? Type195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateSegmentResponseSuccess? Type196 { get; set; }
+        public global::Resend.UpdateSegmentOptions? Type196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListSegmentsResponseSuccess? Type197 { get; set; }
+        public global::Resend.UpdateSegmentResponseSuccess? Type197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListSegmentsResponseSuccessDataItem>? Type198 { get; set; }
+        public global::Resend.ListSegmentsResponseSuccess? Type198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListSegmentsResponseSuccessDataItem? Type199 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListSegmentsResponseSuccessDataItem>? Type199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveSegmentResponseSuccess? Type200 { get; set; }
+        public global::Resend.ListSegmentsResponseSuccessDataItem? Type200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTopicOptions? Type201 { get; set; }
+        public global::Resend.RemoveSegmentResponseSuccess? Type201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTopicOptionsDefaultSubscription? Type202 { get; set; }
+        public global::Resend.CreateTopicOptions? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTopicOptionsVisibility? Type203 { get; set; }
+        public global::Resend.CreateTopicOptionsDefaultSubscription? Type203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateTopicResponseSuccess? Type204 { get; set; }
+        public global::Resend.CreateTopicOptionsVisibility? Type204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetTopicResponseSuccess? Type205 { get; set; }
+        public global::Resend.CreateTopicResponseSuccess? Type205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetTopicResponseSuccessDefaultSubscription? Type206 { get; set; }
+        public global::Resend.GetTopicResponseSuccess? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetTopicResponseSuccessVisibility? Type207 { get; set; }
+        public global::Resend.GetTopicResponseSuccessDefaultSubscription? Type207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListTopicsResponseSuccess? Type208 { get; set; }
+        public global::Resend.GetTopicResponseSuccessVisibility? Type208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListTopicsResponseSuccessDataItem>? Type209 { get; set; }
+        public global::Resend.ListTopicsResponseSuccess? Type209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListTopicsResponseSuccessDataItem? Type210 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListTopicsResponseSuccessDataItem>? Type210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListTopicsResponseSuccessDataItemDefaultSubscription? Type211 { get; set; }
+        public global::Resend.ListTopicsResponseSuccessDataItem? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListTopicsResponseSuccessDataItemVisibility? Type212 { get; set; }
+        public global::Resend.ListTopicsResponseSuccessDataItemDefaultSubscription? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateTopicOptions? Type213 { get; set; }
+        public global::Resend.ListTopicsResponseSuccessDataItemVisibility? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateTopicOptionsVisibility? Type214 { get; set; }
+        public global::Resend.UpdateTopicOptions? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateTopicResponseSuccess? Type215 { get; set; }
+        public global::Resend.UpdateTopicOptionsVisibility? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveTopicResponseSuccess? Type216 { get; set; }
+        public global::Resend.UpdateTopicResponseSuccess? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactPropertyOptions? Type217 { get; set; }
+        public global::Resend.RemoveTopicResponseSuccess? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactPropertyOptionsType? Type218 { get; set; }
+        public global::Resend.CreateContactPropertyOptions? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateContactPropertyResponseSuccess? Type219 { get; set; }
+        public global::Resend.CreateContactPropertyOptionsType? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactPropertyResponseSuccess? Type220 { get; set; }
+        public global::Resend.CreateContactPropertyResponseSuccess? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactPropertiesResponseSuccess? Type221 { get; set; }
+        public global::Resend.GetContactPropertyResponseSuccess? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListContactPropertiesResponseSuccessDataItem>? Type222 { get; set; }
+        public global::Resend.ListContactPropertiesResponseSuccess? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactPropertiesResponseSuccessDataItem? Type223 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListContactPropertiesResponseSuccessDataItem>? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactPropertyOptions? Type224 { get; set; }
+        public global::Resend.ListContactPropertiesResponseSuccessDataItem? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactPropertyResponseSuccess? Type225 { get; set; }
+        public global::Resend.UpdateContactPropertyOptions? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveContactPropertyResponseSuccess? Type226 { get; set; }
+        public global::Resend.UpdateContactPropertyResponseSuccess? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AddContactToSegmentResponseSuccess? Type227 { get; set; }
+        public global::Resend.RemoveContactPropertyResponseSuccess? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactSegmentsResponseSuccess? Type228 { get; set; }
+        public global::Resend.AddContactToSegmentResponseSuccess? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.ListContactSegmentsResponseSuccessDataItem>? Type229 { get; set; }
+        public global::Resend.ListContactSegmentsResponseSuccess? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListContactSegmentsResponseSuccessDataItem? Type230 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.ListContactSegmentsResponseSuccessDataItem>? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveContactFromSegmentResponseSuccess? Type231 { get; set; }
+        public global::Resend.ListContactSegmentsResponseSuccessDataItem? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactTopicsResponseSuccess? Type232 { get; set; }
+        public global::Resend.RemoveContactFromSegmentResponseSuccess? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.GetContactTopicsResponseSuccessDataItem>? Type233 { get; set; }
+        public global::Resend.GetContactTopicsResponseSuccess? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactTopicsResponseSuccessDataItem? Type234 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.GetContactTopicsResponseSuccessDataItem>? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.GetContactTopicsResponseSuccessDataItemSubscription? Type235 { get; set; }
+        public global::Resend.GetContactTopicsResponseSuccessDataItem? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsOptions? Type236 { get; set; }
+        public global::Resend.GetContactTopicsResponseSuccessDataItemSubscription? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.UpdateContactTopicsOptionsTopic>? Type237 { get; set; }
+        public global::Resend.UpdateContactTopicsOptions? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsOptionsTopic? Type238 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.UpdateContactTopicsOptionsTopic>? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsOptionsTopicSubscription? Type239 { get; set; }
+        public global::Resend.UpdateContactTopicsOptionsTopic? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsResponseSuccess? Type240 { get; set; }
+        public global::Resend.UpdateContactTopicsOptionsTopicSubscription? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.UpdateContactTopicsResponseSuccessTopic>? Type241 { get; set; }
+        public global::Resend.UpdateContactTopicsResponseSuccess? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsResponseSuccessTopic? Type242 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.UpdateContactTopicsResponseSuccessTopic>? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateContactTopicsResponseSuccessTopicSubscription? Type243 { get; set; }
+        public global::Resend.UpdateContactTopicsResponseSuccessTopic? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.LogSummary? Type244 { get; set; }
+        public global::Resend.UpdateContactTopicsResponseSuccessTopicSubscription? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.LogSummaryMethod? Type245 { get; set; }
+        public global::Resend.LogSummary? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Log? Type246 { get; set; }
+        public global::Resend.LogSummaryMethod? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.LogMethod? Type247 { get; set; }
+        public global::Resend.Log? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListLogsResponse? Type248 { get; set; }
+        public global::Resend.LogMethod? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.LogSummary>? Type249 { get; set; }
+        public global::Resend.ListLogsResponse? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationStep? Type250 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.LogSummary>? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationStepType? Type251 { get; set; }
+        public global::Resend.AutomationStep? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationStepResponse? Type252 { get; set; }
+        public global::Resend.AutomationStepType? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationStepResponseType? Type253 { get; set; }
+        public global::Resend.AutomationStepResponse? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationConnection? Type254 { get; set; }
+        public global::Resend.AutomationStepResponseType? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationConnectionType? Type255 { get; set; }
+        public global::Resend.AutomationConnection? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateAutomationRequest? Type256 { get; set; }
+        public global::Resend.AutomationConnectionType? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateAutomationRequestStatus? Type257 { get; set; }
+        public global::Resend.CreateAutomationRequest? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationStep>? Type258 { get; set; }
+        public global::Resend.CreateAutomationRequestStatus? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? Type259 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationStep>? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateAutomationResponse? Type260 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationConnection>? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Automation? Type261 { get; set; }
+        public global::Resend.CreateAutomationResponse? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationStatus? Type262 { get; set; }
+        public global::Resend.Automation? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationStepResponse>? Type263 { get; set; }
+        public global::Resend.AutomationStatus? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationListItem? Type264 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationStepResponse>? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationListItemStatus? Type265 { get; set; }
+        public global::Resend.AutomationListItem? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAutomationsResponse? Type266 { get; set; }
+        public global::Resend.AutomationListItemStatus? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationListItem>? Type267 { get; set; }
+        public global::Resend.ListAutomationsResponse? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.PatchAutomationRequest? Type268 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationListItem>? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.PatchAutomationRequestStatus? Type269 { get; set; }
+        public global::Resend.PatchAutomationRequest? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.PatchAutomationResponse? Type270 { get; set; }
+        public global::Resend.PatchAutomationRequestStatus? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DeleteAutomationResponse? Type271 { get; set; }
+        public global::Resend.PatchAutomationResponse? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.DuplicateAutomationResponse? Type272 { get; set; }
+        public global::Resend.DeleteAutomationResponse? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.StopAutomationResponse? Type273 { get; set; }
+        public global::Resend.DuplicateAutomationResponse? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRunStep? Type274 { get; set; }
+        public global::Resend.StopAutomationResponse? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRunStepType? Type275 { get; set; }
+        public global::Resend.AutomationRunStep? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRun? Type276 { get; set; }
+        public global::Resend.AutomationRunStepType? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRunStatus? Type277 { get; set; }
+        public global::Resend.AutomationRun? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationRunStep>? Type278 { get; set; }
+        public global::Resend.AutomationRunStatus? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRunListItem? Type279 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationRunStep>? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationRunListItemStatus? Type280 { get; set; }
+        public global::Resend.AutomationRunListItem? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListAutomationRunsResponse? Type281 { get; set; }
+        public global::Resend.AutomationRunListItemStatus? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.AutomationRunListItem>? Type282 { get; set; }
+        public global::Resend.ListAutomationRunsResponse? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Event? Type283 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.AutomationRunListItem>? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EventSummary? Type284 { get; set; }
+        public global::Resend.Event? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateEventRequest? Type285 { get; set; }
+        public global::Resend.EventSummary? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateEventResponse? Type286 { get; set; }
+        public global::Resend.CreateEventRequest? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListEventsResponse? Type287 { get; set; }
+        public global::Resend.CreateEventResponse? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.EventSummary>? Type288 { get; set; }
+        public global::Resend.ListEventsResponse? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateEventRequest? Type289 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.EventSummary>? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateEventResponse? Type290 { get; set; }
+        public global::Resend.UpdateEventRequest? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveEventResponse? Type291 { get; set; }
+        public global::Resend.UpdateEventResponse? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendEventRequest? Type292 { get; set; }
+        public global::Resend.RemoveEventResponse? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendEventResponse? Type293 { get; set; }
+        public global::Resend.SendEventRequest? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventBounce? Type294 { get; set; }
+        public global::Resend.SendEventResponse? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventBounceSubType? Type295 { get; set; }
+        public global::Resend.WebhookEventBounce? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventBounceType? Type296 { get; set; }
+        public global::Resend.WebhookEventBounceSubType? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventClick? Type297 { get; set; }
+        public global::Resend.WebhookEventBounceType? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventFailed? Type298 { get; set; }
+        public global::Resend.WebhookEventClick? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventSuppressed? Type299 { get; set; }
+        public global::Resend.WebhookEventFailed? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventSuppressedReason? Type300 { get; set; }
+        public global::Resend.WebhookEventSuppressed? Type300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventSuppressedType? Type301 { get; set; }
+        public global::Resend.WebhookEventSuppressedReason? Type301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookEventAttachment? Type302 { get; set; }
+        public global::Resend.WebhookEventSuppressedType? Type302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookDomainRecord? Type303 { get; set; }
+        public global::Resend.WebhookEventAttachment? Type303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookDomainRecordRecord? Type304 { get; set; }
+        public global::Resend.WebhookDomainRecord? Type304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookDomainRecordType? Type305 { get; set; }
+        public global::Resend.WebhookDomainRecordRecord? Type305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.WebhookDomainRecordStatus? Type306 { get; set; }
+        public global::Resend.WebhookDomainRecordType? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OutboundEmailEventData? Type307 { get; set; }
+        public global::Resend.WebhookDomainRecordStatus? Type307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, string>? Type308 { get; set; }
+        public global::Resend.OutboundEmailEventData? Type308 { get; set; }
         /// <summary>
         ///
         /// </summary>

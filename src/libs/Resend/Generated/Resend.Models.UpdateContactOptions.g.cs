@@ -44,7 +44,7 @@ namespace Resend
         /// A map of custom property keys and values to update.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
-        public object? Properties { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string?>? Properties { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -82,7 +82,7 @@ namespace Resend
             string? firstName,
             string? lastName,
             bool? unsubscribed,
-            object? properties)
+            global::System.Collections.Generic.Dictionary<string, string?>? properties)
         {
             this.Email = email;
             this.FirstName = firstName;

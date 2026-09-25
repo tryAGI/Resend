@@ -45,6 +45,10 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.CreateDomainResponseStatusNullableJsonConverter),
 
+            typeof(global::Resend.JsonConverters.UpdateDomainOptionsTlsJsonConverter),
+
+            typeof(global::Resend.JsonConverters.UpdateDomainOptionsTlsNullableJsonConverter),
+
             typeof(global::Resend.JsonConverters.DomainRecordRecordJsonConverter),
 
             typeof(global::Resend.JsonConverters.DomainRecordRecordNullableJsonConverter),
@@ -404,6 +408,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.DomainRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecord))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateDomainOptionsTls), TypeInfoPropertyName = "UpdateDomainOptionsTls2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordRecord), TypeInfoPropertyName = "DomainRecordRecord2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordType), TypeInfoPropertyName = "DomainRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus), TypeInfoPropertyName = "DomainRecordStatus2")]
@@ -448,6 +453,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListAudiencesResponseSuccessDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListAudiencesResponseSuccessDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactOptionsSegment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsTopic>))]
@@ -667,7 +673,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecordType), TypeInfoPropertyName = "WebhookDomainRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.WebhookDomainRecordStatus), TypeInfoPropertyName = "WebhookDomainRecordStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OutboundEmailEventData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.OutboundEmailEventDataHeader>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OutboundEmailEventDataHeader))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailBouncedEventData), TypeInfoPropertyName = "EmailBouncedEventData2")]
