@@ -125,6 +125,11 @@ namespace Resend
         public TopicsClient Topics { get; }
 
         /// <summary>
+        /// Retrieve your account usage and plan limits through the Resend API.
+        /// </summary>
+        public UsageClient Usage { get; }
+
+        /// <summary>
         /// Create and manage Webhooks through the Resend API.
         /// </summary>
         public WebhooksClient Webhooks { get; }
