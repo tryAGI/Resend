@@ -184,9 +184,9 @@ namespace Resend
                                 .AddOptionalParameter("granularity", granularity?.ToValueString())
                                 .AddOptionalParameter("metrics", metrics, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("dimensions", dimensions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
-                                .AddOptionalParameter("domain_id", domainId, selector: static x => x.ToString()!, delimiter: ",", explode: false)
-                                .AddOptionalParameter("email_id", emailId, selector: static x => x.ToString()!, delimiter: ",", explode: false)
-                                .AddOptionalParameter("broadcast_id", broadcastId, selector: static x => x.ToString()!, delimiter: ",", explode: false)
+                                .AddOptionalParameter("domain_id", domainId, selector: static x => x.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."), delimiter: ",", explode: false)
+                                .AddOptionalParameter("email_id", emailId, selector: static x => x.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."), delimiter: ",", explode: false)
+                                .AddOptionalParameter("broadcast_id", broadcastId, selector: static x => x.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."), delimiter: ",", explode: false)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Resend.AutoSDKRequestOptionsSupport.AppendQueryParameters(
