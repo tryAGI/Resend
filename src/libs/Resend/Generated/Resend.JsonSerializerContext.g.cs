@@ -1,14 +1,12 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Resend
 {
     /// <summary>
     ///
     /// </summary>
+    #pragma warning disable CS3016 // Converter type array in this attribute is not CLS-compliant.
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
@@ -361,6 +359,7 @@ namespace Resend
 
             typeof(global::Resend.JsonConverters.UnixTimestampJsonConverter),
         })]
+    #pragma warning restore CS3016
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SendEmailRequest))]
@@ -456,13 +455,27 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteApiKeyResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateApiKeyRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateApiKeyResponse))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAudienceOptions))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateAudienceResponseSuccess))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetAudienceResponseSuccess))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveAudienceResponseSuccess))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListAudiencesResponseSuccess))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListAudiencesResponseSuccessDataItem>))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListAudiencesResponseSuccessDataItem))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateContactOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.CreateContactOptionsSegment>))]
@@ -764,7 +777,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListDomainsItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ApiKey>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.OAuthGrant>))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListAudiencesResponseSuccessDataItem>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.CreateContactOptionsSegment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.CreateContactOptionsTopic>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListContactsResponseSuccessDataItem>))]
