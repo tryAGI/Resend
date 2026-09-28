@@ -42,8 +42,8 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OutboundEmailEventData PickOutbound() => IsOutbound
-            ? Outbound!
+        public global::Resend.OutboundEmailEventData PickOutbound() => Outbound is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Outbound' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EmailSuppressedEventDataVariant2 PickEmailSuppressedEventDataVariant2() => IsEmailSuppressedEventDataVariant2
-            ? EmailSuppressedEventDataVariant2!
+        public global::Resend.EmailSuppressedEventDataVariant2 PickEmailSuppressedEventDataVariant2() => EmailSuppressedEventDataVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EmailSuppressedEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound && outbound != null)
+            if (Outbound is { } __value0 && outbound != null)
             {
-                return outbound(Outbound!);
+                return outbound(__value0);
             }
-            else if (IsEmailSuppressedEventDataVariant2 && emailSuppressedEventDataVariant2 != null)
+            else if (EmailSuppressedEventDataVariant2 is { } __value1 && emailSuppressedEventDataVariant2 != null)
             {
-                return emailSuppressedEventDataVariant2(EmailSuppressedEventDataVariant2!);
+                return emailSuppressedEventDataVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound)
+            if (Outbound is { } __value0)
             {
-                outbound?.Invoke(Outbound!);
+                outbound?.Invoke(__value0);
             }
-            else if (IsEmailSuppressedEventDataVariant2)
+            else if (EmailSuppressedEventDataVariant2 is { } __value1)
             {
-                emailSuppressedEventDataVariant2?.Invoke(EmailSuppressedEventDataVariant2!);
+                emailSuppressedEventDataVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound)
+            if (Outbound is { } __value0)
             {
-                outbound?.Invoke(Outbound!);
+                outbound?.Invoke(__value0);
             }
-            else if (IsEmailSuppressedEventDataVariant2)
+            else if (EmailSuppressedEventDataVariant2 is { } __value1)
             {
-                emailSuppressedEventDataVariant2?.Invoke(EmailSuppressedEventDataVariant2!);
+                emailSuppressedEventDataVariant2?.Invoke(__value1);
             }
         }
 

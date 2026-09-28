@@ -42,8 +42,8 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.OutboundEmailEventData PickOutbound() => IsOutbound
-            ? Outbound!
+        public global::Resend.OutboundEmailEventData PickOutbound() => Outbound is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Outbound' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EmailFailedEventDataVariant2 PickEmailFailedEventDataVariant2() => IsEmailFailedEventDataVariant2
-            ? EmailFailedEventDataVariant2!
+        public global::Resend.EmailFailedEventDataVariant2 PickEmailFailedEventDataVariant2() => EmailFailedEventDataVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'EmailFailedEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound && outbound != null)
+            if (Outbound is { } __value0 && outbound != null)
             {
-                return outbound(Outbound!);
+                return outbound(__value0);
             }
-            else if (IsEmailFailedEventDataVariant2 && emailFailedEventDataVariant2 != null)
+            else if (EmailFailedEventDataVariant2 is { } __value1 && emailFailedEventDataVariant2 != null)
             {
-                return emailFailedEventDataVariant2(EmailFailedEventDataVariant2!);
+                return emailFailedEventDataVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound)
+            if (Outbound is { } __value0)
             {
-                outbound?.Invoke(Outbound!);
+                outbound?.Invoke(__value0);
             }
-            else if (IsEmailFailedEventDataVariant2)
+            else if (EmailFailedEventDataVariant2 is { } __value1)
             {
-                emailFailedEventDataVariant2?.Invoke(EmailFailedEventDataVariant2!);
+                emailFailedEventDataVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Resend
                 Validate();
             }
 
-            if (IsOutbound)
+            if (Outbound is { } __value0)
             {
-                outbound?.Invoke(Outbound!);
+                outbound?.Invoke(__value0);
             }
-            else if (IsEmailFailedEventDataVariant2)
+            else if (EmailFailedEventDataVariant2 is { } __value1)
             {
-                emailFailedEventDataVariant2?.Invoke(EmailFailedEventDataVariant2!);
+                emailFailedEventDataVariant2?.Invoke(__value1);
             }
         }
 

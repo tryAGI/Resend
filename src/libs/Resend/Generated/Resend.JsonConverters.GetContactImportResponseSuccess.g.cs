@@ -54,7 +54,7 @@ namespace Resend.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Resend.ContactImport), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Resend.ContactImport?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Resend.ContactImport).Name}");
-                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.ContactImport!, typeInfo);
+                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickContactImport(), typeInfo);
                 if (__element0.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
