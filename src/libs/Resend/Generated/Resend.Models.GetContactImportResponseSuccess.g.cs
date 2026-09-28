@@ -42,8 +42,8 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ContactImport PickContactImport() => IsContactImport
-            ? ContactImport!
+        public global::Resend.ContactImport PickContactImport() => ContactImport is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ContactImport' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -102,9 +102,9 @@ namespace Resend
                 Validate();
             }
 
-            if (IsContactImport && contactImport != null)
+            if (ContactImport is { } __value0 && contactImport != null)
             {
-                return contactImport(ContactImport!);
+                return contactImport(__value0);
             }
 
             return default(TResult);
@@ -122,9 +122,9 @@ namespace Resend
                 Validate();
             }
 
-            if (IsContactImport)
+            if (ContactImport is { } __value0)
             {
-                contactImport?.Invoke(ContactImport!);
+                contactImport?.Invoke(__value0);
             }
         }
 
@@ -140,9 +140,9 @@ namespace Resend
                 Validate();
             }
 
-            if (IsContactImport)
+            if (ContactImport is { } __value0)
             {
-                contactImport?.Invoke(ContactImport!);
+                contactImport?.Invoke(__value0);
             }
         }
 

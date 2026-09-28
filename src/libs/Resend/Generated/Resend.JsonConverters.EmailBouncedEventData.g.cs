@@ -70,7 +70,7 @@ namespace Resend.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Resend.OutboundEmailEventData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Resend.OutboundEmailEventData?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Resend.OutboundEmailEventData).Name}");
-                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.Outbound!, typeInfo);
+                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickOutbound(), typeInfo);
                 if (__element0.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
@@ -88,7 +88,7 @@ namespace Resend.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Resend.EmailBouncedEventDataVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Resend.EmailBouncedEventDataVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Resend.EmailBouncedEventDataVariant2).Name}");
-                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.EmailBouncedEventDataVariant2!, typeInfo);
+                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickEmailBouncedEventDataVariant2(), typeInfo);
                 if (__element1.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
