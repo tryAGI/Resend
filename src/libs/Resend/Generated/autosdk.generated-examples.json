@@ -1,0 +1,59 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Retrieve a single inbox by ID or email address",
+      "Slug": "inboxes-get",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "csharp",
+      "Code": "using var client = new ResendClient(apiKey);\n\nvar response = await client.Inboxes.InboxesGetAsync(\n    inboxId: \u0022b3e2b2b6-3f0e-4c8e-9ad3-2f43a1e2c7f1\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "inboxes/get",
+      "Setup": "This example assumes \u0060using Resend;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 2,
+      "Title": "Retrieve a list of inbox threads",
+      "Slug": "inboxes-list-threads",
+      "Description": "Returns the threads in an inbox, most recently active first. A thread is a conversation made up of one or more emails. The \u0060after\u0060 and \u0060before\u0060 cursors take a thread ID, and only one of them can be passed. A cursor that is not a UUID, such as a date, returns a 422 validation_error. A cursor thread that is not in the selected folders returns a 404. To find threads by text, sender, recipient, attachment, or date, use the search threads endpoint.",
+      "Language": "http",
+      "Code": "### Retrieve a list of inbox threads\n# @name inboxes/list-threads\nGET {{host}}/inboxes/{{inbox_id}}/threads?folders=[\u0022inbox\u0022,\u0022sent\u0022]\u0026labels=[\u00227f9c1d2e-4a6b-4c3d-8e15-9b0a7c6d5e34\u0022]\u0026read={{read}}\u0026limit={{limit}}\u0026after={{after}}\u0026before={{before}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: OK\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "inboxes/list-threads",
+      "Setup": null
+    },
+    {
+      "Order": 3,
+      "Title": "Remove an existing inbox",
+      "Slug": "inboxes-remove",
+      "Description": "Removes the inbox. An inbox that does not exist or was already removed returns a 404 not_found.",
+      "Language": "csharp",
+      "Code": "using var client = new ResendClient(apiKey);\n\nvar response = await client.Inboxes.InboxesRemoveAsync(\n    inboxId: global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::System.Guid\u003E(\n    @\u0022\u0022\u0022b3e2b2b6-3f0e-4c8e-9ad3-2f43a1e2c7f1\u0022\u0022\u0022)!\n);",
+      "Format": "sdk",
+      "OperationId": "inboxes/remove",
+      "Setup": "This example assumes \u0060using Resend;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 4,
+      "Title": "Search the threads of an inbox",
+      "Slug": "inboxes-search-threads",
+      "Description": "Finds threads by the text of their emails, who sent or received them, whether they have attachments, and their dates. Results are ordered by latest activity, newest first, and paginate like the list threads endpoint, so a cursor that is not a thread ID returns a 422. Search can be up to about a minute behind new emails. Different parameters combine, so a thread must match all of them. \u0060folders\u0060, \u0060labels\u0060, and \u0060read\u0060 apply to the thread. \u0060query\u0060, \u0060from\u0060, \u0060to\u0060, \u0060cc\u0060, \u0060bcc\u0060, \u0060has_attachment\u0060, \u0060start_date\u0060, and \u0060end_date\u0060 must all match the same email in the thread. When any of these email filters is set, the matching email must itself be in one of \u0060folders\u0060. For \u0060sent\u0060, that means an email the inbox sent. When more than 10,000 threads match, search covers the 10,000 with the newest matching email.",
+      "Language": "http",
+      "Code": "### Search the threads of an inbox\n# @name inboxes/search-threads\nGET {{host}}/inboxes/{{inbox_id}}/threads/search?query=invoice -draft\u0026from=[\u0022isabella@example.com\u0022,\u0022carolina@example.com\u0022]\u0026to={{to}}\u0026cc={{cc}}\u0026bcc={{bcc}}\u0026has_attachment={{has_attachment}}\u0026start_date=2026-09-01\u0026end_date=2026-09-30\u0026folders=[\u0022inbox\u0022,\u0022sent\u0022]\u0026labels=[\u00227f9c1d2e-4a6b-4c3d-8e15-9b0a7c6d5e34\u0022]\u0026read={{read}}\u0026limit={{limit}}\u0026after={{after}}\u0026before={{before}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: OK\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "inboxes/search-threads",
+      "Setup": null
+    },
+    {
+      "Order": 5,
+      "Title": "Update an existing inbox",
+      "Slug": "inboxes-update",
+      "Description": "Updates the internal name of the inbox or the name recipients see when mail is sent from it. At least one of \u0060name\u0060 or \u0060from_name\u0060 is required.",
+      "Language": "http",
+      "Code": "### Update an existing inbox\n# @name inboxes/update\nPATCH {{host}}/inboxes/{{inbox_id}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n\u0022string\u0022\n\n## Responses\n# 200\n# Description: OK\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "inboxes/update",
+      "Setup": null
+    }
+  ]
+}

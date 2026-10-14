@@ -56,13 +56,13 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.ListAttachmentsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListAttachmentsResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListAttachmentsResponseDataItemContentDisposition), TypeInfoPropertyName = "ListAttachmentsResponseDataItemContentDisposition2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsGranularity), TypeInfoPropertyName = "EmailsMetricsGranularity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsMetric), TypeInfoPropertyName = "EmailsMetricsMetric2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsDimension), TypeInfoPropertyName = "EmailsMetricsDimension2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>?), TypeInfoPropertyName = "NullableOneOfStringIListString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AllOf<global::Resend.EmailTemplateInput, object>?), TypeInfoPropertyName = "NullableAllOfEmailTemplateInputObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.OneOf<string, double?>?), TypeInfoPropertyName = "NullableOneOfStringDouble2")]
@@ -89,10 +89,10 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailMetricsDataRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.CreateBatchEmailsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListAttachmentsResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.SendEmailRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailsMetricsMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailsMetricsDimension>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
     internal sealed partial class EmailsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -152,6 +152,17 @@ namespace Resend
             options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Resend.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Resend.JsonConverters.UnixTimestampJsonConverter());
             options.Converters.Add(new LazyEnumJsonConverterFactory());
         }

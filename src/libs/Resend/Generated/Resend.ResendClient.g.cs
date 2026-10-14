@@ -132,6 +132,16 @@ namespace Resend
         };
 
         /// <summary>
+        /// Create and manage Inboxes through the Resend API. Every Inboxes endpoint needs a full access API key. A sending access key returns a 401 `restricted_api_key`.
+        /// </summary>
+        public InboxesClient Inboxes => new InboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            CreateIdempotencyKey = CreateIdempotencyKey,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
         /// Retrieve API request logs through the Resend API.
         /// </summary>
         public LogsClient Logs => new LogsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
