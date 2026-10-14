@@ -72,9 +72,9 @@ namespace Resend
         /// Example: 2
         /// </summary>
         /// <example>2</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message_count")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email_count")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MessageCount { get; set; }
+        public required int EmailCount { get; set; }
 
         /// <summary>
         /// Whether the most recent email in the thread has an attachment.<br/>
@@ -150,7 +150,7 @@ namespace Resend
         /// <param name="labels">
         /// The labels attached to the thread.
         /// </param>
-        /// <param name="messageCount">
+        /// <param name="emailCount">
         /// The number of emails in the thread.<br/>
         /// Example: 2
         /// </param>
@@ -191,7 +191,7 @@ namespace Resend
             global::System.Collections.Generic.IList<string> cc,
             global::System.Collections.Generic.IList<string> bcc,
             global::System.Collections.Generic.IList<global::Resend.InboxThreadLabel> labels,
-            int messageCount,
+            int emailCount,
             bool hasAttachment,
             bool hasDraft,
             bool read,
@@ -207,7 +207,7 @@ namespace Resend
             this.Cc = cc ?? throw new global::System.ArgumentNullException(nameof(cc));
             this.Bcc = bcc ?? throw new global::System.ArgumentNullException(nameof(bcc));
             this.Labels = labels ?? throw new global::System.ArgumentNullException(nameof(labels));
-            this.MessageCount = messageCount;
+            this.EmailCount = emailCount;
             this.HasAttachment = hasAttachment;
             this.HasDraft = hasDraft;
             this.Read = read;
