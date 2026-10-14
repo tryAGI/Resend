@@ -17,6 +17,10 @@ namespace Resend
         ///
         /// </summary>
         Inline,
+        /// <summary>
+        ///
+        /// </summary>
+        OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
     }
 
     /// <summary>
@@ -33,6 +37,7 @@ namespace Resend
             {
                 RetrievedAttachmentContentDisposition.Attachment => "attachment",
                 RetrievedAttachmentContentDisposition.Inline => "inline",
+                RetrievedAttachmentContentDisposition.OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464 => "openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -45,6 +50,7 @@ namespace Resend
             {
                 "attachment" => RetrievedAttachmentContentDisposition.Attachment,
                 "inline" => RetrievedAttachmentContentDisposition.Inline,
+                "openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464" => RetrievedAttachmentContentDisposition.OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
                 _ => null,
             };
         }

@@ -16,6 +16,10 @@ namespace Resend
         ///
         /// </summary>
         Inline,
+        /// <summary>
+        ///
+        /// </summary>
+        OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
     }
 
     /// <summary>
@@ -32,6 +36,7 @@ namespace Resend
             {
                 ListReceivedEmailsResponseDataItemAttachmentContentDisposition.Attachment => "attachment",
                 ListReceivedEmailsResponseDataItemAttachmentContentDisposition.Inline => "inline",
+                ListReceivedEmailsResponseDataItemAttachmentContentDisposition.OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464 => "openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -44,6 +49,7 @@ namespace Resend
             {
                 "attachment" => ListReceivedEmailsResponseDataItemAttachmentContentDisposition.Attachment,
                 "inline" => ListReceivedEmailsResponseDataItemAttachmentContentDisposition.Inline,
+                "openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464" => ListReceivedEmailsResponseDataItemAttachmentContentDisposition.OpenapiJsonNullSentinelValue2bf936000fe44250987aE5ddb203e464,
                 _ => null,
             };
         }
