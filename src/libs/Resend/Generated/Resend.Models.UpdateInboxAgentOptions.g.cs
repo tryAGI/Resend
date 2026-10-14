@@ -17,12 +17,13 @@ namespace Resend
         public string? Instructions { get; set; }
 
         /// <summary>
-        /// The tone the agent writes in, such as `friendly and concise`. Max 64 characters. Leading and trailing whitespace is trimmed, and the trimmed value must not be empty. Send null to clear the tone.<br/>
-        /// Example: friendly and concise
+        /// The tone the agent writes in. Send null to clear the tone.<br/>
+        /// Example: concise_professional
         /// </summary>
-        /// <example>friendly and concise</example>
+        /// <example>concise_professional</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("tone")]
-        public string? Tone { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.UpdateInboxAgentOptionsToneJsonConverter))]
+        public global::Resend.UpdateInboxAgentOptionsTone? Tone { get; set; }
 
         /// <summary>
         /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
@@ -46,8 +47,8 @@ namespace Resend
         /// Example: Answer refund questions yourself. Escalate legal threats.
         /// </param>
         /// <param name="tone">
-        /// The tone the agent writes in, such as `friendly and concise`. Max 64 characters. Leading and trailing whitespace is trimmed, and the trimmed value must not be empty. Send null to clear the tone.<br/>
-        /// Example: friendly and concise
+        /// The tone the agent writes in. Send null to clear the tone.<br/>
+        /// Example: concise_professional
         /// </param>
         /// <param name="enabledActions">
         /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
@@ -58,7 +59,7 @@ namespace Resend
 #endif
         public UpdateInboxAgentOptions(
             string? instructions,
-            string? tone,
+            global::Resend.UpdateInboxAgentOptionsTone? tone,
             global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? enabledActions)
         {
             this.Instructions = instructions;

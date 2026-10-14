@@ -35,9 +35,11 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveInboxResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentTone), TypeInfoPropertyName = "InboxAgentTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentEnabledAction), TypeInfoPropertyName = "InboxAgentEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsTone), TypeInfoPropertyName = "UpdateInboxAgentOptionsTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction), TypeInfoPropertyName = "UpdateInboxAgentOptionsEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentResponseSuccess))]
@@ -102,7 +104,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentTone?), TypeInfoPropertyName = "NullableInboxAgentTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentEnabledAction?), TypeInfoPropertyName = "NullableInboxAgentEnabledAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsTone?), TypeInfoPropertyName = "NullableUpdateInboxAgentOptionsTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction?), TypeInfoPropertyName = "NullableUpdateInboxAgentOptionsEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxThreadFolder?), TypeInfoPropertyName = "NullableInboxThreadFolder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxThreadSearchResult?), TypeInfoPropertyName = "NullableInboxThreadSearchResult2")]
@@ -223,9 +227,17 @@ namespace Resend
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Resend.InboxAgentEnabledAction)
+                    typeToConvert == typeof(global::Resend.InboxAgentTone)
+
+                    || typeToConvert == typeof(global::Resend.InboxAgentTone?)
+
+                    || typeToConvert == typeof(global::Resend.InboxAgentEnabledAction)
 
                     || typeToConvert == typeof(global::Resend.InboxAgentEnabledAction?)
+
+                    || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone)
+
+                    || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone?)
 
                     || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction)
 
@@ -268,6 +280,16 @@ namespace Resend
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Resend.InboxAgentTone))
+                {
+                    return new global::Resend.JsonConverters.InboxAgentToneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.InboxAgentTone?))
+                {
+                    return new global::Resend.JsonConverters.InboxAgentToneNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Resend.InboxAgentEnabledAction))
                 {
                     return new global::Resend.JsonConverters.InboxAgentEnabledActionJsonConverter();
@@ -276,6 +298,16 @@ namespace Resend
                 if (typeToConvert == typeof(global::Resend.InboxAgentEnabledAction?))
                 {
                     return new global::Resend.JsonConverters.InboxAgentEnabledActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone))
+                {
+                    return new global::Resend.JsonConverters.UpdateInboxAgentOptionsToneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone?))
+                {
+                    return new global::Resend.JsonConverters.UpdateInboxAgentOptionsToneNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction))

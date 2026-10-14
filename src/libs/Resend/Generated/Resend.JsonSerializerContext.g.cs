@@ -423,9 +423,11 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.RemoveInboxResponseSuccess))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentTone), TypeInfoPropertyName = "InboxAgentTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentEnabledAction), TypeInfoPropertyName = "InboxAgentEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsTone), TypeInfoPropertyName = "UpdateInboxAgentOptionsTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction), TypeInfoPropertyName = "UpdateInboxAgentOptionsEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentResponseSuccess))]
@@ -521,8 +523,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactsListImportsStatus), TypeInfoPropertyName = "ContactsListImportsStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastsRecipientsType), TypeInfoPropertyName = "BroadcastsRecipientsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastsRecipientsBounceType), TypeInfoPropertyName = "BroadcastsRecipientsBounceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationsListStatus), TypeInfoPropertyName = "AutomationsListStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionsListOrigin), TypeInfoPropertyName = "SuppressionsListOrigin2")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -533,6 +533,8 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationsListStatus), TypeInfoPropertyName = "AutomationsListStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.SuppressionsListOrigin), TypeInfoPropertyName = "SuppressionsListOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxesListThreadsFolder), TypeInfoPropertyName = "InboxesListThreadsFolder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.InboxesSearchThreadsFolder>))]
@@ -624,7 +626,9 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TopicEventDataDefaultSubscription?), TypeInfoPropertyName = "NullableTopicEventDataDefaultSubscription2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.GetSuppressionResponseSuccessOrigin?), TypeInfoPropertyName = "NullableGetSuppressionResponseSuccessOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ListSuppressionsResponseSuccessDataItemOrigin?), TypeInfoPropertyName = "NullableListSuppressionsResponseSuccessDataItemOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentTone?), TypeInfoPropertyName = "NullableInboxAgentTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxAgentEnabledAction?), TypeInfoPropertyName = "NullableInboxAgentEnabledAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsTone?), TypeInfoPropertyName = "NullableUpdateInboxAgentOptionsTone2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction?), TypeInfoPropertyName = "NullableUpdateInboxAgentOptionsEnabledAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxThreadFolder?), TypeInfoPropertyName = "NullableInboxThreadFolder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxThreadSearchResult?), TypeInfoPropertyName = "NullableInboxThreadSearchResult2")]
@@ -1099,9 +1103,17 @@ namespace Resend
 
                     || typeToConvert == typeof(global::Resend.ListSuppressionsResponseSuccessDataItemOrigin?)
 
+                    || typeToConvert == typeof(global::Resend.InboxAgentTone)
+
+                    || typeToConvert == typeof(global::Resend.InboxAgentTone?)
+
                     || typeToConvert == typeof(global::Resend.InboxAgentEnabledAction)
 
                     || typeToConvert == typeof(global::Resend.InboxAgentEnabledAction?)
+
+                    || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone)
+
+                    || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone?)
 
                     || typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction)
 
@@ -1916,6 +1928,16 @@ namespace Resend
                     return new global::Resend.JsonConverters.ListSuppressionsResponseSuccessDataItemOriginNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Resend.InboxAgentTone))
+                {
+                    return new global::Resend.JsonConverters.InboxAgentToneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.InboxAgentTone?))
+                {
+                    return new global::Resend.JsonConverters.InboxAgentToneNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Resend.InboxAgentEnabledAction))
                 {
                     return new global::Resend.JsonConverters.InboxAgentEnabledActionJsonConverter();
@@ -1924,6 +1946,16 @@ namespace Resend
                 if (typeToConvert == typeof(global::Resend.InboxAgentEnabledAction?))
                 {
                     return new global::Resend.JsonConverters.InboxAgentEnabledActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone))
+                {
+                    return new global::Resend.JsonConverters.UpdateInboxAgentOptionsToneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsTone?))
+                {
+                    return new global::Resend.JsonConverters.UpdateInboxAgentOptionsToneNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Resend.UpdateInboxAgentOptionsEnabledAction))

@@ -44,8 +44,8 @@ namespace Resend
         /// Example: Answer refund questions yourself. Escalate legal threats.
         /// </param>
         /// <param name="tone">
-        /// The tone the agent writes in, such as `friendly and concise`. Max 64 characters. Leading and trailing whitespace is trimmed, and the trimmed value must not be empty. Send null to clear the tone.<br/>
-        /// Example: friendly and concise
+        /// The tone the agent writes in. Send null to clear the tone.<br/>
+        /// Example: concise_professional
         /// </param>
         /// <param name="enabledActions">
         /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
@@ -57,7 +57,7 @@ namespace Resend
         global::System.Threading.Tasks.Task<global::Resend.UpdateInboxAgentResponseSuccess> InboxesUpdateAgentAsync(
             global::System.Guid inboxId,
             string? instructions = default,
-            string? tone = default,
+            global::Resend.UpdateInboxAgentOptionsTone? tone = default,
             global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? enabledActions = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
