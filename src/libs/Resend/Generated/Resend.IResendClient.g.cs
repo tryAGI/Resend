@@ -90,6 +90,11 @@ namespace Resend
         public EventsClient Events { get; }
 
         /// <summary>
+        /// Create and manage Inboxes through the Resend API. Every Inboxes endpoint needs a full access API key. A sending access key returns a 401 `restricted_api_key`.
+        /// </summary>
+        public InboxesClient Inboxes { get; }
+
+        /// <summary>
         /// Retrieve API request logs through the Resend API.
         /// </summary>
         public LogsClient Logs { get; }
