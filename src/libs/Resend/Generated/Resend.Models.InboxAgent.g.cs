@@ -26,12 +26,13 @@ namespace Resend
         public string? Instructions { get; set; }
 
         /// <summary>
-        /// The tone the agent writes in, such as `friendly and concise`. Null when no tone is set.<br/>
-        /// Example: friendly and concise
+        /// The tone the agent writes in. Null when no tone is set.<br/>
+        /// Example: concise_professional
         /// </summary>
-        /// <example>friendly and concise</example>
+        /// <example>concise_professional</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("tone")]
-        public string? Tone { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.InboxAgentToneJsonConverter))]
+        public global::Resend.InboxAgentTone? Tone { get; set; }
 
         /// <summary>
         /// The actions the agent can take. Empty when no actions are enabled.<br/>
@@ -64,8 +65,8 @@ namespace Resend
         /// Example: Answer refund questions yourself. Escalate legal threats.
         /// </param>
         /// <param name="tone">
-        /// The tone the agent writes in, such as `friendly and concise`. Null when no tone is set.<br/>
-        /// Example: friendly and concise
+        /// The tone the agent writes in. Null when no tone is set.<br/>
+        /// Example: concise_professional
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -74,7 +75,7 @@ namespace Resend
             string @object,
             global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction> enabledActions,
             string? instructions,
-            string? tone)
+            global::Resend.InboxAgentTone? tone)
         {
             this.Object = @object ?? throw new global::System.ArgumentNullException(nameof(@object));
             this.Instructions = instructions;

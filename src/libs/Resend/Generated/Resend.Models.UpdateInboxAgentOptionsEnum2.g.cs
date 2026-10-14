@@ -6,7 +6,7 @@ namespace Resend
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class UpdateInboxAgentOptionsVariant2
+    public sealed partial class UpdateInboxAgentOptionsEnum2
     {
 
         /// <summary>

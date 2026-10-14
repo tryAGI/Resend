@@ -1613,419 +1613,427 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction>? Type395 { get; set; }
+        public global::Resend.InboxAgentTone? Type395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxAgentEnabledAction? Type396 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction>? Type396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxAgentOptions? Type397 { get; set; }
+        public global::Resend.InboxAgentEnabledAction? Type397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? Type398 { get; set; }
+        public global::Resend.UpdateInboxAgentOptions? Type398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxAgentOptionsEnabledAction? Type399 { get; set; }
+        public global::Resend.UpdateInboxAgentOptionsTone? Type399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxAgentResponseSuccess? Type400 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? Type400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxLabel? Type401 { get; set; }
+        public global::Resend.UpdateInboxAgentOptionsEnabledAction? Type401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListInboxLabelsResponseSuccess? Type402 { get; set; }
+        public global::Resend.UpdateInboxAgentResponseSuccess? Type402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxLabel>? Type403 { get; set; }
+        public global::Resend.InboxLabel? Type403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateInboxLabelOptions? Type404 { get; set; }
+        public global::Resend.ListInboxLabelsResponseSuccess? Type404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateInboxLabelResponseSuccess? Type405 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxLabel>? Type405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxLabelOptions? Type406 { get; set; }
+        public global::Resend.CreateInboxLabelOptions? Type406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxLabelResponseSuccess? Type407 { get; set; }
+        public global::Resend.CreateInboxLabelResponseSuccess? Type407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveInboxLabelResponseSuccess? Type408 { get; set; }
+        public global::Resend.UpdateInboxLabelOptions? Type408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadLabel? Type409 { get; set; }
+        public global::Resend.UpdateInboxLabelResponseSuccess? Type409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThread? Type410 { get; set; }
+        public global::Resend.RemoveInboxLabelResponseSuccess? Type410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxThreadLabel>? Type411 { get; set; }
+        public global::Resend.InboxThreadLabel? Type411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadFolder? Type412 { get; set; }
+        public global::Resend.InboxThread? Type412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadSearchResult? Type413 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxThreadLabel>? Type413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadSearchResultVariant2? Type414 { get; set; }
+        public global::Resend.InboxThreadFolder? Type414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadSearchResultVariant2Highlights? Type415 { get; set; }
+        public global::Resend.InboxThreadSearchResult? Type415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadSummary? Type416 { get; set; }
+        public global::Resend.InboxThreadSearchResultVariant2? Type416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadSummaryFolder? Type417 { get; set; }
+        public global::Resend.InboxThreadSearchResultVariant2Highlights? Type417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListInboxThreadsResponseSuccess? Type418 { get; set; }
+        public global::Resend.InboxThreadSummary? Type418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxThread>? Type419 { get; set; }
+        public global::Resend.InboxThreadSummaryFolder? Type419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SearchInboxThreadsResponseSuccess? Type420 { get; set; }
+        public global::Resend.ListInboxThreadsResponseSuccess? Type420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxThreadSearchResult>? Type421 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxThread>? Type421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxThreadOptions? Type422 { get; set; }
+        public global::Resend.SearchInboxThreadsResponseSuccess? Type422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxThreadOptionsFolder? Type423 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxThreadSearchResult>? Type423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Guid>? Type424 { get; set; }
+        public global::Resend.UpdateInboxThreadOptions? Type424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveInboxThreadResponseSuccess? Type425 { get; set; }
+        public global::Resend.UpdateInboxThreadOptionsFolder? Type425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadEmailAttachment? Type426 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Guid>? Type426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadEmail? Type427 { get; set; }
+        public global::Resend.RemoveInboxThreadResponseSuccess? Type427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadEmailDirection? Type428 { get; set; }
+        public global::Resend.InboxThreadEmailAttachment? Type428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxThreadEmailAttachment>? Type429 { get; set; }
+        public global::Resend.InboxThreadEmail? Type429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListInboxThreadEmailsResponseSuccess? Type430 { get; set; }
+        public global::Resend.InboxThreadEmailDirection? Type430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxThreadEmail>? Type431 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxThreadEmailAttachment>? Type431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ReplyInboxThreadEmailOptions? Type432 { get; set; }
+        public global::Resend.ListInboxThreadEmailsResponseSuccess? Type432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ReplyInboxThreadEmailResponseSuccess? Type433 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxThreadEmail>? Type433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ForwardInboxThreadEmailOptions? Type434 { get; set; }
+        public global::Resend.ReplyInboxThreadEmailOptions? Type434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ForwardInboxThreadEmailResponseSuccess? Type435 { get; set; }
+        public global::Resend.ReplyInboxThreadEmailResponseSuccess? Type435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftAttachmentInput? Type436 { get; set; }
+        public global::Resend.ForwardInboxThreadEmailOptions? Type436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftAttachment? Type437 { get; set; }
+        public global::Resend.ForwardInboxThreadEmailResponseSuccess? Type437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraft? Type438 { get; set; }
+        public global::Resend.InboxDraftAttachmentInput? Type438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftType? Type439 { get; set; }
+        public global::Resend.InboxDraftAttachment? Type439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxDraftAttachment>? Type440 { get; set; }
+        public global::Resend.InboxDraft? Type440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftListItem? Type441 { get; set; }
+        public global::Resend.InboxDraftType? Type441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftListItemType? Type442 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxDraftAttachment>? Type442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ListInboxDraftsResponseSuccess? Type443 { get; set; }
+        public global::Resend.InboxDraftListItem? Type443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxDraftListItem>? Type444 { get; set; }
+        public global::Resend.InboxDraftListItemType? Type444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateInboxDraftOptions? Type445 { get; set; }
+        public global::Resend.ListInboxDraftsResponseSuccess? Type445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxDraftAttachmentInput>? Type446 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxDraftListItem>? Type446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.CreateInboxDraftResponseSuccess? Type447 { get; set; }
+        public global::Resend.CreateInboxDraftOptions? Type447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.UpdateInboxDraftOptions? Type448 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxDraftAttachmentInput>? Type448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.RemoveInboxDraftResponseSuccess? Type449 { get; set; }
+        public global::Resend.CreateInboxDraftResponseSuccess? Type449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendInboxDraftOptions? Type450 { get; set; }
+        public global::Resend.UpdateInboxDraftOptions? Type450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SendInboxDraftResponseSuccess? Type451 { get; set; }
+        public global::Resend.RemoveInboxDraftResponseSuccess? Type451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventSource? Type452 { get; set; }
+        public global::Resend.SendInboxDraftOptions? Type452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventEmailAttachment? Type453 { get; set; }
+        public global::Resend.SendInboxDraftResponseSuccess? Type453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventEmail? Type454 { get; set; }
+        public global::Resend.InboxEventSource? Type454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventEmailDirection? Type455 { get; set; }
+        public global::Resend.InboxEventEmailAttachment? Type455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxEventEmailAttachment>? Type456 { get; set; }
+        public global::Resend.InboxEventEmail? Type456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventDraft? Type457 { get; set; }
+        public global::Resend.InboxEventEmailDirection? Type457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventDraftType? Type458 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxEventEmailAttachment>? Type458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEventData? Type459 { get; set; }
+        public global::Resend.InboxEventDraft? Type459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDeletedEventData? Type460 { get; set; }
+        public global::Resend.InboxEventDraftType? Type460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadEmailEventData? Type461 { get; set; }
+        public global::Resend.InboxEventData? Type461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadFolderUpdatedEventData? Type462 { get; set; }
+        public global::Resend.InboxDeletedEventData? Type462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadFolderUpdatedEventDataFrom? Type463 { get; set; }
+        public global::Resend.InboxThreadEmailEventData? Type463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadFolderUpdatedEventDataTo? Type464 { get; set; }
+        public global::Resend.InboxThreadFolderUpdatedEventData? Type464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadAssignedEventData? Type465 { get; set; }
+        public global::Resend.InboxThreadFolderUpdatedEventDataFrom? Type465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadUnassignedEventData? Type466 { get; set; }
+        public global::Resend.InboxThreadFolderUpdatedEventDataTo? Type466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadLabelsUpdatedEventData? Type467 { get; set; }
+        public global::Resend.InboxThreadAssignedEventData? Type467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftEventData? Type468 { get; set; }
+        public global::Resend.InboxThreadUnassignedEventData? Type468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftSentEventData? Type469 { get; set; }
+        public global::Resend.InboxThreadLabelsUpdatedEventData? Type469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxCreatedEvent? Type470 { get; set; }
+        public global::Resend.InboxDraftEventData? Type470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxUpdatedEvent? Type471 { get; set; }
+        public global::Resend.InboxDraftSentEventData? Type471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDeletedEvent? Type472 { get; set; }
+        public global::Resend.InboxCreatedEvent? Type472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadCreatedEvent? Type473 { get; set; }
+        public global::Resend.InboxUpdatedEvent? Type473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEmailReceivedEvent? Type474 { get; set; }
+        public global::Resend.InboxDeletedEvent? Type474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxEmailSentEvent? Type475 { get; set; }
+        public global::Resend.InboxThreadCreatedEvent? Type475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadFolderUpdatedEvent? Type476 { get; set; }
+        public global::Resend.InboxEmailReceivedEvent? Type476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadAssignedEvent? Type477 { get; set; }
+        public global::Resend.InboxEmailSentEvent? Type477 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadUnassignedEvent? Type478 { get; set; }
+        public global::Resend.InboxThreadFolderUpdatedEvent? Type478 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxThreadLabelsUpdatedEvent? Type479 { get; set; }
+        public global::Resend.InboxThreadAssignedEvent? Type479 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftCreatedEvent? Type480 { get; set; }
+        public global::Resend.InboxThreadUnassignedEvent? Type480 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftUpdatedEvent? Type481 { get; set; }
+        public global::Resend.InboxThreadLabelsUpdatedEvent? Type481 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftSentEvent? Type482 { get; set; }
+        public global::Resend.InboxDraftCreatedEvent? Type482 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxDraftDeletedEvent? Type483 { get; set; }
+        public global::Resend.InboxDraftUpdatedEvent? Type483 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type484 { get; set; }
+        public global::Resend.InboxDraftSentEvent? Type484 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EmailsMetricsGranularity? Type485 { get; set; }
+        public global::Resend.InboxDraftDeletedEvent? Type485 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>? Type486 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>? Type486 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EmailsMetricsMetric? Type487 { get; set; }
+        public global::Resend.EmailsMetricsGranularity? Type487 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>? Type488 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>? Type488 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.EmailsMetricsDimension? Type489 { get; set; }
+        public global::Resend.EmailsMetricsMetric? Type489 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.ContactsListImportsStatus? Type490 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>? Type490 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.BroadcastsRecipientsType? Type491 { get; set; }
+        public global::Resend.EmailsMetricsDimension? Type491 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.BroadcastsRecipientsBounceType? Type492 { get; set; }
+        public global::Resend.ContactsListImportsStatus? Type492 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.AutomationsListStatus? Type493 { get; set; }
+        public global::Resend.BroadcastsRecipientsType? Type493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.SuppressionsListOrigin? Type494 { get; set; }
+        public global::Resend.BroadcastsRecipientsBounceType? Type494 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? Type495 { get; set; }
+        public global::Resend.AutomationsListStatus? Type495 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxesListThreadsFolder? Type496 { get; set; }
+        public global::Resend.SuppressionsListOrigin? Type496 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Resend.InboxesSearchThreadsFolder>? Type497 { get; set; }
+        public global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? Type497 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.InboxesSearchThreadsFolder? Type498 { get; set; }
+        public global::Resend.InboxesListThreadsFolder? Type498 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Resend.InboxesSearchThreadsFolder>? Type499 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Resend.InboxesSearchThreadsFolder? Type500 { get; set; }
 
         /// <summary>
         ///
