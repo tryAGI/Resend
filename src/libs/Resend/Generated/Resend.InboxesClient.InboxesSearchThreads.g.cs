@@ -27,7 +27,7 @@ namespace Resend
             };
         partial void PrepareInboxesSearchThreadsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref string? query,
             global::System.Collections.Generic.IList<string>? from,
             global::System.Collections.Generic.IList<string>? to,
@@ -45,7 +45,7 @@ namespace Resend
         partial void PrepareInboxesSearchThreadsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             string? query,
             global::System.Collections.Generic.IList<string>? from,
             global::System.Collections.Generic.IList<string>? to,
@@ -92,7 +92,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.SearchInboxThreadsResponseSuccess> InboxesSearchThreadsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? query = default,
             global::System.Collections.Generic.IList<string>? from = default,
             global::System.Collections.Generic.IList<string>? to = default,
@@ -155,7 +155,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.SearchInboxThreadsResponseSuccess>> InboxesSearchThreadsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? query = default,
             global::System.Collections.Generic.IList<string>? from = default,
             global::System.Collections.Generic.IList<string>? to = default,

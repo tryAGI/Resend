@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// At least one of `instructions`, `tone`, or `enabled_actions` must be provided. Omitted fields keep their current value.
+    /// At least one of `instructions`, `tone`, or `actions` must be provided. Omitted fields keep their current value.
     /// </summary>
     public sealed partial class UpdateInboxAgentOptions
     {
@@ -26,12 +26,12 @@ namespace Resend
         public global::Resend.UpdateInboxAgentOptionsTone? Tone { get; set; }
 
         /// <summary>
-        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
+        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions. The old names `archive_thread` and `delete_thread` return a 422. Use `archive` and `move_to_trash`.<br/>
         /// Example: [draft_reply, add_labels]
         /// </summary>
         /// <example>[draft_reply, add_labels]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled_actions")]
-        public global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? EnabledActions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
+        public global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsAction>? Actions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,8 +50,8 @@ namespace Resend
         /// The tone the agent writes in. Send null to clear the tone.<br/>
         /// Example: concise_professional
         /// </param>
-        /// <param name="enabledActions">
-        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
+        /// <param name="actions">
+        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions. The old names `archive_thread` and `delete_thread` return a 422. Use `archive` and `move_to_trash`.<br/>
         /// Example: [draft_reply, add_labels]
         /// </param>
 #if NET7_0_OR_GREATER
@@ -60,11 +60,11 @@ namespace Resend
         public UpdateInboxAgentOptions(
             string? instructions,
             global::Resend.UpdateInboxAgentOptionsTone? tone,
-            global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? enabledActions)
+            global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsAction>? actions)
         {
             this.Instructions = instructions;
             this.Tone = tone;
-            this.EnabledActions = enabledActions;
+            this.Actions = actions;
         }
 
         /// <summary>

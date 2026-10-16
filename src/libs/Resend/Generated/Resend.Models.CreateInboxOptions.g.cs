@@ -9,7 +9,7 @@ namespace Resend
     public sealed partial class CreateInboxOptions
     {
         /// <summary>
-        /// The inbox email address on one of your domains. The API trims and lowercases it. The part before the `@` is at most 64 characters and contains only letters, numbers, and `. _ % + -`. It cannot start or end with a dot or contain two dots in a row.<br/>
+        /// The inbox email address on one of your domains. The API trims and lowercases it. The part before the `@` is at most 64 characters and contains only letters, numbers, and `. _ % -`. A `+` returns a 422. It cannot start or end with a dot or contain two dots in a row.<br/>
         /// Example: support@acme.com
         /// </summary>
         /// <example>support@acme.com</example>
@@ -50,7 +50,7 @@ namespace Resend
         /// Initializes a new instance of the <see cref="CreateInboxOptions" /> class.
         /// </summary>
         /// <param name="emailAddress">
-        /// The inbox email address on one of your domains. The API trims and lowercases it. The part before the `@` is at most 64 characters and contains only letters, numbers, and `. _ % + -`. It cannot start or end with a dot or contain two dots in a row.<br/>
+        /// The inbox email address on one of your domains. The API trims and lowercases it. The part before the `@` is at most 64 characters and contains only letters, numbers, and `. _ % -`. A `+` returns a 422. It cannot start or end with a dot or contain two dots in a row.<br/>
         /// Example: support@acme.com
         /// </param>
         /// <param name="name">

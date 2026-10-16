@@ -14,7 +14,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateInboxLabelResponseSuccess> InboxesCreateLabelAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.CreateInboxLabelOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -29,7 +29,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.CreateInboxLabelResponseSuccess>> InboxesCreateLabelAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.CreateInboxLabelOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -51,7 +51,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateInboxLabelResponseSuccess> InboxesCreateLabelAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string name,
             string? color = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,

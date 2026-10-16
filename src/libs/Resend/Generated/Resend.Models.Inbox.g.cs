@@ -105,6 +105,15 @@ namespace Resend
         public required global::System.DateTime CreatedAt { get; set; }
 
         /// <summary>
+        /// ISO 8601 timestamp when the inbox was last updated.<br/>
+        /// Example: 2026-08-03T10:20:05.118Z
+        /// </summary>
+        /// <example>2026-08-03T10:20:05.118Z</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime UpdatedAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -145,6 +154,10 @@ namespace Resend
         /// ISO 8601 timestamp when the inbox was created.<br/>
         /// Example: 2026-08-01T09:12:44.512Z
         /// </param>
+        /// <param name="updatedAt">
+        /// ISO 8601 timestamp when the inbox was last updated.<br/>
+        /// Example: 2026-08-03T10:20:05.118Z
+        /// </param>
         /// <param name="receivingAddress">
         /// The address to forward mail to when forwarding is enabled. `null` otherwise.<br/>
         /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -169,6 +182,7 @@ namespace Resend
             int unread,
             int drafts,
             global::System.DateTime createdAt,
+            global::System.DateTime updatedAt,
             string? receivingAddress,
             string? fromName,
             global::System.DateTime? lastReceived)
@@ -184,6 +198,7 @@ namespace Resend
             this.Drafts = drafts;
             this.LastReceived = lastReceived;
             this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

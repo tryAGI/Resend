@@ -27,13 +27,13 @@ namespace Resend
             };
         partial void PrepareInboxesUpdateLabelArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref global::System.Guid labelId,
             global::Resend.UpdateInboxLabelOptions request);
         partial void PrepareInboxesUpdateLabelRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid labelId,
             global::Resend.UpdateInboxLabelOptions request);
         partial void ProcessInboxesUpdateLabelResponse(
@@ -56,7 +56,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxLabelResponseSuccess> InboxesUpdateLabelAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid labelId,
 
             global::Resend.UpdateInboxLabelOptions request,
@@ -85,7 +85,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxLabelResponseSuccess>> InboxesUpdateLabelAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid labelId,
 
             global::Resend.UpdateInboxLabelOptions request,
@@ -469,7 +469,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxLabelResponseSuccess> InboxesUpdateLabelAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid labelId,
             string? name = default,
             string? color = default,

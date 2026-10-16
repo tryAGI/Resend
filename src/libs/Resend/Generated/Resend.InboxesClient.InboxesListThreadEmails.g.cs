@@ -27,7 +27,7 @@ namespace Resend
             };
         partial void PrepareInboxesListThreadEmailsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref global::System.Guid threadId,
             ref int? limit,
             ref string? after,
@@ -35,7 +35,7 @@ namespace Resend
         partial void PrepareInboxesListThreadEmailsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             int? limit,
             string? after,
@@ -62,7 +62,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.ListInboxThreadEmailsResponseSuccess> InboxesListThreadEmailsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             int? limit = default,
             string? after = default,
@@ -95,7 +95,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListInboxThreadEmailsResponseSuccess>> InboxesListThreadEmailsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             int? limit = default,
             string? after = default,

@@ -6,7 +6,7 @@ namespace Resend
     {
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -14,8 +14,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Resend.InboxDraft> InboxesUpdateDraftAsync(
-            global::System.Guid inboxId,
+        global::System.Threading.Tasks.Task<global::Resend.UpdateInboxDraftResponseSuccess> InboxesUpdateDraftAsync(
+            string inboxId,
             global::System.Guid draftId,
 
             global::Resend.UpdateInboxDraftOptions request,
@@ -23,7 +23,7 @@ namespace Resend
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -31,8 +31,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.InboxDraft>> InboxesUpdateDraftAsResponseAsync(
-            global::System.Guid inboxId,
+        global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxDraftResponseSuccess>> InboxesUpdateDraftAsResponseAsync(
+            string inboxId,
             global::System.Guid draftId,
 
             global::Resend.UpdateInboxDraftOptions request,
@@ -40,7 +40,7 @@ namespace Resend
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -70,8 +70,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Resend.InboxDraft> InboxesUpdateDraftAsync(
-            global::System.Guid inboxId,
+        global::System.Threading.Tasks.Task<global::Resend.UpdateInboxDraftResponseSuccess> InboxesUpdateDraftAsync(
+            string inboxId,
             global::System.Guid draftId,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? to = default,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? cc = default,

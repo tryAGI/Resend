@@ -3,10 +3,10 @@
 namespace Resend.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class InboxAgentEnabledActionNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Resend.InboxAgentEnabledAction?>
+    public sealed class InboxAgentActionNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Resend.InboxAgentAction?>
     {
         /// <inheritdoc />
-        public override global::Resend.InboxAgentEnabledAction? Read(
+        public override global::Resend.InboxAgentAction? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Resend.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Resend.InboxAgentEnabledActionExtensions.ToEnum(stringValue);
+                        return global::Resend.InboxAgentActionExtensions.ToEnum(stringValue);
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Resend.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Resend.InboxAgentEnabledAction)numValue;
+                    return (global::Resend.InboxAgentAction)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Resend.InboxAgentEnabledAction?);
+                    return default(global::Resend.InboxAgentAction?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Resend.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Resend.InboxAgentEnabledAction? value,
+            global::Resend.InboxAgentAction? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Resend.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Resend.InboxAgentEnabledActionExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Resend.InboxAgentActionExtensions.ToValueString(value.Value));
             }
         }
     }

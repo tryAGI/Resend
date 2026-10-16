@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// Create and manage Inboxes through the Resend API. Every Inboxes endpoint needs a full access API key. A sending access key returns a 401 `restricted_api_key`.<br/>
+    /// Create and manage Inboxes through the Resend API. A sending access key can call only these Inboxes endpoints: `POST /inboxes/{inbox_id}/threads/{thread_id}/emails/{email_id}/reply`, `POST /inboxes/{inbox_id}/threads/{thread_id}/emails/{email_id}/forward`, `POST /inboxes/{inbox_id}/drafts` and `POST /inboxes/{inbox_id}/drafts/{draft_id}/send`. When the key is limited to one domain, the inbox address must be on that domain, or the request returns a 403. Every other Inboxes endpoint needs a full access API key, and a sending access key returns a 401 `restricted_api_key`.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>

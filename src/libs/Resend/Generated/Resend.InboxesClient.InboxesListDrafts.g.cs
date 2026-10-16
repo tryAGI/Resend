@@ -27,14 +27,14 @@ namespace Resend
             };
         partial void PrepareInboxesListDraftsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref int? limit,
             ref string? after,
             ref string? before);
         partial void PrepareInboxesListDraftsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             int? limit,
             string? after,
             string? before);
@@ -59,7 +59,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.ListInboxDraftsResponseSuccess> InboxesListDraftsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             int? limit = default,
             string? after = default,
             string? before = default,
@@ -89,7 +89,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListInboxDraftsResponseSuccess>> InboxesListDraftsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             int? limit = default,
             string? after = default,
             string? before = default,

@@ -6,7 +6,7 @@ namespace Resend
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class UpdateInboxThreadOptionsEnum3
+    public sealed partial class ReplyInboxThreadEmailOptionsVariant1
     {
 
         /// <summary>

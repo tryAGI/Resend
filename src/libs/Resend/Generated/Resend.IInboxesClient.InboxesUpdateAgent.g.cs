@@ -14,7 +14,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.UpdateInboxAgentResponseSuccess> InboxesUpdateAgentAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.UpdateInboxAgentOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -29,7 +29,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxAgentResponseSuccess>> InboxesUpdateAgentAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.UpdateInboxAgentOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -47,18 +47,18 @@ namespace Resend
         /// The tone the agent writes in. Send null to clear the tone.<br/>
         /// Example: concise_professional
         /// </param>
-        /// <param name="enabledActions">
-        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions.<br/>
+        /// <param name="actions">
+        /// The actions the agent can take. Replaces the whole set. Duplicates are removed. Send an empty array to disable all actions. The old names `archive_thread` and `delete_thread` return a 422. Use `archive` and `move_to_trash`.<br/>
         /// Example: [draft_reply, add_labels]
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.UpdateInboxAgentResponseSuccess> InboxesUpdateAgentAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? instructions = default,
             global::Resend.UpdateInboxAgentOptionsTone? tone = default,
-            global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsEnabledAction>? enabledActions = default,
+            global::System.Collections.Generic.IList<global::Resend.UpdateInboxAgentOptionsAction>? actions = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

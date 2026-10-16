@@ -14,7 +14,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.RemoveInboxThreadResponseSuccess> InboxesRemoveThreadAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -28,7 +28,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.RemoveInboxThreadResponseSuccess>> InboxesRemoveThreadAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

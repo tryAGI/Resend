@@ -27,7 +27,7 @@ namespace Resend
             };
         partial void PrepareInboxesListThreadsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? folders,
             global::System.Collections.Generic.IList<global::System.Guid>? labels,
             ref bool? read,
@@ -37,7 +37,7 @@ namespace Resend
         partial void PrepareInboxesListThreadsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? folders,
             global::System.Collections.Generic.IList<global::System.Guid>? labels,
             bool? read,
@@ -68,7 +68,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.ListInboxThreadsResponseSuccess> InboxesListThreadsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? folders = default,
             global::System.Collections.Generic.IList<global::System.Guid>? labels = default,
             bool? read = default,
@@ -107,7 +107,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListInboxThreadsResponseSuccess>> InboxesListThreadsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Collections.Generic.IList<global::Resend.InboxesListThreadsFolder>? folders = default,
             global::System.Collections.Generic.IList<global::System.Guid>? labels = default,
             bool? read = default,

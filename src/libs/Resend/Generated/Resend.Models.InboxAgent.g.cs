@@ -35,13 +35,13 @@ namespace Resend
         public global::Resend.InboxAgentTone? Tone { get; set; }
 
         /// <summary>
-        /// The actions the agent can take. Empty when no actions are enabled.<br/>
+        /// The actions the agent can take, in the order of the enum. Empty when no actions are enabled.<br/>
         /// Example: [draft_reply, add_labels]
         /// </summary>
         /// <example>[draft_reply, add_labels]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled_actions")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction> EnabledActions { get; set; }
+        public required global::System.Collections.Generic.IList<global::Resend.InboxAgentAction> Actions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,8 +56,8 @@ namespace Resend
         /// The object type. Always `inbox_agent`.<br/>
         /// Example: inbox_agent
         /// </param>
-        /// <param name="enabledActions">
-        /// The actions the agent can take. Empty when no actions are enabled.<br/>
+        /// <param name="actions">
+        /// The actions the agent can take, in the order of the enum. Empty when no actions are enabled.<br/>
         /// Example: [draft_reply, add_labels]
         /// </param>
         /// <param name="instructions">
@@ -73,14 +73,14 @@ namespace Resend
 #endif
         public InboxAgent(
             string @object,
-            global::System.Collections.Generic.IList<global::Resend.InboxAgentEnabledAction> enabledActions,
+            global::System.Collections.Generic.IList<global::Resend.InboxAgentAction> actions,
             string? instructions,
             global::Resend.InboxAgentTone? tone)
         {
             this.Object = @object ?? throw new global::System.ArgumentNullException(nameof(@object));
             this.Instructions = instructions;
             this.Tone = tone;
-            this.EnabledActions = enabledActions ?? throw new global::System.ArgumentNullException(nameof(enabledActions));
+            this.Actions = actions ?? throw new global::System.ArgumentNullException(nameof(actions));
         }
 
         /// <summary>

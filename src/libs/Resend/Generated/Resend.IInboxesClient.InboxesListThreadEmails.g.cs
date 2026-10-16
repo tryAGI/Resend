@@ -17,7 +17,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.ListInboxThreadEmailsResponseSuccess> InboxesListThreadEmailsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             int? limit = default,
             string? after = default,
@@ -37,7 +37,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListInboxThreadEmailsResponseSuccess>> InboxesListThreadEmailsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             int? limit = default,
             string? after = default,

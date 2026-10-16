@@ -60,6 +60,24 @@ namespace Resend
         public global::System.DateTime? LastReceived { get; set; }
 
         /// <summary>
+        /// ISO 8601 timestamp when the inbox was created.<br/>
+        /// Example: 2026-08-01T09:12:44.512Z
+        /// </summary>
+        /// <example>2026-08-01T09:12:44.512Z</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// ISO 8601 timestamp when the inbox was last updated.<br/>
+        /// Example: 2026-08-03T10:20:05.118Z
+        /// </summary>
+        /// <example>2026-08-03T10:20:05.118Z</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime UpdatedAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -80,6 +98,14 @@ namespace Resend
         /// The number of unread threads in the Inbox folder.<br/>
         /// Example: 3
         /// </param>
+        /// <param name="createdAt">
+        /// ISO 8601 timestamp when the inbox was created.<br/>
+        /// Example: 2026-08-01T09:12:44.512Z
+        /// </param>
+        /// <param name="updatedAt">
+        /// ISO 8601 timestamp when the inbox was last updated.<br/>
+        /// Example: 2026-08-03T10:20:05.118Z
+        /// </param>
         /// <param name="name">
         /// Internal name for the inbox. Recipients do not see it.<br/>
         /// Example: Customer Support
@@ -99,6 +125,8 @@ namespace Resend
             global::System.Guid id,
             string emailAddress,
             int unread,
+            global::System.DateTime createdAt,
+            global::System.DateTime updatedAt,
             string? name,
             string? fromName,
             global::System.DateTime? lastReceived)
@@ -109,6 +137,8 @@ namespace Resend
             this.FromName = fromName;
             this.Unread = unread;
             this.LastReceived = lastReceived;
+            this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

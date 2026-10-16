@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// The data of an `inbox.thread.labels.updated` event. One event carries one label, in either `added` or `removed`.
+    /// The data of an `inbox.thread.labels.updated` event. Adding labels fills only `added`. Removing one label fills only `removed`. Setting the labels of a thread can fill both.
     /// </summary>
     public sealed partial class InboxThreadLabelsUpdatedEventData
     {
