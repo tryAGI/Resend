@@ -27,13 +27,13 @@ namespace Resend
             };
         partial void PrepareInboxesUpdateDraftArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref global::System.Guid draftId,
             global::Resend.UpdateInboxDraftOptions request);
         partial void PrepareInboxesUpdateDraftRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid draftId,
             global::Resend.UpdateInboxDraftOptions request);
         partial void ProcessInboxesUpdateDraftResponse(
@@ -47,7 +47,7 @@ namespace Resend
 
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -55,8 +55,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.InboxDraft> InboxesUpdateDraftAsync(
-            global::System.Guid inboxId,
+        public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxDraftResponseSuccess> InboxesUpdateDraftAsync(
+            string inboxId,
             global::System.Guid draftId,
 
             global::Resend.UpdateInboxDraftOptions request,
@@ -76,7 +76,7 @@ namespace Resend
         }
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -84,8 +84,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.InboxDraft>> InboxesUpdateDraftAsResponseAsync(
-            global::System.Guid inboxId,
+        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxDraftResponseSuccess>> InboxesUpdateDraftAsResponseAsync(
+            string inboxId,
             global::System.Guid draftId,
 
             global::Resend.UpdateInboxDraftOptions request,
@@ -377,9 +377,9 @@ namespace Resend
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Resend.InboxDraft.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Resend.UpdateInboxDraftResponseSuccess.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.InboxDraft>(
+                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxDraftResponseSuccess>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Resend.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -409,9 +409,9 @@ namespace Resend
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Resend.InboxDraft.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Resend.UpdateInboxDraftResponseSuccess.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.InboxDraft>(
+                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxDraftResponseSuccess>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Resend.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -453,7 +453,7 @@ namespace Resend
         }
         /// <summary>
         /// Update an existing draft<br/>
-        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409.
+        /// Updates the content of an unsent draft. Omitted fields are left unchanged. Send at least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments`. Sending `attachments` replaces every attachment on the draft. A request that sets `text` or `html` replaces the whole body. The body part you omit from that request becomes `null`. The merged draft must still contain at least one non-empty field, and its combined recipients cannot exceed 50. A draft that was already sent, or that changed during the request, returns a 409. The response holds only the Draft ID. Retrieve the draft to read its content.
         /// </summary>
         /// <param name="inboxId"></param>
         /// <param name="draftId"></param>
@@ -483,8 +483,8 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.InboxDraft> InboxesUpdateDraftAsync(
-            global::System.Guid inboxId,
+        public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxDraftResponseSuccess> InboxesUpdateDraftAsync(
+            string inboxId,
             global::System.Guid draftId,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? to = default,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? cc = default,

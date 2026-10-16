@@ -27,7 +27,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.SearchInboxThreadsResponseSuccess> InboxesSearchThreadsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? query = default,
             global::System.Collections.Generic.IList<string>? from = default,
             global::System.Collections.Generic.IList<string>? to = default,
@@ -67,7 +67,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.SearchInboxThreadsResponseSuccess>> InboxesSearchThreadsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? query = default,
             global::System.Collections.Generic.IList<string>? from = default,
             global::System.Collections.Generic.IList<string>? to = default,

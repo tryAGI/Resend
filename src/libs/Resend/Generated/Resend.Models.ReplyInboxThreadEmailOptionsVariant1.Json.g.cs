@@ -2,7 +2,7 @@
 
 namespace Resend
 {
-    public sealed partial class InboxThreadSearchResultVariant2Highlights
+    public sealed partial class ReplyInboxThreadEmailOptionsVariant1
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -47,20 +47,20 @@ namespace Resend
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Resend.InboxThreadSearchResultVariant2Highlights? FromJson(
+        public static global::Resend.ReplyInboxThreadEmailOptionsVariant1? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Resend.InboxThreadSearchResultVariant2Highlights),
-                jsonSerializerContext) as global::Resend.InboxThreadSearchResultVariant2Highlights;
+                typeof(global::Resend.ReplyInboxThreadEmailOptionsVariant1),
+                jsonSerializerContext) as global::Resend.ReplyInboxThreadEmailOptionsVariant1;
         }
 
         /// <summary>
         /// Deserializes a JSON string using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::Resend.InboxThreadSearchResultVariant2Highlights? FromJson(
+        public static global::Resend.ReplyInboxThreadEmailOptionsVariant1? FromJson(
             string json)
         {
             return FromJson(
@@ -75,7 +75,7 @@ namespace Resend
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Resend.InboxThreadSearchResultVariant2Highlights? FromJson(
+        public static global::Resend.ReplyInboxThreadEmailOptionsVariant1? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -86,7 +86,7 @@ namespace Resend
                     global::Resend.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Resend.InboxThreadSearchResultVariant2Highlights>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Resend.ReplyInboxThreadEmailOptionsVariant1>(
                 json,
                 jsonSerializerOptions);
         }
@@ -94,20 +94,20 @@ namespace Resend
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Resend.InboxThreadSearchResultVariant2Highlights?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Resend.ReplyInboxThreadEmailOptionsVariant1?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Resend.InboxThreadSearchResultVariant2Highlights),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Resend.InboxThreadSearchResultVariant2Highlights;
+                typeof(global::Resend.ReplyInboxThreadEmailOptionsVariant1),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Resend.ReplyInboxThreadEmailOptionsVariant1;
         }
 
         /// <summary>
         /// Deserializes a JSON stream using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::System.Threading.Tasks.ValueTask<global::Resend.InboxThreadSearchResultVariant2Highlights?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Resend.ReplyInboxThreadEmailOptionsVariant1?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream)
         {
             return FromJsonStreamAsync(
@@ -122,7 +122,7 @@ namespace Resend
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Resend.InboxThreadSearchResultVariant2Highlights?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Resend.ReplyInboxThreadEmailOptionsVariant1?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -133,7 +133,7 @@ namespace Resend
                     global::Resend.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Resend.InboxThreadSearchResultVariant2Highlights?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Resend.ReplyInboxThreadEmailOptionsVariant1?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

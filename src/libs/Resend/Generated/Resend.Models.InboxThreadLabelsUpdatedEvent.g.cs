@@ -25,7 +25,7 @@ namespace Resend
         public required global::System.DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// The data of an `inbox.thread.labels.updated` event. One event carries one label, in either `added` or `removed`.
+        /// The data of an `inbox.thread.labels.updated` event. Adding labels fills only `added`. Removing one label fills only `removed`. Setting the labels of a thread can fill both.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -45,7 +45,7 @@ namespace Resend
         /// Example: 2026-09-29T12:00:00.000Z
         /// </param>
         /// <param name="data">
-        /// The data of an `inbox.thread.labels.updated` event. One event carries one label, in either `added` or `removed`.
+        /// The data of an `inbox.thread.labels.updated` event. Adding labels fills only `added`. Removing one label fills only `removed`. Setting the labels of a thread can fill both.
         /// </param>
         /// <param name="type">
         /// The event type.

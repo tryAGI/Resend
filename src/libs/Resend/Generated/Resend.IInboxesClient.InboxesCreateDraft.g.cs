@@ -6,7 +6,7 @@ namespace Resend
     {
         /// <summary>
         /// Create a draft<br/>
-        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject and gets no `Re:` prefix, so set one before you send it.
+        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject. When it is sent, it takes the thread subject, prefixed with `Re:` when it does not already start with it.
         /// </summary>
         /// <param name="idempotencyKey">
         /// Optional idempotency key. When omitted, the SDK generates one for this request.
@@ -17,7 +17,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateInboxDraftResponseSuccess> InboxesCreateDraftAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.CreateInboxDraftOptions request,
             string? idempotencyKey = default,
@@ -25,7 +25,7 @@ namespace Resend
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a draft<br/>
-        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject and gets no `Re:` prefix, so set one before you send it.
+        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject. When it is sent, it takes the thread subject, prefixed with `Re:` when it does not already start with it.
         /// </summary>
         /// <param name="idempotencyKey">
         /// Optional idempotency key. When omitted, the SDK generates one for this request.
@@ -36,7 +36,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.CreateInboxDraftResponseSuccess>> InboxesCreateDraftAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.CreateInboxDraftOptions request,
             string? idempotencyKey = default,
@@ -44,7 +44,7 @@ namespace Resend
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a draft<br/>
-        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject and gets no `Re:` prefix, so set one before you send it.
+        /// Creates an unsent draft on the inbox. Omit `thread_id` and `reply_to_email_id` for a draft that starts a new thread. Pass both together for a reply draft in an existing thread. A reply draft without `to` is addressed to the sender of the email it replies to, or to its Reply-To when set. For an email the inbox sent, it defaults to that email's `to` recipients. Send `to: []` to leave it empty. At least one of `to`, `cc`, `bcc`, `subject`, `text`, `html` or `attachments` must be non-empty. The combined recipients of `to`, `cc` and `bcc` cannot exceed 50. Attachments are stored on the draft, so each one needs `content`, `filename` and `content_type`. Returns 201 for a new draft. Only one unsent reply draft can target an email, so a reply draft request for an email that already has one returns 200 with the ID of the existing draft. An unknown `thread_id`, or a `reply_to_email_id` that is not in that thread, returns a 404. That request ignores every other field, except `attachments`, which replaces the attachments of the existing draft when sent. A reply draft created without `subject` stores an empty subject. When it is sent, it takes the thread subject, prefixed with `Re:` when it does not already start with it.
         /// </summary>
         /// <param name="idempotencyKey">
         /// Optional idempotency key. When omitted, the SDK generates one for this request.
@@ -87,7 +87,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.CreateInboxDraftResponseSuccess> InboxesCreateDraftAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? idempotencyKey = default,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? to = default,
             global::Resend.OneOf<string, global::System.Collections.Generic.IList<string>>? cc = default,

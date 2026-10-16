@@ -27,12 +27,12 @@ namespace Resend
             };
         partial void PrepareInboxesRemoveDraftArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref global::System.Guid draftId);
         partial void PrepareInboxesRemoveDraftRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid draftId);
         partial void ProcessInboxesRemoveDraftResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -53,7 +53,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.RemoveInboxDraftResponseSuccess> InboxesRemoveDraftAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid draftId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -77,7 +77,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.RemoveInboxDraftResponseSuccess>> InboxesRemoveDraftAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid draftId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

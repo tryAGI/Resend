@@ -13,7 +13,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.ListInboxLabelsResponseSuccess> InboxesListLabelsAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -25,7 +25,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.ListInboxLabelsResponseSuccess>> InboxesListLabelsAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

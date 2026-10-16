@@ -27,12 +27,12 @@ namespace Resend
             };
         partial void PrepareInboxesUpdateArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             global::Resend.UpdateInboxOptions request);
         partial void PrepareInboxesUpdateRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::Resend.UpdateInboxOptions request);
         partial void ProcessInboxesUpdateResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -44,7 +44,7 @@ namespace Resend
             ref string content);
 
         /// <summary>
-        /// Update an existing inbox<br/>
+        /// Update an existing inbox by ID or email address<br/>
         /// Updates the internal name of the inbox or the name recipients see when mail is sent from it. At least one of `name` or `from_name` is required.
         /// </summary>
         /// <param name="inboxId"></param>
@@ -53,7 +53,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxResponseSuccess> InboxesUpdateAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.UpdateInboxOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -70,7 +70,7 @@ namespace Resend
             return __response.Body;
         }
         /// <summary>
-        /// Update an existing inbox<br/>
+        /// Update an existing inbox by ID or email address<br/>
         /// Updates the internal name of the inbox or the name recipients see when mail is sent from it. At least one of `name` or `from_name` is required.
         /// </summary>
         /// <param name="inboxId"></param>
@@ -79,7 +79,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.UpdateInboxResponseSuccess>> InboxesUpdateAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
 
             global::Resend.UpdateInboxOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -443,7 +443,7 @@ namespace Resend
             }
         }
         /// <summary>
-        /// Update an existing inbox<br/>
+        /// Update an existing inbox by ID or email address<br/>
         /// Updates the internal name of the inbox or the name recipients see when mail is sent from it. At least one of `name` or `from_name` is required.
         /// </summary>
         /// <param name="inboxId"></param>
@@ -459,7 +459,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.UpdateInboxResponseSuccess> InboxesUpdateAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             string? name = default,
             string? fromName = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,

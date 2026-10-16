@@ -27,13 +27,13 @@ namespace Resend
             };
         partial void PrepareInboxesGetThreadEmailArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid inboxId,
+            ref string inboxId,
             ref global::System.Guid threadId,
             ref global::System.Guid emailId);
         partial void PrepareInboxesGetThreadEmailRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             global::System.Guid emailId);
         partial void ProcessInboxesGetThreadEmailResponse(
@@ -55,7 +55,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.InboxThreadEmail> InboxesGetThreadEmailAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             global::System.Guid emailId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
@@ -81,7 +81,7 @@ namespace Resend
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.InboxThreadEmail>> InboxesGetThreadEmailAsResponseAsync(
-            global::System.Guid inboxId,
+            string inboxId,
             global::System.Guid threadId,
             global::System.Guid emailId,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
