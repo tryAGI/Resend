@@ -18,9 +18,9 @@ namespace Resend
 
         /// <summary>
         /// A URL to download the file from, starting with `http` or `https`. Required without `content`. A file that cannot be downloaded returns a 422, and so does a request whose downloads take more than 20 seconds together.<br/>
-        /// Example: https://resend.com/static/sample/invoice.pdf
+        /// Example: https://example.com/invoice.pdf
         /// </summary>
-        /// <example>https://resend.com/static/sample/invoice.pdf</example>
+        /// <example>https://example.com/invoice.pdf</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("path")]
         public string? Path { get; set; }
 
@@ -60,7 +60,7 @@ namespace Resend
         /// </param>
         /// <param name="path">
         /// A URL to download the file from, starting with `http` or `https`. Required without `content`. A file that cannot be downloaded returns a 422, and so does a request whose downloads take more than 20 seconds together.<br/>
-        /// Example: https://resend.com/static/sample/invoice.pdf
+        /// Example: https://example.com/invoice.pdf
         /// </param>
         /// <param name="contentType">
         /// The MIME type of the attachment. It must be a valid MIME type, such as `application/pdf`, or the request returns a 422. Required with `content`. With `path`, it defaults to the content type of the downloaded file.<br/>
