@@ -4,18 +4,25 @@
 namespace Resend
 {
     /// <summary>
-    /// A file to store on a draft. Unlike `POST /emails` attachments, a draft attachment cannot use `path` or `content_id`. A `path` without `content` returns a 422, and when both are sent, `path` is ignored.
+    /// A file to store on a draft. Send either `content` or a `path` URL. Unlike `POST /emails` attachments, a `path` file is downloaded when the request is made, not when the draft is sent, and a draft attachment cannot use `content_id`. When both `content` and `path` are sent, `path` is ignored.
     /// </summary>
     public sealed partial class InboxDraftAttachmentInput
     {
         /// <summary>
-        /// The content of the file, encoded in base64. It cannot be empty.<br/>
+        /// The content of the file, encoded in base64. It cannot be empty. Required without `path`.<br/>
         /// Example: aGVsbG8gZTJl
         /// </summary>
         /// <example>aGVsbG8gZTJl</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Content { get; set; }
+        public string? Content { get; set; }
+
+        /// <summary>
+        /// A URL to download the file from, starting with `http` or `https`. Required without `content`. A file that cannot be downloaded returns a 422, and so does a request whose downloads take more than 20 seconds together.<br/>
+        /// Example: https://resend.com/static/sample/invoice.pdf
+        /// </summary>
+        /// <example>https://resend.com/static/sample/invoice.pdf</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        public string? Path { get; set; }
 
         /// <summary>
         /// The filename of the attachment. A blocked file type returns a 422.<br/>
@@ -27,13 +34,12 @@ namespace Resend
         public required string Filename { get; set; }
 
         /// <summary>
-        /// The MIME type of the attachment. It must be a valid MIME type, such as `application/pdf`, or the request returns a 422.<br/>
+        /// The MIME type of the attachment. It must be a valid MIME type, such as `application/pdf`, or the request returns a 422. Required with `content`. With `path`, it defaults to the content type of the downloaded file.<br/>
         /// Example: application/pdf
         /// </summary>
         /// <example>application/pdf</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("content_type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ContentType { get; set; }
+        public string? ContentType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,29 +50,35 @@ namespace Resend
         /// <summary>
         /// Initializes a new instance of the <see cref="InboxDraftAttachmentInput" /> class.
         /// </summary>
-        /// <param name="content">
-        /// The content of the file, encoded in base64. It cannot be empty.<br/>
-        /// Example: aGVsbG8gZTJl
-        /// </param>
         /// <param name="filename">
         /// The filename of the attachment. A blocked file type returns a 422.<br/>
         /// Example: receipt.pdf
         /// </param>
+        /// <param name="content">
+        /// The content of the file, encoded in base64. It cannot be empty. Required without `path`.<br/>
+        /// Example: aGVsbG8gZTJl
+        /// </param>
+        /// <param name="path">
+        /// A URL to download the file from, starting with `http` or `https`. Required without `content`. A file that cannot be downloaded returns a 422, and so does a request whose downloads take more than 20 seconds together.<br/>
+        /// Example: https://resend.com/static/sample/invoice.pdf
+        /// </param>
         /// <param name="contentType">
-        /// The MIME type of the attachment. It must be a valid MIME type, such as `application/pdf`, or the request returns a 422.<br/>
+        /// The MIME type of the attachment. It must be a valid MIME type, such as `application/pdf`, or the request returns a 422. Required with `content`. With `path`, it defaults to the content type of the downloaded file.<br/>
         /// Example: application/pdf
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public InboxDraftAttachmentInput(
-            string content,
             string filename,
-            string contentType)
+            string? content,
+            string? path,
+            string? contentType)
         {
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
+            this.Content = content;
+            this.Path = path;
             this.Filename = filename ?? throw new global::System.ArgumentNullException(nameof(filename));
-            this.ContentType = contentType ?? throw new global::System.ArgumentNullException(nameof(contentType));
+            this.ContentType = contentType;
         }
 
         /// <summary>
