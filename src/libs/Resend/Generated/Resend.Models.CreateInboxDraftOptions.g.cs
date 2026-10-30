@@ -56,7 +56,7 @@ namespace Resend
         public string? Text { get; set; }
 
         /// <summary>
-        /// Files to store on the draft. Each one needs `content`, `filename` and `content_type`. A `path` without `content` returns a 422, and when both are sent, `path` is ignored. A `content_id` returns a 422. The files on a draft can total at most 25 MB. An empty file or a blocked file type returns a 422.
+        /// Files to store on the draft. Each one needs a `filename` and either `content` or a `path` URL. A `path` file is downloaded when the request is made and stored on the draft. When both are sent, `path` is ignored. A `content_id` returns a 422. The files on a draft, downloaded ones included, can total at most 25 MB. A `path` that does not start with `http` or `https`, or that cannot be downloaded, returns a 422, and so does a request whose downloads take more than 20 seconds together. An empty file or a blocked file type returns a 422.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attachments")]
         public global::System.Collections.Generic.IList<global::Resend.InboxDraftAttachmentInput>? Attachments { get; set; }
@@ -109,7 +109,7 @@ namespace Resend
         /// Example: Refund issued for order 1041.
         /// </param>
         /// <param name="attachments">
-        /// Files to store on the draft. Each one needs `content`, `filename` and `content_type`. A `path` without `content` returns a 422, and when both are sent, `path` is ignored. A `content_id` returns a 422. The files on a draft can total at most 25 MB. An empty file or a blocked file type returns a 422.
+        /// Files to store on the draft. Each one needs a `filename` and either `content` or a `path` URL. A `path` file is downloaded when the request is made and stored on the draft. When both are sent, `path` is ignored. A `content_id` returns a 422. The files on a draft, downloaded ones included, can total at most 25 MB. A `path` that does not start with `http` or `https`, or that cannot be downloaded, returns a 422, and so does a request whose downloads take more than 20 seconds together. An empty file or a blocked file type returns a 422.
         /// </param>
         /// <param name="threadId">
         /// The Thread ID to reply in. Must be sent with `reply_to_email_id`.<br/>
