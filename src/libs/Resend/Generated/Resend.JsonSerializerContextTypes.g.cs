@@ -794,7 +794,7 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
-        public global::Resend.Template2? Type189 { get; set; }
+        public global::Resend.Template? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>

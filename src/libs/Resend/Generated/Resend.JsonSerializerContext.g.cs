@@ -218,7 +218,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariableInput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateVariableInputType), TypeInfoPropertyName = "TemplateVariableInputType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Template2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Template))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.TemplateVariable>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateStatus), TypeInfoPropertyName = "TemplateStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.TemplateListItem))]
