@@ -48,7 +48,7 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.Template2> TemplatesGetAsync(
+        public async global::System.Threading.Tasks.Task<global::Resend.Template> TemplatesGetAsync(
             string id,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -68,7 +68,7 @@ namespace Resend
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.Template2>> TemplatesGetAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.Template>> TemplatesGetAsResponseAsync(
             string id,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -346,9 +346,9 @@ namespace Resend
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Resend.Template2.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Resend.Template.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.Template2>(
+                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.Template>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Resend.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -378,9 +378,9 @@ namespace Resend
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Resend.Template2.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Resend.Template.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.Template2>(
+                                    return new global::Resend.AutoSDKHttpResponse<global::Resend.Template>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Resend.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

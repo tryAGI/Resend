@@ -6,7 +6,7 @@ namespace Resend
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class Template2
+    public sealed partial class Template
     {
         /// <summary>
         /// The type of object.<br/>
@@ -120,7 +120,7 @@ namespace Resend
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Template2" /> class.
+        /// Initializes a new instance of the <see cref="Template" /> class.
         /// </summary>
         /// <param name="object">
         /// The type of object.<br/>
@@ -175,7 +175,7 @@ namespace Resend
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public Template2(
+        public Template(
             string? @object,
             string? id,
             string? currentVersionId,
@@ -212,9 +212,9 @@ namespace Resend
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Template2" /> class.
+        /// Initializes a new instance of the <see cref="Template" /> class.
         /// </summary>
-        public Template2()
+        public Template()
         {
         }
 
