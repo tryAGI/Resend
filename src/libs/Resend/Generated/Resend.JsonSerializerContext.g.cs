@@ -315,6 +315,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DeleteAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DuplicateAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.StopAutomationResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CancelAutomationRunResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationRunStep))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationRunStepType), TypeInfoPropertyName = "AutomationRunStepType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.AutomationRun))]
@@ -522,7 +523,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsGranularity), TypeInfoPropertyName = "EmailsMetricsGranularity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsMetric), TypeInfoPropertyName = "EmailsMetricsMetric2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -533,6 +533,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsDimension), TypeInfoPropertyName = "EmailsMetricsDimension2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactsListImportsStatus), TypeInfoPropertyName = "ContactsListImportsStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.BroadcastsRecipientsType), TypeInfoPropertyName = "BroadcastsRecipientsType2")]
