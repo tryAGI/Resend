@@ -27,11 +27,13 @@ namespace Resend
             };
         partial void PrepareDomainsVerifyArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string domainId);
+            ref string domainId,
+            global::Resend.VerifyDomainOptions request);
         partial void PrepareDomainsVerifyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string domainId);
+            string domainId,
+            global::Resend.VerifyDomainOptions request);
         partial void ProcessDomainsVerifyResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -43,19 +45,24 @@ namespace Resend
 
         /// <summary>
         /// Verify an existing domain<br/>
-        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured).
+        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured). Pass `scope` to limit the check to specific records.
         /// </summary>
         /// <param name="domainId"></param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.VerifyDomainResponse> DomainsVerifyAsync(
             string domainId,
+
+            global::Resend.VerifyDomainOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await DomainsVerifyAsResponseAsync(
                 domainId: domainId,
+
+                request: request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -64,22 +71,28 @@ namespace Resend
         }
         /// <summary>
         /// Verify an existing domain<br/>
-        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured).
+        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured). Pass `scope` to limit the check to specific records.
         /// </summary>
         /// <param name="domainId"></param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Resend.AutoSDKHttpResponse<global::Resend.VerifyDomainResponse>> DomainsVerifyAsResponseAsync(
             string domainId,
+
+            global::Resend.VerifyDomainOptions request,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
             PrepareDomainsVerifyArguments(
                 httpClient: HttpClient,
-                domainId: ref domainId);
+                domainId: ref domainId,
+                request: request);
 
 
             var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
@@ -136,6 +149,12 @@ namespace Resend
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Resend.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -147,7 +166,8 @@ namespace Resend
                 PrepareDomainsVerifyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domainId: domainId);
+                    domainId: domainId,
+                    request: request);
 
                 return __httpRequest;
             }
@@ -421,6 +441,34 @@ namespace Resend
             {
                 __httpRequest?.Dispose();
             }
+        }
+        /// <summary>
+        /// Verify an existing domain<br/>
+        /// Triggers verification of the domain's DNS records including DKIM, SPF, and the tracking CNAME (if a tracking subdomain is configured). Pass `scope` to limit the check to specific records.
+        /// </summary>
+        /// <param name="domainId"></param>
+        /// <param name="scope">
+        /// Limit the check to specific records. The only supported value is `forge`: only the Forge record is checked, and the other records keep their current status. Requires Forge to be enabled on the domain, otherwise the endpoint responds with a `forge_not_enabled` error. When omitted, all records are checked.
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Resend.VerifyDomainResponse> DomainsVerifyAsync(
+            string domainId,
+            global::System.Collections.Generic.IList<global::Resend.VerifyDomainOptionsScopeItem>? scope = default,
+            global::Resend.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Resend.VerifyDomainOptions
+            {
+                Scope = scope,
+            };
+
+            return await DomainsVerifyAsync(
+                domainId: domainId,
+                request: __request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }
