@@ -77,6 +77,10 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus), TypeInfoPropertyName = "DomainRecordStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.Domain))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainStatus), TypeInfoPropertyName = "DomainStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EnableForgeRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.VerifyDomainOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.VerifyDomainOptionsScopeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.VerifyDomainOptionsScopeItem), TypeInfoPropertyName = "VerifyDomainOptionsScopeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainClaimRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainClaimRequestRegion), TypeInfoPropertyName = "CreateDomainClaimRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimRecord))]
@@ -519,10 +523,6 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxDraftUpdatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxDraftSentEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.InboxDraftDeletedEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsGranularity), TypeInfoPropertyName = "EmailsMetricsGranularity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsMetric), TypeInfoPropertyName = "EmailsMetricsMetric2")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -533,6 +533,10 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.SendEmailRequest>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsGranularity), TypeInfoPropertyName = "EmailsMetricsGranularity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsMetric>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsMetric), TypeInfoPropertyName = "EmailsMetricsMetric2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Resend.EmailsMetricsDimension>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.EmailsMetricsDimension), TypeInfoPropertyName = "EmailsMetricsDimension2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.ContactsListImportsStatus), TypeInfoPropertyName = "ContactsListImportsStatus2")]
@@ -564,6 +568,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordType?), TypeInfoPropertyName = "NullableDomainRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainRecordStatus?), TypeInfoPropertyName = "NullableDomainRecordStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainStatus?), TypeInfoPropertyName = "NullableDomainStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.VerifyDomainOptionsScopeItem?), TypeInfoPropertyName = "NullableVerifyDomainOptionsScopeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.CreateDomainClaimRequestRegion?), TypeInfoPropertyName = "NullableCreateDomainClaimRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimRecordType?), TypeInfoPropertyName = "NullableDomainClaimRecordType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Resend.DomainClaimStatus?), TypeInfoPropertyName = "NullableDomainClaimStatus2")]
@@ -666,6 +671,7 @@ namespace Resend
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.EmailMetricsDataRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.CreateBatchEmailsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.DomainRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.VerifyDomainOptionsScopeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ListDomainsItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.ApiKey>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Resend.OAuthGrant>))]
@@ -871,6 +877,10 @@ namespace Resend
                     || typeToConvert == typeof(global::Resend.DomainStatus)
 
                     || typeToConvert == typeof(global::Resend.DomainStatus?)
+
+                    || typeToConvert == typeof(global::Resend.VerifyDomainOptionsScopeItem)
+
+                    || typeToConvert == typeof(global::Resend.VerifyDomainOptionsScopeItem?)
 
                     || typeToConvert == typeof(global::Resend.CreateDomainClaimRequestRegion)
 
@@ -1341,6 +1351,16 @@ namespace Resend
                 if (typeToConvert == typeof(global::Resend.DomainStatus?))
                 {
                     return new global::Resend.JsonConverters.DomainStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.VerifyDomainOptionsScopeItem))
+                {
+                    return new global::Resend.JsonConverters.VerifyDomainOptionsScopeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Resend.VerifyDomainOptionsScopeItem?))
+                {
+                    return new global::Resend.JsonConverters.VerifyDomainOptionsScopeItemNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Resend.CreateDomainClaimRequestRegion))
