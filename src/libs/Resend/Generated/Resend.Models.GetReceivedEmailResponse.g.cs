@@ -105,12 +105,12 @@ namespace Resend
         public string? Text { get; set; }
 
         /// <summary>
-        /// The email headers.<br/>
-        /// Example: {"X-Custom-Header":"value"}
+        /// The email headers, keyed by lowercase header name.<br/>
+        /// Example: {"x-custom-header":"value"}
         /// </summary>
-        /// <example>{"X-Custom-Header":"value"}</example>
+        /// <example>{"x-custom-header":"value"}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
-        public object? Headers { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string>? Headers { get; set; }
 
         /// <summary>
         /// Timestamp when the email was received.<br/>
@@ -184,8 +184,8 @@ namespace Resend
         /// Example: Email content
         /// </param>
         /// <param name="headers">
-        /// The email headers.<br/>
-        /// Example: {"X-Custom-Header":"value"}
+        /// The email headers, keyed by lowercase header name.<br/>
+        /// Example: {"x-custom-header":"value"}
         /// </param>
         /// <param name="createdAt">
         /// Timestamp when the email was received.<br/>
@@ -210,7 +210,7 @@ namespace Resend
             global::System.Collections.Generic.IList<string>? receivedFor,
             string? html,
             string? text,
-            object? headers,
+            global::System.Collections.Generic.Dictionary<string, string>? headers,
             global::System.DateTime? createdAt,
             global::System.Collections.Generic.IList<global::Resend.GetReceivedEmailResponseAttachment>? attachments)
         {
