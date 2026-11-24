@@ -4,8 +4,8 @@
 namespace Resend
 {
     /// <summary>
-    /// The email headers.<br/>
-    /// Example: {"X-Custom-Header":"value"}
+    /// The email headers, keyed by lowercase header name.<br/>
+    /// Example: {"x-custom-header":"value"}
     /// </summary>
     public sealed partial class GetReceivedEmailResponseHeaders
     {
