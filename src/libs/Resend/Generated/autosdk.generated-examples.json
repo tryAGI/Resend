@@ -296,6 +296,17 @@
       "Format": "http",
       "OperationId": "inboxes/update-thread",
       "Setup": null
+    },
+    {
+      "Order": 28,
+      "Title": "Retrieve a list of received emails",
+      "Slug": "emails-list-receiving",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "csharp",
+      "Code": "using var client = new ResendClient(apiKey);\n\nvar response = await client.ReceivingEmails.EmailsListReceivingAsync(\n    to: global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::System.Collections.Generic.IList\u003Cstring\u003E\u003E(\n    @\u0022[\n  \u0022\u0022support@example.com\u0022\u0022,\n  \u0022\u0022billing@example.com\u0022\u0022\n]\u0022)!,\n    startDate: \u00222026-09-01\u0022,\n    endDate: \u00222026-09-30\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "emails/list-receiving",
+      "Setup": "This example assumes \u0060using Resend;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
     }
   ]
 }

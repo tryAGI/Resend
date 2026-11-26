@@ -29,13 +29,19 @@ namespace Resend
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
             ref global::System.Guid? after,
-            ref global::System.Guid? before);
+            ref global::System.Guid? before,
+            global::System.Collections.Generic.IList<string>? to,
+            ref string? startDate,
+            ref string? endDate);
         partial void PrepareEmailsListReceivingRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             int? limit,
             global::System.Guid? after,
-            global::System.Guid? before);
+            global::System.Guid? before,
+            global::System.Collections.Generic.IList<string>? to,
+            string? startDate,
+            string? endDate);
         partial void ProcessEmailsListReceivingResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -51,6 +57,9 @@ namespace Resend
         /// <param name="limit"></param>
         /// <param name="after"></param>
         /// <param name="before"></param>
+        /// <param name="to"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
@@ -58,6 +67,9 @@ namespace Resend
             int? limit = default,
             global::System.Guid? after = default,
             global::System.Guid? before = default,
+            global::System.Collections.Generic.IList<string>? to = default,
+            string? startDate = default,
+            string? endDate = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -65,6 +77,9 @@ namespace Resend
                 limit: limit,
                 after: after,
                 before: before,
+                to: to,
+                startDate: startDate,
+                endDate: endDate,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -77,6 +92,9 @@ namespace Resend
         /// <param name="limit"></param>
         /// <param name="after"></param>
         /// <param name="before"></param>
+        /// <param name="to"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Resend.ApiException"></exception>
@@ -84,6 +102,9 @@ namespace Resend
             int? limit = default,
             global::System.Guid? after = default,
             global::System.Guid? before = default,
+            global::System.Collections.Generic.IList<string>? to = default,
+            string? startDate = default,
+            string? endDate = default,
             global::Resend.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -93,7 +114,10 @@ namespace Resend
                 httpClient: HttpClient,
                 limit: ref limit,
                 after: ref after,
-                before: ref before);
+                before: ref before,
+                to: to,
+                startDate: ref startDate,
+                endDate: ref endDate);
 
 
             var __authorizations = global::Resend.EndPointSecurityResolver.ResolveAuthorizations(
@@ -125,6 +149,9 @@ namespace Resend
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("after", after?.ToString())
                                 .AddOptionalParameter("before", before?.ToString())
+                                .AddOptionalParameter("to", to, delimiter: ",", explode: false)
+                                .AddOptionalParameter("start_date", startDate)
+                                .AddOptionalParameter("end_date", endDate)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Resend.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -168,7 +195,10 @@ namespace Resend
                     httpRequestMessage: __httpRequest,
                     limit: limit,
                     after: after,
-                    before: before);
+                    before: before,
+                    to: to,
+                    startDate: startDate,
+                    endDate: endDate);
 
                 return __httpRequest;
             }
