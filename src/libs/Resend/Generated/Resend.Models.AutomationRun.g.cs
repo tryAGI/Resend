@@ -23,11 +23,19 @@ namespace Resend
         public string? Id { get; set; }
 
         /// <summary>
-        /// The current status of the automation run.
+        /// The current status of the automation run. `cancelled` runs were stopped on purpose, `skipped` runs ended on their own.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Resend.JsonConverters.AutomationRunStatusJsonConverter))]
         public global::Resend.AutomationRunStatus? Status { get; set; }
+
+        /// <summary>
+        /// The reason behind the run's status, for example `missing_variable` or `contact_deleted`. Only present on `failed` and `skipped` runs.<br/>
+        /// Example: missing_variable
+        /// </summary>
+        /// <example>missing_variable</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status_reason")]
+        public string? StatusReason { get; set; }
 
         /// <summary>
         /// The date and time the run started.<br/>
@@ -76,7 +84,11 @@ namespace Resend
         /// The ID of the automation run.
         /// </param>
         /// <param name="status">
-        /// The current status of the automation run.
+        /// The current status of the automation run. `cancelled` runs were stopped on purpose, `skipped` runs ended on their own.
+        /// </param>
+        /// <param name="statusReason">
+        /// The reason behind the run's status, for example `missing_variable` or `contact_deleted`. Only present on `failed` and `skipped` runs.<br/>
+        /// Example: missing_variable
         /// </param>
         /// <param name="startedAt">
         /// The date and time the run started.<br/>
@@ -100,6 +112,7 @@ namespace Resend
             string? @object,
             string? id,
             global::Resend.AutomationRunStatus? status,
+            string? statusReason,
             string? startedAt,
             string? completedAt,
             string? createdAt,
@@ -108,6 +121,7 @@ namespace Resend
             this.Object = @object;
             this.Id = id;
             this.Status = status;
+            this.StatusReason = statusReason;
             this.StartedAt = startedAt;
             this.CompletedAt = completedAt;
             this.CreatedAt = createdAt;
