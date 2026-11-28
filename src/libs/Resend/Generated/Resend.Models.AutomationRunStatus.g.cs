@@ -4,7 +4,7 @@
 namespace Resend
 {
     /// <summary>
-    /// The current status of the automation run.
+    /// The current status of the automation run. `cancelled` runs were stopped on purpose, `skipped` runs ended on their own.
     /// </summary>
     public enum AutomationRunStatus
     {
@@ -23,7 +23,15 @@ namespace Resend
         /// <summary>
         ///
         /// </summary>
+        QuotaExceeded,
+        /// <summary>
+        ///
+        /// </summary>
         Running,
+        /// <summary>
+        ///
+        /// </summary>
+        Skipped,
     }
 
     /// <summary>
@@ -41,7 +49,9 @@ namespace Resend
                 AutomationRunStatus.Cancelled => "cancelled",
                 AutomationRunStatus.Completed => "completed",
                 AutomationRunStatus.Failed => "failed",
+                AutomationRunStatus.QuotaExceeded => "quota_exceeded",
                 AutomationRunStatus.Running => "running",
+                AutomationRunStatus.Skipped => "skipped",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -55,7 +65,9 @@ namespace Resend
                 "cancelled" => AutomationRunStatus.Cancelled,
                 "completed" => AutomationRunStatus.Completed,
                 "failed" => AutomationRunStatus.Failed,
+                "quota_exceeded" => AutomationRunStatus.QuotaExceeded,
                 "running" => AutomationRunStatus.Running,
+                "skipped" => AutomationRunStatus.Skipped,
                 _ => null,
             };
         }
